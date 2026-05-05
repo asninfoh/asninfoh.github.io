@@ -78,7 +78,7 @@ layout: default
       <div class="d-flex mb-3 gap-3 align-items-start">
 
         {% if post.image %}
-        <img src="{{ post.image | relative_url }}" class="rounded" style="width:95px;height:75px;object-fit:cover;">
+        <img src="{{ post.image | relative_url }}" class="rounded" style="min-width: 120px; height:75px;object-fit:cover;">
         {% endif %}
 
         <div class="flex-grow-1">
@@ -92,11 +92,6 @@ layout: default
           <a href="{{ post.url | relative_url }}" class="text-dark text-decoration-none fw-semibold d-block">
             {{ post.title | truncate: 60 }}
           </a>
-
-          <!-- DATE -->
-          <div class="small text-muted">
-            {{ post.date | date: "%-d %b %Y" }}
-          </div>
 
         </div>
 

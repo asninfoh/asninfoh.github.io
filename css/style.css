@@ -43,6 +43,18 @@ body {
   font-weight: 500;
 }
 
+.search-container {
+  width: 100%;
+  padding: 0 10px; /* optional biar ada jarak */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
 .bg-danger {
   background: linear-gradient(90deg,#dc3545,#8b2bbf);
 }
