@@ -1,35 +1,14 @@
-<footer class="footer pb-4 border-top shadow-none bg-dark text-white">
-  <!-- MENU -->
-  <div class="container col-12 pt-4 text-center">
-    © {{ site.time | date: "%Y" }}
-    {% if site.copyright.name %}
-    <a href="{{site.copyright.link}}" class='text-primary text-decoration-none text-capitalize fw-bolder'
-      target="_blank">
-      {{site.copyright.name}}
-    </a>
-    {% else %}
-    {{ site.title }}
-    {% endif %}
-    . Supported by <a href="https://indonesiya.com" class='text-danger text-decoration-none text-capitalize fw-bolder'
-      target="_blank">Indonesiya</a>
-  </div>
-</footer>
-
-
 <footer class="footer mt-5 pt-5">
 
   <div class="container">
     <div class="row gy-4">
 
       <!-- ABOUT -->
-      <div class="col-lg-4">
+      <div class="col-lg-6 text-start">
         <p class="text-danger small fw-bold mb-2">/ ABOUT /</p>
 
         <div class="d-flex align-items-center mb-3">
-          <img src="/images/profile.jpg"
-               class="rounded-circle me-3"
-               width="60" height="60"
-               style="object-fit:cover;">
+          <img src="/images/profile.jpg" class="rounded-circle me-3" width="60" height="60" style="object-fit:cover;">
 
           <div>
             <h6 class="mb-0 fw-bold">Mas Sugeng</h6>
@@ -57,7 +36,7 @@
       </div>
 
       <!-- LINKS -->
-      <div class="col-lg-4">
+      <div class="col-lg-3 col-sm-6 text-start">
         <h6 class="fw-bold mb-3">Links</h6>
 
         <ul class="list-unstyled small">
@@ -70,7 +49,7 @@
       </div>
 
       <!-- HALAMAN -->
-      <div class="col-lg-4">
+      <div class="col-lg-3 col-sm-6 text-start">
         <h6 class="fw-bold mb-3">Halaman</h6>
 
         <ul class="list-unstyled small">
@@ -86,7 +65,13 @@
 
   <!-- COPYRIGHT -->
   <div class="footer-bottom text-center mt-4 py-3">
-    <small>© 2025 - <a href="#" class="text-danger text-decoration-none">WUZZ</a></small>
+    © {{ site.time | date: "%Y" }}
+    {% if site.copyright.name %}
+    <small>© 2026 - <a href="{{site.copyright.link}}"
+        class="text-danger text-decoration-none">{{site.copyright.name}}</a></small>
+    {% else %}
+    {{ site.title }}
+    {% endif %}
   </div>
 
 </footer>

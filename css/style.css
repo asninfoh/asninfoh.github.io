@@ -17,6 +17,26 @@ body {
   }
 }
 
+.navbar .nav-link {
+  font-weight: 500;
+}
+
+.bg-danger {
+  background: linear-gradient(90deg,#dc3545,#8b2bbf);
+}
+
+h6 span {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .bg-danger .container {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
 .post-content img {
   max-width: 100%;
   height: auto;
