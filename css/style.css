@@ -130,20 +130,6 @@ img {
   transform: translateY(-2px);
 }
 
-/* READMORE */
-.readmore-list {
-  background: #fafafa;
-}
-
-.readmore-link {
-  transition: 0.2s;
-}
-
-.readmore-link:hover {
-  color: #dc3545; /* merah bootstrap */
-  padding-left: 5px;
-}
-
 /* FOOTER */
 .footer {
   background: #f8f9fa;

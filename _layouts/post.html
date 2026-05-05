@@ -9,11 +9,19 @@ layout: default
 
     <article>
 
-      {% if page.categories and page.categories.size > 0 %}
-      <div class="small text-danger fw-semibold mb-3">
-        {{ page.categories[0] }}
+      <div class="d-flex justify-content-between align-items-center mb-3">
+
+        {% if page.categories and page.categories.size > 0 %}
+        <span class="small text-danger fw-semibold">
+          {{ page.categories[0] }}
+        </span>
+        {% endif %}
+
+        <span class="text-muted small">
+          {{ page.date | date: "%B %-d, %Y" }}
+        </span>
+
       </div>
-      {% endif %}
 
       {% if page.image %}
       <img src="{{ page.image | relative_url }}" class="w-100 rounded mb-3" style="aspect-ratio:16/9; object-fit:cover;"
@@ -21,10 +29,6 @@ layout: default
       {% endif %}
 
       <h1 class="fw-bold">{{ page.title }}</h1>
-
-      <small class="text-muted">
-        {{ page.date | date: "%B %-d, %Y" }}
-      </small>
 
       <!-- ad -->
       <div class="ad-box my-3 text-center">
@@ -36,7 +40,7 @@ layout: default
         {% for p in parts %}
         {{ p }}</p>
         {% if forloop.index == 3 %}
-        <div class="readmore my-4 text-center">
+        <div class="text-start bg-light my-4">
           {% include readmore.html %}
         </div>
         {% endif %}

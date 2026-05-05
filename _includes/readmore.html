@@ -1,4 +1,4 @@
-<div class="readmore-list mt-4 p-3 border rounded">
+<div class="bg-light mt-4 p-3 border rounded">
 
   <h6 class="fw-bold text-uppercase mb-3">
     <span class="text-danger">/</span> BACA JUGA <span class="text-danger">/</span>
@@ -27,8 +27,8 @@
     {% if match %}
 
     <li class="mb-2">
-      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark fw-semibold d-block readmore-link">
-        → {{ post.title }}
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-primary fw-semibold d-block">
+        {{ post.title }}
       </a>
     </li>
 
@@ -52,7 +52,7 @@
     {% unless shown_urls contains post.url %}
 
     <li class="mb-2">
-      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-muted d-block text-primary">
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none d-block text-primary">
         {{ post.title }}
       </a>
     </li>
