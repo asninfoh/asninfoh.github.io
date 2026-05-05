@@ -10,7 +10,7 @@ layout: default
     <article>
 
       {% if page.categories and page.categories.size > 0 %}
-      <div class="small text-danger fw-semibold mb-1">
+      <div class="small text-danger fw-semibold mb-3">
         {{ page.categories[0] }}
       </div>
       {% endif %}
@@ -32,15 +32,19 @@ layout: default
       </div>
 
       <div class="mb-4">
-        {{ content }}
+        {% assign parts = content | split: '</p>' %}
+        {% for p in parts %}
+        {{ p }}</p>
+        {% if forloop.index == 3 %}
+        <div class="readmore my-4 text-center">
+          {% include readmore.html %}
+        </div>
+        {% endif %}
+        {% endfor %}
+
       </div>
 
     </article>
-
-    <!-- Read More -->
-    <div id="readmore" class="readmore" style="display:none;">
-      {% include readmore.html %}
-    </div>
 
     <!-- ad bottom -->
     <div class="ad-box my-3 text-center">

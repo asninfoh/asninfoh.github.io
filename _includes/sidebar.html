@@ -56,7 +56,8 @@
     {% assign count = category[1].size %}
     {% assign size = count | times: 100 | divided_by: max_count %}
 
-    <a href="{{ '/categories/' | append: category[0] | slugify | append: '/' | relative_url }}"
+    {% capture cat_url %}/categories/{{ category[0] | slugify }}/{% endcapture %}
+    <a href="{{ cat_url | relative_url }}"
       class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
       {{ category[0] }}
     </a>
