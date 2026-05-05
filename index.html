@@ -59,7 +59,7 @@ layout: default
 {% endif %}
 <!-- FEATURED END -->
 
-<h5 class="fw-bold mb-3">Artikel Terbaru</h3>
+<h5 class="fw-bold my-4">Artikel Terbaru</h3>
 
   {% assign visible_count = 0 %}
 
@@ -73,7 +73,7 @@ layout: default
 
   <div class="col-12 col-md-6 col-lg-6 mt-0 mb-4" data-category="{{ post.categories | join: ' ' }}">
 
-    <div class="card h-100 card-hover shadow-none">
+    <div class="card h-100 border-0 shadow-none">
 
       <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
 
@@ -131,7 +131,7 @@ layout: default
 
 
 <!-- PAGINATION -->
-<div class="container mt-5">
+<div class="container my-4">
 
   {% if paginator.total_pages > 1 %}
 

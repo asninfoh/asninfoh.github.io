@@ -1,24 +1,16 @@
-<footer class="footer pb-4 border-top shadow-none">
-  <div class="container">
-    <div class="row g-4">
-
-            <!-- MENU -->
-      <div class="col-12 pt-4 text-center">
-        © {{ site.time | date: "%Y" }}
-        {% if site.copyright.name %}
-        <a href="{{site.copyright.link}}" class='text-primary text-decoration-none text-capitalize fw-bolder' target="_blank">
-          {{site.copyright.name}}
-        </a>
-        {% else %}
-        {{ site.title }}
-        {% endif %}
-        . Supported by <a href="https://indonesiya.com" class='text-danger text-decoration-none text-capitalize fw-bolder' target="_blank">
-          Indonesiya
-        </a>.
-      </div>
-
-    </div>
-
-
+<footer class="footer pb-4 border-top shadow-none bg-dark text-white">
+  <!-- MENU -->
+  <div class="container col-12 pt-4 text-center">
+    © {{ site.time | date: "%Y" }}
+    {% if site.copyright.name %}
+    <a href="{{site.copyright.link}}" class='text-primary text-decoration-none text-capitalize fw-bolder'
+      target="_blank">
+      {{site.copyright.name}}
+    </a>
+    {% else %}
+    {{ site.title }}
+    {% endif %}
+    . Supported by <a href="https://indonesiya.com" class='text-danger text-decoration-none text-capitalize fw-bolder'
+      target="_blank">Indonesiya</a>
   </div>
 </footer>
