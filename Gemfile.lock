@@ -61,6 +61,8 @@ DEPENDENCIES
   jekyll
   jekyll-paginate
   jekyll-seo-tag
+  jekyll-feed
+  jekyll-sitemap
 
 BUNDLED WITH
    2.3.7
