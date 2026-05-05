@@ -1,6 +1,8 @@
 <!-- RECENT POSTS -->
 <div class="mb-4">
-  <h5 class="fw-bold mb-3">Recent</h5>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> ARTIKEL TERBARU<span class="text-danger">/</span>
+  </h6>
 
   {% for post in site.posts limit:10 %}
   {% if post.url != page.url %}
@@ -34,7 +36,9 @@
 
 <!-- CATEGORIES CLOUD -->
 <div class="mb-4">
-  <h5 class="fw-bold mb-3">Categories</h5>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
+  </h6>
 
   <div class="d-flex flex-wrap gap-2">
 
@@ -61,7 +65,9 @@
 
 <!-- STICKY WIDGET -->
 <div class="mb-4">
-  <h5 class="fw-bold mb-3">Featured</h5>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> SPONSOR <span class="text-danger">/</span>
+  </h6>
 
   <p class="ad-box text-center">
     {% include adsidebar.html %}
