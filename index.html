@@ -113,22 +113,24 @@ layout: default
       <span class="text-danger">/</span> ARTIKEL TERBARU <span class="text-danger">/</span>
     </h6>
 
+    {% assign now = site.time | date: "%s" %}
+    {% assign valid_posts = "" | split: "" %}
+
+    {% for post in site.posts %}
+    {% assign publish_time = post.publish_at | date: "%s" %}
+
+    {% if post.publish_at == nil or publish_time <= now %}
+    {% assign valid_posts = valid_posts | push: post %}
+    {% endif %}
+    {% endfor %}
+
+    {% assign sorted_posts = valid_posts | sort: "publish_at" | reverse %}
+
     <div class="row g-4">
 
-      {% assign visible_count = 0 %}
-      {% assign limit_count = 12 %}
+      {% if sorted_posts.size > 0 %}
 
-      {% for post in paginator.posts %}
-
-      {% if visible_count >= limit_count %}
-      {% break %}
-      {% endif %}
-
-      {% assign publish_time = post.publish_at | date: "%s" %}
-
-      {% if post.publish_at == nil or publish_time <= now %}
-      {% assign visible_count = visible_count | plus: 1 %}
-
+      {% for post in sorted_posts limit:12 %}
       <div class="col-12 col-md-4">
 
         <div class="card border-0 h-100">
@@ -142,22 +144,26 @@ layout: default
             </div>
             {% endif %}
 
-            <div class="mt-2">
+            <div class="mt-3">
 
+              <!-- CATEGORY -->
               {% if post.categories %}
               <div class="small text-danger fw-semibold mb-1">
-                {{ post.categories | first }}
+                {{ post.categories[0] }}
               </div>
               {% endif %}
 
+              <!-- TITLE -->
               <h4 class="fw-bold text-dark mb-1">
                 {{ post.title }}
               </h4>
 
+              <!-- DATE -->
               <small class="text-muted d-block mb-1">
                 {{ post.date | date: "%b %-d, %Y" }}
               </small>
 
+              <!-- EXCERPT -->
               <p class="text-muted small mb-0">
                 {{ post.excerpt | strip_html | truncate: 100 }}
               </p>
@@ -169,17 +175,19 @@ layout: default
         </div>
 
       </div>
-
-      {% endif %}
       {% endfor %}
 
-    </div>
+      {% else %}
 
-    {% if visible_count == 0 %}
-    <div class="text-center text-muted py-5">
-      No posts available yet.
+      <div class="col-12">
+        <div class="text-center text-muted py-5">
+          No posts available yet.
+        </div>
+      </div>
+
+      {% endif %}
+
     </div>
-    {% endif %}
 
   </div>
 
