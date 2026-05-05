@@ -4,17 +4,19 @@ permalink: /404.html
 title: "404 - Page Not Found"
 ---
 
-{% assign random_posts = site.posts | sample: 6 %}
-{% if random_posts == empty %}
-  {% assign random_posts = site.posts limit:6 %}
-{% endif %}
-
 <div class="container py-5 text-center">
 
   <!-- TITLE -->
   <h1 class="display-3 fw-bold text-danger">404</h1>
 
   <h4 class="fw-semibold mb-3">
-    Halaman tidak ditemukan
+    Page Not Found
   </h4>
+
+  <div class="mt-4">
+    <a href="{{ '/' | relative_url }}" class="btn btn-danger btn-lg px-4">
+      <i class="fa fa-home me-2"></i> Back to Home
+    </a>
+  </div>
+
 </div>
