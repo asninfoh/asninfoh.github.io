@@ -1,77 +1,71 @@
 <!-- RECENT POSTS -->
-<div class="card border border-0 shadow-none mb-4">
-  <div class="card-body">
-    <h5 class="fw-bold mb-3">Recent</h5>
+<div class="mb-4">
+  <h5 class="fw-bold mb-3">Recent</h5>
 
-    {% for post in site.posts limit:10 %}
-    {% if post.url != page.url %}
-    <div class="d-flex mb-3">
+  {% for post in site.posts limit:10 %}
+  {% if post.url != page.url %}
+  <div class="d-flex mb-3">
 
-      {% if post.image %}
-      <div class="me-2">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}" class="rounded"
-            style="min-width: 120px; height: 75px; object-fit: cover;" loading="lazy">
-        </a>
-      </div>
-      {% endif %}
-
-      <div>
-        <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
-          <small class="fw-semibold d-block">
-            {{ post.title | truncate: 50 }}
-          </small>
-        </a>
-        <small class="text-muted">
-          {{ post.date | date: "%b %d, %Y" }}
-        </small>
-      </div>
-
+    {% if post.image %}
+    <div class="me-2">
+      <a href="{{ post.url | relative_url }}">
+        <img src="{{ post.image | relative_url }}" class="rounded"
+          style="min-width: 120px; height: 75px; object-fit: cover;" loading="lazy">
+      </a>
     </div>
     {% endif %}
+
+    <div>
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
+        <small class="fw-semibold d-block">
+          {{ post.title | truncate: 50 }}
+        </small>
+      </a>
+      <small class="text-muted">
+        {{ post.date | date: "%b %d, %Y" }}
+      </small>
+    </div>
+
+  </div>
+  {% endif %}
+  {% endfor %}
+
+</div>
+
+<!-- CATEGORIES CLOUD -->
+<div class="mb-4">
+  <h5 class="fw-bold mb-3">Categories</h5>
+
+  <div class="d-flex flex-wrap gap-2">
+
+    {% assign max_count = 0 %}
+    {% for category in site.categories %}
+    {% if category[1].size > max_count %}
+    {% assign max_count = category[1].size %}
+    {% endif %}
+    {% endfor %}
+
+    {% for category in site.categories %}
+    {% assign count = category[1].size %}
+    {% assign size = count | times: 100 | divided_by: max_count %}
+
+    <a href="{{ '/categories/' | append: category[0] | append: '/' | slugify | relative_url }}"
+      class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
+
+      {{ category[0] }}
+
+    </a>
+
     {% endfor %}
 
   </div>
 </div>
 
-<!-- CATEGORIES CLOUD -->
-<div class="card border border-0 shadow-none mb-4">
-  <div class="card-body">
-    <h5 class="fw-bold mb-3">Categories</h5>
-
-    <div class="d-flex flex-wrap gap-2">
-
-      {% assign max_count = 0 %}
-      {% for category in site.categories %}
-      {% if category[1].size > max_count %}
-      {% assign max_count = category[1].size %}
-      {% endif %}
-      {% endfor %}
-
-      {% for category in site.categories %}
-      {% assign count = category[1].size %}
-      {% assign size = count | times: 100 | divided_by: max_count %}
-
-      <a href="{{ '/categories/' | append: category[0] | append: '/' | slugify | relative_url }}"
-        class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
-
-        {{ category[0] }}
-
-      </a>
-
-      {% endfor %}
-
-    </div>
-  </div>
-</div>
-
 <!-- STICKY WIDGET -->
-<div class="card border-0 shadow-none">
-  <div class="card-body">
-    <h5 class="fw-bold mb-3">Featured</h5>
+<div class="mb-4">
+  <h5 class="fw-bold mb-3">Featured</h5>
 
-    <p class="small text-muted mb-2 text-center">
-      {% include adsidebar.html %}
-    </p>
-  </div>
+  <p class="small text-muted mb-2 text-center">
+    {% include adsidebar.html %}
+  </p>
 </div>
