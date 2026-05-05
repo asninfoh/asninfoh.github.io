@@ -4,6 +4,18 @@ body {
   overflow-x: hidden;
 }
 
+/* brand biar gak kegedean */
+.navbar-brand {
+  font-size: 1.25rem;
+}
+
+/* dropdown biar enak di mobile */
+@media (max-width: 991px) {
+  .dropdown-menu {
+    text-align: center;
+  }
+}
+
 .post-content img {
   max-width: 100%;
   height: auto;

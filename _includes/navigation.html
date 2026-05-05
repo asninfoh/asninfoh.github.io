@@ -2,12 +2,14 @@
   <div class="container">
 
     <!-- BRAND -->
-    <a class="navbar-brand text-danger text-uppercase p-0" href="{{ '/' | relative_url }}">
-      <h3 class="m-0" >{{ site.title }}</h3>
+    <a class="navbar-brand text-danger text-uppercase fw-bold" href="{{ '/' | relative_url }}">
+      {{ site.title }}
     </a>
 
     <!-- TOGGLER -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler border-0" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -25,15 +27,16 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="https://aridjaya.com/">Partner</a>
+          <a class="nav-link" href="https://aridjaya.com/" target="_blank">Partner</a>
         </li>
 
         <!-- DROPDOWN -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
             Categories
           </a>
-          <ul class="dropdown-menu border-0 shadow-none text-center text-lg-start">
+
+          <ul class="dropdown-menu border-0 shadow-sm text-center text-lg-start">
 
             <li><a class="dropdown-item" href="{{ '/categories/aesthetic/' | relative_url }}">Aesthetic</a></li>
             <li><a class="dropdown-item" href="{{ '/categories/background/' | relative_url }}">Background</a></li>
@@ -46,7 +49,7 @@
             <li><hr class="dropdown-divider"></li>
 
             <li>
-              <a class="dropdown-item " target="_blank" href="https://aridjaya.com/hijab/">
+              <a class="dropdown-item" target="_blank" href="https://aridjaya.com/hijab/">
                 Hijab
               </a>
             </li>
@@ -54,9 +57,9 @@
           </ul>
         </li>
 
-        <!-- CTA BUTTON -->
+        <!-- CTA -->
         <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-          <a class="btn btn-primary w-100 w-lg-auto px-3 " href="{{ '/sitemap/' | relative_url }}">
+          <a class="btn btn-primary w-100 px-3" href="{{ '/sitemap/' | relative_url }}">
             Sitemap
           </a>
         </li>
