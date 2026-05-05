@@ -118,8 +118,13 @@ layout: default
     <div class="row g-4">
 
       {% assign visible_count = 0 %}
+      {% assign limit_count = 12 %}
 
       {% for post in paginator.posts %}
+
+      {% if visible_count >= limit_count %}
+      {% break %}
+      {% endif %}
 
       {% assign publish_time = post.publish_at | date: "%s" %}
 
@@ -149,24 +154,20 @@ layout: default
 
             <div class="mt-2">
 
-              <!-- CATEGORY -->
               {% if post.categories %}
               <div class="small text-danger fw-semibold mb-1">
                 {{ post.categories | first }}
               </div>
               {% endif %}
 
-              <!-- TITLE -->
               <h4 class="fw-bold text-dark mb-1">
                 {{ post.title }}
               </h4>
 
-              <!-- DATE -->
               <small class="text-muted d-block mb-1">
                 {{ post.date | date: "%b %-d, %Y" }}
               </small>
 
-              <!-- EXCERPT -->
               <p class="text-muted small mb-0">
                 {{ post.excerpt | strip_html | truncate: 100 }}
               </p>
