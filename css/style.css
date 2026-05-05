@@ -1,7 +1,8 @@
-// Custom CSS
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 
 /* brand biar gak kegedean */
@@ -33,8 +34,6 @@ body {
 .ad-box img,
 .ad-box ins {
   max-width: 100% !important;
-  width: 100% !important;
-  height: auto !important;
   display: block;
   margin: auto;
 }
@@ -61,11 +60,15 @@ img {
   transform: translateY(-2px);
 }
 
-/* Sticky hanya aktif di desktop */
-@media (min-width: 992px) {
-  #sidebar-sticky {
-    position: sticky;
-    top: 100px;
-    align-self: flex-start;
-  }
+.readmore-list {
+  background: #fafafa;
+}
+
+.readmore-link {
+  transition: 0.2s;
+}
+
+.readmore-link:hover {
+  color: #dc3545; /* merah bootstrap */
+  padding-left: 5px;
 }
