@@ -24,8 +24,9 @@ layout: default
       </div>
 
       {% if page.image %}
-      <img src="{{ page.image | relative_url }}" class="w-100 rounded mb-3" style="aspect-ratio:16/9; object-fit:cover;"
-        loading="lazy">
+      <a href="https://aridjaya.com">
+        <img src="{{ page.image | relative_url }}" class="w-100 rounded mb-3"
+          style="aspect-ratio:16/9; object-fit:cover;" loading="lazy"></a>
       {% endif %}
 
       <h1 class="fw-bold">{{ page.title }}</h1>

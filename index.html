@@ -107,7 +107,7 @@ layout: default
 
 
   <!-- MAIN CONTENT -->
-  <div class="mt-5">
+  <div class="my-5">
 
     <h6 class="fw-bold text-uppercase mb-3">
       <span class="text-danger">/</span> ARTIKEL TERBARU <span class="text-danger">/</span>
@@ -137,14 +137,6 @@ layout: default
 
             {% if post.image %}
             <div class="position-relative">
-
-              {% assign post_time = post.date | date: "%s" %}
-              {% assign diff = now | minus: post_time %}
-
-              {% if diff < 604800 %}
-              <span class="badge bg-danger position-absolute m-2">NEW</span>
-              {% endif %}
-
               <img src="{{ post.image | relative_url }}" class="w-100 rounded"
                 style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             </div>
