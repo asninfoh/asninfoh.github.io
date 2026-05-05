@@ -9,52 +9,58 @@ permalink: /404.html
 {% assign random_posts = site.posts %}
 {% endif %}
 
-<div class="row g-4 text-start">
+<!-- HERO 404 -->
+<div class="text-center py-5">
+    <h1 class="display-1 fw-bold text-danger">404</h1>
+    <h3 class="fw-semibold mb-3">Page Not Found</h3>
+    <p class="text-muted mb-4">
+        Halaman yang kamu cari tidak ditemukan atau sudah dipindahkan.
+    </p>
 
-    {% for post in random_posts %}
+    <a href="{{ '/' | relative_url }}" class="btn btn-primary px-4">
+        Kembali ke Beranda
+    </a>
+</div>
 
-    <div class="col-12 col-md-6 col-lg-4 mt-0 mb-4">
+<!-- SUGGESTED POSTS -->
+<div class="container mt-5">
+    <h5 class="fw-bold mb-4">Mungkin kamu tertarik ini 👇</h5>
 
-        <div class="card modern-card h-100 border-0">
+    <div class="row g-4 text-start">
 
-            <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
+        {% for post in random_posts %}
 
-                {% if post.image %}
-                <div class="overflow-hidden position-relative">
+        <div class="col-12 col-md-6 col-lg-4">
 
-                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-img rounded"
-                        style="aspect-ratio: 16/9; object-fit: cover;" loading="lazy">
+            <div class="card modern-card h-100 border-0">
 
-                </div>
-                {% endif %}
+                <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
 
-                <div class="card-body my-3 p-0">
-                    <h5 class="fw-semibold mb-2 text-capitalize text-danger">
-                        {{ post.title }}
-                    </h5>
+                    {% if post.image %}
+                    <div class="overflow-hidden">
+                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}"
+                            class="card-img rounded"
+                            style="aspect-ratio: 16/9; object-fit: cover;" loading="lazy">
+                    </div>
+                    {% endif %}
 
-                    <small class="text-muted d-block mb-2">
-                        {{ post.date | date: "%b %-d, %Y" }}
-                    </small>
+                    <div class="card-body my-3 p-0">
+                        <h5 class="fw-semibold mb-2 text-capitalize text-danger">
+                            {{ post.title }}
+                        </h5>
 
-                    <p class="excerpt">
-                        {{ post.excerpt | strip_html | truncate: 100 }}
-                    </p>
+                        <p class="excerpt">
+                            {{ post.excerpt | strip_html | truncate: 100 }}
+                        </p>
+                    </div>
 
-                </div>
+                </a>
 
-            </a>
+            </div>
 
         </div>
 
+        {% endfor %}
+
     </div>
-
-    {% endfor %}
-
-</div>
-
-<div class="justify-content-center text-center mb-3">
-    <a href="{{ '/' | relative_url }}" class="btn btn-primary mt-5 px-4">
-        &laquo; Back to Home
-    </a>
 </div>
