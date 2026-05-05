@@ -6,6 +6,8 @@ layout: default
 
 <div class="my-4">
 
+  {% if page.url == "/" or page.url == "/index.html" %}
+
   <!-- TOP SECTION -->
   <div class="row g-4">
 
@@ -100,6 +102,8 @@ layout: default
     </div>
 
   </div>
+
+  {% endif %}
 
 
   <!-- MAIN CONTENT -->
