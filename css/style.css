@@ -10,6 +10,28 @@ body {
   font-size: 1.25rem;
 }
 
+.nav-custom .nav-link {
+  position: relative;
+  padding: 5px 10px;
+}
+
+.nav-custom .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: red;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+.nav-custom .nav-link:hover::before {
+  transform: scaleX(1);
+}
+
 /* dropdown biar enak di mobile */
 @media (max-width: 991px) {
   .dropdown-menu {
@@ -157,4 +179,22 @@ img {
   .footer .d-flex {
     justify-content: center;
   }
+}
+
+/* DARK MODE */
+.dark-mode {
+  background:#121212;
+  color:#eee;
+}
+
+.dark-mode .navbar {
+  background:#1e1e1e !important;
+}
+
+.dark-mode .nav-link {
+  color:#ddd !important;
+}
+
+.dark-mode .bg-danger {
+  background:#222 !important;
 }

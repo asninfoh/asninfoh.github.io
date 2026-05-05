@@ -9,6 +9,12 @@ layout: default
 
     <article>
 
+      {% if post.categories %}
+      <div class="small text-danger fw-semibold mb-1">
+        {{ post.categories | first }}
+      </div>
+      {% endif %}
+
       {% if page.image %}
       <img src="{{ page.image | relative_url }}" class="w-100 rounded mb-3" style="aspect-ratio:16/9; object-fit:cover;"
         loading="lazy">
@@ -29,12 +35,12 @@ layout: default
         {{ content }}
       </div>
 
-      <!-- Read More -->
-      <div id="readmore" class="readmore" style="display:none;">
-        {% include readmore.html %}
-      </div>
-
     </article>
+
+    <!-- Read More -->
+    <div id="readmore" class="readmore" style="display:none;">
+      {% include readmore.html %}
+    </div>
 
     <!-- ad bottom -->
     <div class="ad-box my-3 text-center">
@@ -95,7 +101,7 @@ layout: default
 
       <div class="row g-3">
 
-        {% assign maxRelated = 8 %}
+        {% assign maxRelated = 4 %}
         {% assign minCommonTags = 1 %}
         {% assign relatedCount = 0 %}
 
@@ -119,18 +125,18 @@ layout: default
         {% if sameCategory or sameTagCount >= minCommonTags %}
 
         {% if relatedCount < maxRelated %}
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-6">
 
           <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
 
             {% if post.image %}
             <img src="{{ post.image | relative_url }}" class="w-100 rounded mb-2"
-              style="aspect-ratio:4/3; object-fit:cover;" loading="lazy">
+              style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             {% endif %}
 
-            <small>
+            <p class="fw-semibold">
               {{ post.title | truncate: 45 }}
-            </small>
+            </p>
 
           </a>
 

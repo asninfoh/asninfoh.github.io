@@ -1,3 +1,30 @@
+/* SEARCH */
+function openSearch() {
+    document.getElementById("searchBox").style.display = "block";
+}
+
+document.getElementById("searchBox").addEventListener("click", function (e) {
+    if (e.target.id === "searchBox") {
+        this.style.display = "none";
+    }
+});
+
+/* DARK MODE */
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+}
+
+// LOAD THEME
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+}
+
 /* READMORE */
 document.addEventListener("DOMContentLoaded", function () {
 

@@ -1,9 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top z-3">
   <div class="container">
 
-    <!-- LOGO -->
-    <a class="navbar-brand fw-bold" href="{{ '/' | relative_url }}">
-      WUZZ<span class="text-danger">»»</span>
+    <!-- LOGO AUTO -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="{{ '/' | relative_url }}">
+      {% if site.logo %}
+        <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" style="height:40px;">
+      {% else %}
+        {{ site.title }}
+      {% endif %}
     </a>
 
     <!-- TOGGLER -->
@@ -13,33 +17,70 @@
 
     <!-- MENU -->
     <div class="collapse navbar-collapse" id="navTop">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Keuangan</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Bisnis</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Inspirasi</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Landing Page</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+
+      <ul class="navbar-nav mx-auto nav-custom">
+
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains 'keuangan' %}active{% endif %}" href="/categories/keuangan/">Keuangan</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains 'bisnis' %}active{% endif %}" href="/categories/bisnis/">Bisnis</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains 'inspirasi' %}active{% endif %}" href="/categories/inspirasi/">Inspirasi</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/landing/">Landing Page</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/">Blog</a>
+        </li>
+
       </ul>
 
       <!-- ICON -->
-      <div class="d-flex gap-3">
-        <i class="bi bi-gear"></i>
-        <i class="bi bi-search"></i>
+      <div class="d-flex gap-3 align-items-center">
+
+        <!-- DARK MODE -->
+        <button onclick="toggleTheme()" class="btn btn-sm border-0">
+          🌙
+        </button>
+
+        <!-- SEARCH -->
+        <button onclick="openSearch()" class="btn btn-sm border-0">
+          🔍
+        </button>
+
       </div>
+
     </div>
 
   </div>
 </nav>
 
+<!-- HOT BAR -->
 <div class="bg-danger text-white py-2">
   <div class="container d-flex flex-wrap gap-3 small fw-semibold">
 
-    <span>🔥 HOT</span>
-    <span>⭐ POPULER</span>
-    <span>⚡ TRENDING</span>
-    <span>🏷 BISNIS</span>
-    <span>💰 KEUANGAN</span>
-    <span>🧪 TESTING</span>
+    <a href="/tags/hot/" class="text-white text-decoration-none">🔥 HOT</a>
+    <a href="/tags/popular/" class="text-white text-decoration-none">⭐ POPULER</a>
+    <a href="/tags/trending/" class="text-white text-decoration-none">⚡ TRENDING</a>
+    <a href="/categories/bisnis/" class="text-white text-decoration-none">🏷 BISNIS</a>
+    <a href="/categories/keuangan/" class="text-white text-decoration-none">💰 KEUANGAN</a>
 
+  </div>
+</div>
+
+<!-- SEARCH MODAL -->
+<div id="searchBox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000000cc; z-index:9999;">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <form action="/search/" method="get" class="bg-white p-4 rounded w-75">
+      <input type="text" name="q" class="form-control mb-3" placeholder="Cari artikel...">
+      <button class="btn btn-danger w-100">Search</button>
+    </form>
   </div>
 </div>
