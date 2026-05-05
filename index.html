@@ -54,14 +54,9 @@ layout: default
             {% endif %}
 
             <!-- TITLE -->
-            <h4 class="fw-bold text-dark mb-2">
+            <h2 class="fw-bold text-dark mb-2">
               {{ featured_post.title }}
-            </h4>
-
-            <!-- EXCERPT -->
-            <p class="text-muted small mb-0">
-              {{ featured_post.excerpt | strip_html | truncate: 140 }}
-            </p>
+            </h2>
 
           </div>
 
@@ -162,9 +157,9 @@ layout: default
               {% endif %}
 
               <!-- TITLE -->
-              <h6 class="fw-bold text-dark mb-1">
+              <h4 class="fw-bold text-dark mb-1">
                 {{ post.title }}
-              </h6>
+              </h4>
 
               <!-- DATE -->
               <small class="text-muted d-block mb-1">
@@ -206,20 +201,57 @@ layout: default
   <nav>
     <ul class="pagination justify-content-center">
 
+      <!-- PREV -->
       {% if paginator.previous_page %}
       <li class="page-item">
         <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a>
       </li>
       {% endif %}
 
-      {% for page in (1..paginator.total_pages) %}
-      <li class="page-item {% if page == paginator.page %}active{% endif %}">
+      {% assign total = paginator.total_pages %}
+      {% assign current = paginator.page %}
+      {% assign delta = 1 %}
+
+      {% assign start = current | minus: delta %}
+      {% assign end = current | plus: delta %}
+
+      {% if start < 1 %}{% assign start = 1 %}{% endif %}
+      {% if end > total %}{% assign end = total %}{% endif %}
+
+      <!-- FIRST -->
+      {% if start > 1 %}
+      <li class="page-item">
+        <a class="page-link" href="{{ '/' | relative_url }}">1</a>
+      </li>
+
+      {% if start > 2 %}
+      <li class="page-item disabled"><span class="page-link">...</span></li>
+      {% endif %}
+      {% endif %}
+
+      <!-- RANGE -->
+      {% for page in (start..end) %}
+      <li class="page-item {% if page == current %}active{% endif %}">
         <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
           {{ page }}
         </a>
       </li>
       {% endfor %}
 
+      <!-- LAST -->
+      {% if end < total %}
+      {% if end < total | minus: 1 %}
+      <li class="page-item disabled"><span class="page-link">...</span></li>
+      {% endif %}
+
+      <li class="page-item">
+        <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
+          {{ total }}
+        </a>
+      </li>
+      {% endif %}
+
+      <!-- NEXT -->
       {% if paginator.next_page %}
       <li class="page-item">
         <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">&raquo;</a>
