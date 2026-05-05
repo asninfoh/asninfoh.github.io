@@ -134,9 +134,9 @@ layout: default
               style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             {% endif %}
 
-            <p class="fw-semibold">
+            <span class="fw-semibold">
               {{ post.title | truncate: 45 }}
-            </p>
+            </span>
 
           </a>
 
@@ -155,18 +155,20 @@ layout: default
       <!-- FALLBACK -->
       {% if relatedCount == 0 %}
       <div class="row g-3">
-        {% for post in site.posts limit:8 %}
+        {% for post in site.posts limit:4 %}
         {% if post.url != page.url %}
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-6">
 
           <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
 
             {% if post.image %}
             <img src="{{ post.image | relative_url }}" class="w-100 rounded mb-2"
-              style="aspect-ratio:4/3; object-fit:cover;">
+              style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             {% endif %}
 
-            <small>{{ post.title | truncate: 45 }}</small>
+            <span class="fw-semibold">
+              {{ post.title | truncate: 45 }}
+            </span>
 
           </a>
 
