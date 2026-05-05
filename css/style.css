@@ -36,6 +36,11 @@ h6 span {
   }
 }
 
+.text-danger.fw-semibold {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
 
 .post-content img {
   max-width: 100%;

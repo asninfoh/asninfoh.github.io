@@ -14,13 +14,13 @@ layout: default
 
       {% assign featured_post = nil %}
       {% for post in site.posts %}
-        {% if post.tags contains "featured" %}
-          {% assign publish_time = post.publish_at | date: "%s" %}
-          {% if post.publish_at == nil or publish_time <= now %}
-            {% assign featured_post = post %}
-            {% break %}
-          {% endif %}
-        {% endif %}
+      {% if post.tags contains "featured" %}
+      {% assign publish_time = post.publish_at | date: "%s" %}
+      {% if post.publish_at == nil or publish_time <= now %}
+      {% assign featured_post = post %}
+      {% break %}
+      {% endif %}
+      {% endif %}
       {% endfor %}
 
       {% if featured_post %}
@@ -29,9 +29,8 @@ layout: default
         <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-white">
 
           {% if featured_post.image %}
-          <img src="{{ featured_post.image | relative_url }}"
-               class="w-100 rounded"
-               style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+          <img src="{{ featured_post.image | relative_url }}" class="w-100 rounded"
+            style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
           {% endif %}
 
           <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">
@@ -39,7 +38,7 @@ layout: default
           </span>
 
           <div class="position-absolute bottom-0 start-0 w-100 p-3"
-               style="background:linear-gradient(to top, rgba(0,0,0,.7), transparent);">
+            style="background:linear-gradient(to top, rgba(0,0,0,.7), transparent);">
 
             <h4 class="fw-bold">{{ featured_post.title }}</h4>
             <p class="small mb-0">
@@ -62,26 +61,26 @@ layout: default
         <span class="text-danger">/</span> Populer
       </h6>
 
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts limit:4 %}
       <div class="d-flex mb-3 gap-3 align-items-start">
 
         {% if post.image %}
-        <img src="{{ post.image | relative_url }}"
-             class="rounded"
-             style="width:90px;height:70px;object-fit:cover;">
+        <img src="{{ post.image | relative_url }}" class="rounded" style="width:95px;height:75px;object-fit:cover;">
         {% endif %}
 
         <div class="flex-grow-1">
 
-          <div class="small text-danger">
-            {{ post.categories | first }} • Trending
+          <!-- CATEGORY -->
+          <div class="small text-danger fw-semibold">
+            {{ post.categories | first }}
           </div>
 
-          <a href="{{ post.url | relative_url }}"
-             class="text-dark text-decoration-none fw-semibold d-block">
-            {{ post.title | truncate: 55 }}
+          <!-- TITLE -->
+          <a href="{{ post.url | relative_url }}" class="text-dark text-decoration-none fw-semibold d-block">
+            {{ post.title | truncate: 60 }}
           </a>
 
+          <!-- DATE -->
           <div class="small text-muted">
             {{ post.date | date: "%-d %b %Y" }}
           </div>
@@ -128,24 +127,35 @@ layout: default
               <span class="badge bg-danger position-absolute m-2">NEW</span>
               {% endif %}
 
-              <img src="{{ post.image | relative_url }}"
-                   class="w-100 rounded"
-                   style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+              <img src="{{ post.image | relative_url }}" class="w-100 rounded"
+                style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             </div>
             {% endif %}
 
             <div class="mt-2">
-              <h6 class="fw-bold text-danger">
+
+              <!-- CATEGORY -->
+              {% if post.categories %}
+              <div class="small text-danger fw-semibold mb-1">
+                {{ post.categories | first }}
+              </div>
+              {% endif %}
+
+              <!-- TITLE -->
+              <h6 class="fw-bold text-dark mb-1">
                 {{ post.title }}
               </h6>
 
+              <!-- DATE -->
               <small class="text-muted d-block mb-1">
                 {{ post.date | date: "%b %-d, %Y" }}
               </small>
 
+              <!-- EXCERPT -->
               <p class="text-muted small mb-0">
                 {{ post.excerpt | strip_html | truncate: 100 }}
               </p>
+
             </div>
 
           </a>
@@ -184,8 +194,7 @@ layout: default
 
       {% for page in (1..paginator.total_pages) %}
       <li class="page-item {% if page == paginator.page %}active{% endif %}">
-        <a class="page-link"
-           href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
+        <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
           {{ page }}
         </a>
       </li>
