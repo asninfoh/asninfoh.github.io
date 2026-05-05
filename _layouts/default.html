@@ -10,14 +10,15 @@ layout: compress
   {% include navigation.html %}
 
   <!-- ad1 -->
-  <div class="ad-box container text-center my-3">
-    {% include adbanner.html %}
+  <div class="container">
+    <div class="ad-box text-center my-3">
+
+      {% include adbanner.html %}
+    </div>
   </div>
 
   <div class="container">
-    <div class="row">
-      {{ content }}
-    </div>
+    {{ content }}
   </div>
 
   {% include footer.html %}
