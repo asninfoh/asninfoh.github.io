@@ -13,13 +13,13 @@ layout: default
     {% assign featured_post = nil %}
 
     {% for post in site.posts %}
-      {% if post.tags contains "featured" %}
-        {% assign publish_time = post.publish_at | date: "%s" %}
-        {% if post.publish_at == nil or publish_time <= now %}
-          {% assign featured_post = post %}
-          {% break %}
-        {% endif %}
-      {% endif %}
+    {% if post.tags contains "featured" %}
+    {% assign publish_time = post.publish_at | date: "%s" %}
+    {% if post.publish_at == nil or publish_time <= now %}
+    {% assign featured_post = post %}
+    {% break %}
+    {% endif %}
+    {% endif %}
     {% endfor %}
 
     {% if featured_post %}
@@ -28,9 +28,8 @@ layout: default
       <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-white">
 
         {% if featured_post.image %}
-        <img src="{{ featured_post.image | relative_url }}"
-             class="w-100 rounded"
-             style="height:400px; object-fit:cover;" loading="lazy">
+        <img src="{{ featured_post.image | relative_url }}" class="w-100 rounded"
+          style="height:400px; object-fit:cover;" loading="lazy">
         {% endif %}
 
         <div class="position-absolute top-0 start-0 m-3">
@@ -38,7 +37,7 @@ layout: default
         </div>
 
         <div class="position-absolute bottom-0 start-0 w-100 p-3"
-             style="background:linear-gradient(to top, rgba(0,0,0,.7), transparent);">
+          style="background:linear-gradient(to top, rgba(0,0,0,.7), transparent);">
 
           <h2 class="fw-bold">{{ featured_post.title }}</h2>
           <p>{{ featured_post.excerpt | strip_html | truncate: 150 }}</p>
@@ -59,54 +58,53 @@ layout: default
 
       {% for post in paginator.posts %}
 
-        {% assign publish_time = post.publish_at | date: "%s" %}
+      {% assign publish_time = post.publish_at | date: "%s" %}
 
-        {% if post.publish_at == nil or publish_time <= now %}
-        {% assign visible_count = visible_count | plus: 1 %}
+      {% if post.publish_at == nil or publish_time <= now %}
+      {% assign visible_count = visible_count | plus: 1 %}
 
-        <div class="col-md-6">
+      <div class="col-md-6">
 
-          <div class="card border-0 h-100">
+        <div class="card border-0 h-100">
 
-            <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
+          <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
 
-              {% if post.image %}
-              <div class="position-relative">
+            {% if post.image %}
+            <div class="position-relative">
 
-                {% assign post_time = post.date | date: "%s" %}
-                {% assign diff = now | minus: post_time %}
+              {% assign post_time = post.date | date: "%s" %}
+              {% assign diff = now | minus: post_time %}
 
-                {% if diff < 604800 %}
-                <span class="badge bg-danger position-absolute m-2">NEW</span>
-                {% endif %}
-
-                <img src="{{ post.image | relative_url }}"
-                     class="w-100 rounded"
-                     style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
-              </div>
+              {% if diff < 604800 %}
+              <span class="badge bg-danger position-absolute m-2">NEW</span>
               {% endif %}
 
-              <div class="mt-2">
-                <h6 class="fw-bold text-danger">
-                  {{ post.title }}
-                </h6>
+              <img src="{{ post.image | relative_url }}" class="w-100 rounded"
+                style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+            </div>
+            {% endif %}
 
-                <small class="text-muted">
-                  {{ post.date | date: "%b %-d, %Y" }}
-                </small>
+            <div class="mt-2">
+              <h6 class="fw-bold text-danger">
+                {{ post.title }}
+              </h6>
 
-                <p class="text-muted small">
-                  {{ post.excerpt | strip_html | truncate: 100 }}
-                </p>
-              </div>
+              <small class="text-muted">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </small>
 
-            </a>
+              <p class="text-muted small">
+                {{ post.excerpt | strip_html | truncate: 100 }}
+              </p>
+            </div>
 
-          </div>
+          </a>
 
         </div>
 
-        {% endif %}
+      </div>
+
+      {% endif %}
       {% endfor %}
 
     </div>
@@ -133,20 +131,55 @@ layout: default
   <nav>
     <ul class="pagination justify-content-center">
 
+      <!-- PREV -->
       {% if paginator.previous_page %}
       <li class="page-item">
         <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a>
       </li>
       {% endif %}
 
-      {% for page in (1..paginator.total_pages) %}
-      <li class="page-item {% if page == paginator.page %}active{% endif %}">
+      {% assign total = paginator.total_pages %}
+      {% assign current = paginator.page %}
+      {% assign delta = 2 %}
+
+      {% assign start = current | minus: delta %}
+      {% assign end = current | plus: delta %}
+
+      {% if start < 1 %}{% assign start = 1 %}{% endif %}
+      {% if end > total %}{% assign end = total %}{% endif %}
+
+      <!-- FIRST -->
+      {% if start > 1 %}
+      <li class="page-item">
+        <a class="page-link" href="{{ '/' | relative_url }}">1</a>
+      </li>
+      {% if start > 2 %}
+      <li class="page-item disabled"><span class="page-link">...</span></li>
+      {% endif %}
+      {% endif %}
+
+      <!-- RANGE -->
+      {% for page in (start..end) %}
+      <li class="page-item {% if page == current %}active{% endif %}">
         <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
           {{ page }}
         </a>
       </li>
       {% endfor %}
 
+      <!-- LAST -->
+      {% if end < total %}
+      {% if end < total | minus: 1 %}
+      <li class="page-item disabled"><span class="page-link">...</span></li>
+      {% endif %}
+      <li class="page-item">
+        <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
+          {{ total }}
+        </a>
+      </li>
+      {% endif %}
+
+      <!-- NEXT -->
       {% if paginator.next_page %}
       <li class="page-item">
         <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">&raquo;</a>
