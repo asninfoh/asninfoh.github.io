@@ -5,61 +5,61 @@ layout: default
 {% assign now = site.time | date: "%s" %}
 
 <!-- POST GRID -->
-<div class="row g-3 col-lg-8">
+<div class="row container g-3 col-lg-8">
 
-<!-- FEATURED -->
-{% assign featured_post = nil %}
+  <!-- FEATURED -->
+  {% assign featured_post = nil %}
 
-{% for post in site.posts %}
+  {% for post in site.posts %}
   {% if post.tags contains "featured" %}
-    {% assign publish_time = post.publish_at | date: "%s" %}
-    {% if post.publish_at == nil or publish_time <= now %}
-      {% assign featured_post = post %}
-      {% break %}
-    {% endif %}
+  {% assign publish_time = post.publish_at | date: "%s" %}
+  {% if post.publish_at == nil or publish_time <= now %}
+  {% assign featured_post = post %}
+  {% break %}
   {% endif %}
-{% endfor %}
+  {% endif %}
+  {% endfor %}
 
-{% if featured_post %}
-<div class="container">
-  <div class="card border-0 shadow-none bg-dark text-white">
+  {% if featured_post %}
+  <div class="container">
+    <div class="card border-0 shadow-none bg-dark text-white">
 
-    <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-white">
+      <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-white">
 
-      {% if featured_post.image %}
-      <div class="position-relative">
-        <img src="{{ featured_post.image | relative_url }}" class="card-img"
-          style="height: 400px; object-fit: cover;" loading="lazy">
+        {% if featured_post.image %}
+        <div class="position-relative">
+          <img src="{{ featured_post.image | relative_url }}" class="card-img" style="height: 400px; object-fit: cover;"
+            loading="lazy">
 
-        <div class="position-absolute top-0 start-0 m-3">
-          <span class="badge bg-warning text-dark">FEATURED</span>
+          <div class="position-absolute top-0 start-0 m-3">
+            <span class="badge bg-warning text-dark">FEATURED</span>
+          </div>
         </div>
-      </div>
-      {% endif %}
+        {% endif %}
 
-      <div class="card-img-overlay d-flex flex-column justify-content-end"
-        style="background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
+        <div class="card-img-overlay d-flex flex-column justify-content-end"
+          style="background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);">
 
-        <h2 class="fw-bold">{{ featured_post.title }}</h2>
+          <h2 class="fw-bold">{{ featured_post.title }}</h2>
 
-        <!--<small class="text-light">
+          <!--<small class="text-light">
           {{ featured_post.date | date: "%b %-d, %Y" }}
         </small>-->
 
-        <p>
-          {{ featured_post.excerpt | strip_html | truncate: 150 }}
-        </p>
+          <p>
+            {{ featured_post.excerpt | strip_html | truncate: 150 }}
+          </p>
 
-      </div>
+        </div>
 
-    </a>
+      </a>
 
+    </div>
   </div>
-</div>
-{% endif %}
-<!-- FEATURED END -->
+  {% endif %}
+  <!-- FEATURED END -->
 
-<h5 class="fw-bold my-4">Artikel Terbaru</h3>
+  <h5 class="container fw-bold my-4">Artikel Terbaru</h5>
 
   {% assign visible_count = 0 %}
 
@@ -71,7 +71,7 @@ layout: default
 
   {% assign visible_count = visible_count | plus: 1 %}
 
-  <div class="col-12 col-md-6 col-lg-6 mt-0 mb-4" data-category="{{ post.categories | join: ' ' }}">
+  <div class="container col-12 col-md-6 col-lg-6 mt-0 mb-4" data-category="{{ post.categories | join: ' ' }}">
 
     <div class="card h-100 border-0 shadow-none">
 
@@ -87,8 +87,8 @@ layout: default
           <span class="badge bg-danger position-absolute m-2">NEW</span>
           {% endif %}
 
-          <img src="{{ post.image | relative_url }}" class="card-img rounded" style="aspect-ratio: 16/9; object-fit: cover;"
-            loading="lazy">
+          <img src="{{ post.image | relative_url }}" class="card-img rounded"
+            style="aspect-ratio: 16/9; object-fit: cover;" loading="lazy">
         </div>
         {% endif %}
 
@@ -117,7 +117,7 @@ layout: default
   {% endfor %}
 
   {% if visible_count == 0 %}
-  <div class="col-12 text-center text-muted py-5">
+  <div class="container col-12 text-center text-muted py-5">
     No posts available yet.
   </div>
   {% endif %}
@@ -125,7 +125,7 @@ layout: default
 </div>
 
 <!-- SIDEBAR -->
-<div class="col-lg-4">
+<div class="container col-lg-4">
   {% include sidebar.html %}
 </div>
 
