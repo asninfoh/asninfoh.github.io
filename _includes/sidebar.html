@@ -51,9 +51,7 @@
 
     <a href="{{ '/categories/' | append: category[0] | append: '/' | slugify | relative_url }}"
       class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
-
       {{ category[0] }}
-
     </a>
 
     {% endfor %}
@@ -65,7 +63,7 @@
 <div class="mb-4">
   <h5 class="fw-bold mb-3">Featured</h5>
 
-  <p class="small text-muted mb-2 text-center">
+  <p class="ad text-center">
     {% include adsidebar.html %}
   </p>
 </div>

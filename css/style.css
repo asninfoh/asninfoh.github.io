@@ -1,5 +1,7 @@
 // Custom CSS
 
+.ad iframe,
+.ad img,
 iframe,
 img {
   max-width: 100%;
