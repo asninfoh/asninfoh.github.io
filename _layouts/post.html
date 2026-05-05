@@ -3,9 +3,9 @@ layout: default
 ---
 
 <!-- MAIN CONTENT -->
-<div class="row g-3 col-lg-8">
+<div class="g-3 col-lg-8">
 
-  <article class="container post" itemscope itemtype="https://schema.org/BlogPosting">
+  <article class="container" itemscope itemtype="https://schema.org/BlogPosting">
 
     <!-- IMAGE -->
     {% if page.image %}
@@ -34,6 +34,11 @@ layout: default
       </div>
     </header>
 
+    <!-- ad2 -->
+    <div class="text-center p-3 my-3">
+      {% include adtop.html %}
+    </div>
+
     <!-- CONTENT -->
     <div class="post-content mb-4" itemprop="articleBody">
       {{ content }}
@@ -44,6 +49,11 @@ layout: default
   <!-- Read More -->
   <div id="readmore" class="readmore" style="display:none;">
     {% include readmore.html %}
+  </div>
+
+  <!-- ad3 -->
+  <div class="text-center p-3 my-3">
+    {% include adsbottom.html %}
   </div>
 
   <!-- SHARE -->

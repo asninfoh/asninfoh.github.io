@@ -4,11 +4,6 @@ layout: default
 permalink: /404.html
 ---
 
-{% assign random_posts = site.posts | sample: 6 %}
-{% if random_posts == empty %}
-{% assign random_posts = site.posts %}
-{% endif %}
-
 <!-- HERO 404 -->
 <div class="text-center py-5">
     <h1 class="display-1 fw-bold text-danger">404</h1>
@@ -20,47 +15,4 @@ permalink: /404.html
     <a href="{{ '/' | relative_url }}" class="btn btn-primary px-4">
         Kembali ke Beranda
     </a>
-</div>
-
-<!-- SUGGESTED POSTS -->
-<div class="container mt-5">
-    <h5 class="fw-bold mb-4">Mungkin kamu tertarik ini 👇</h5>
-
-    <div class="row g-4 text-start">
-
-        {% for post in random_posts %}
-
-        <div class="col-12 col-md-6 col-lg-4">
-
-            <div class="card modern-card h-100 border-0">
-
-                <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
-
-                    {% if post.image %}
-                    <div class="overflow-hidden">
-                        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}"
-                            class="card-img rounded"
-                            style="aspect-ratio: 16/9; object-fit: cover;" loading="lazy">
-                    </div>
-                    {% endif %}
-
-                    <div class="card-body my-3 p-0">
-                        <h5 class="fw-semibold mb-2 text-capitalize text-danger">
-                            {{ post.title }}
-                        </h5>
-
-                        <p class="excerpt">
-                            {{ post.excerpt | strip_html | truncate: 100 }}
-                        </p>
-                    </div>
-
-                </a>
-
-            </div>
-
-        </div>
-
-        {% endfor %}
-
-    </div>
 </div>
