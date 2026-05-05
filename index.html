@@ -4,7 +4,7 @@ layout: default
 
 {% assign now = site.time | date: "%s" %}
 
-<div class="row g-3" id="post-container">
+<div class="row g-3 col-lg-8" id="post-container">
 
   {% assign visible_count = 0 %}
 
@@ -68,6 +68,12 @@ layout: default
   {% endif %}
 
 </div>
+
+<!-- SIDEBAR -->
+<div class="col-lg-4">
+  {% include sidebar.html %}
+</div>
+
 
 <!-- PAGINATION -->
 <div class="container mt-5">

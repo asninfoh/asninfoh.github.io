@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Firebaseh
+title: asn info
 email: admin@aridjaya.com
 description: >
   A collection of high-quality HD, Full HD, and 4K wallpapers featuring nature landscapes, mountains, forests, beaches, sunsets, city views, and aesthetic designs.
 
-url: "https://firebaseh.github.io"
+url: "https://asninfoh.github.io"
 baseurl: "/"
 
 timezone: Asia/Jakarta
@@ -20,11 +20,11 @@ future: false
 
 default-image: logo.jpg
 
-built-by: firebaseh
+built-by: asninfoh
 
 copyright:
-  name: firebaseh
-  link: "https://firebaseh.github.io"
+  name: asninfoh
+  link: "https://asninfoh.github.io"
 
 markdown: kramdown
 permalink: /:title/
