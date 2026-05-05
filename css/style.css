@@ -43,16 +43,29 @@ body {
   font-weight: 500;
 }
 
+/* Default (desktop) */
 .search-container {
+  max-width: 250px; /* batasi biar gak kepanjangan */
   width: 100%;
-  padding: 0 10px; /* optional biar ada jarak */
+  margin-left: 15px;
 }
 
-.search-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+/* Mobile */
+@media (max-width: 991px) {
+  .search-container {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  .navbar-collapse {
+    align-items: stretch !important;
+  }
+
+  .search-container form {
+    width: 100%;
+  }
 }
 
 .bg-danger {
