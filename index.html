@@ -4,43 +4,47 @@ layout: default
 
 {% assign now = site.time | date: "%s" %}
 
-<div class="row g-4">
+<div class="container my-4">
 
-  <div class="container my-4">
-    <div class="row g-4">
+  <!-- TOP SECTION -->
+  <div class="row g-4">
 
-      <!-- FEATURED -->
+    <!-- FEATURED -->
+    <div class="col-lg-7">
+
       {% assign featured_post = nil %}
-
       {% for post in site.posts %}
-      {% if post.tags contains "featured" %}
-      {% assign publish_time = post.publish_at | date: "%s" %}
-      {% if post.publish_at == nil or publish_time <= now %}
-      {% assign featured_post = post %}
-      {% break %}
-      {% endif %}
-      {% endif %}
+        {% if post.tags contains "featured" %}
+          {% assign publish_time = post.publish_at | date: "%s" %}
+          {% if post.publish_at == nil or publish_time <= now %}
+            {% assign featured_post = post %}
+            {% break %}
+          {% endif %}
+        {% endif %}
       {% endfor %}
 
       {% if featured_post %}
-      <div class="mb-4 position-relative">
+      <div class="position-relative">
 
         <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-white">
 
           {% if featured_post.image %}
-          <img src="{{ featured_post.image | relative_url }}" class="w-100 rounded"
-            style="height:400px; object-fit:cover;" loading="lazy">
+          <img src="{{ featured_post.image | relative_url }}"
+               class="w-100 rounded"
+               style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
           {% endif %}
 
-          <div class="position-absolute top-0 start-0 m-3">
-            <span class="badge bg-warning text-dark">FEATURED</span>
-          </div>
+          <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">
+            FEATURED
+          </span>
 
           <div class="position-absolute bottom-0 start-0 w-100 p-3"
-            style="background:linear-gradient(to top, rgba(0,0,0,.7), transparent);">
+               style="background:linear-gradient(to top, rgba(0,0,0,.7), transparent);">
 
-            <h2 class="fw-bold">{{ featured_post.title }}</h2>
-            <p>{{ featured_post.excerpt | strip_html | truncate: 150 }}</p>
+            <h4 class="fw-bold">{{ featured_post.title }}</h4>
+            <p class="small mb-0">
+              {{ featured_post.excerpt | strip_html | truncate: 120 }}
+            </p>
 
           </div>
 
@@ -48,62 +52,52 @@ layout: default
 
       </div>
       {% endif %}
-      <!-- END FEATURED -->
 
-      <!-- POPULAR -->
-      <div class="col-lg-5">
+    </div>
 
-        <h6 class="fw-bold text-uppercase mb-3">
-          <span class="text-danger">/</span> Populer
-        </h6>
+    <!-- POPULAR -->
+    <div class="col-lg-5">
 
-        {% for post in site.posts limit:3 %}
-        <div class="d-flex mb-3 gap-3">
+      <h6 class="fw-bold text-uppercase mb-3">
+        <span class="text-danger">/</span> Populer
+      </h6>
 
-          {% if post.image %}
-          <img src="{{ post.image | relative_url }}" class="rounded" style="width:90px;height:70px;object-fit:cover;">
-          {% endif %}
+      {% for post in site.posts limit:3 %}
+      <div class="d-flex mb-3 gap-3 align-items-start">
 
-          <div>
-            <div class="small text-danger">
-              {{ post.categories | first }} • Trending
-            </div>
+        {% if post.image %}
+        <img src="{{ post.image | relative_url }}"
+             class="rounded"
+             style="width:90px;height:70px;object-fit:cover;">
+        {% endif %}
 
-            <a href="{{ post.url | relative_url }}" class="text-dark text-decoration-none fw-semibold">
-              {{ post.title | truncate: 60 }}
-            </a>
+        <div class="flex-grow-1">
 
-            <div class="small text-muted mt-1">
-              By {{ post.author | default: "Admin" }} • {{ post.date | date: "%-d/%m/%Y" }}
-            </div>
+          <div class="small text-danger">
+            {{ post.categories | first }} • Trending
           </div>
 
-          <div class="ms-auto small text-danger">
-            💬 32
+          <a href="{{ post.url | relative_url }}"
+             class="text-dark text-decoration-none fw-semibold d-block">
+            {{ post.title | truncate: 55 }}
+          </a>
+
+          <div class="small text-muted">
+            {{ post.date | date: "%-d %b %Y" }}
           </div>
 
         </div>
-        {% endfor %}
 
       </div>
+      {% endfor %}
 
     </div>
+
   </div>
 
 
   <!-- MAIN CONTENT -->
-  <div class="col-lg-8">
-
-
-
-
-
-
-
-
-
-
-
+  <div class="mt-5">
 
     <h5 class="fw-bold mb-3">Artikel Terbaru</h5>
 
@@ -118,7 +112,7 @@ layout: default
       {% if post.publish_at == nil or publish_time <= now %}
       {% assign visible_count = visible_count | plus: 1 %}
 
-      <div class="col-md-6">
+      <div class="col-12 col-md-6">
 
         <div class="card border-0 h-100">
 
@@ -134,8 +128,9 @@ layout: default
               <span class="badge bg-danger position-absolute m-2">NEW</span>
               {% endif %}
 
-              <img src="{{ post.image | relative_url }}" class="w-100 rounded"
-                style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+              <img src="{{ post.image | relative_url }}"
+                   class="w-100 rounded"
+                   style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             </div>
             {% endif %}
 
@@ -144,11 +139,11 @@ layout: default
                 {{ post.title }}
               </h6>
 
-              <small class="text-muted">
+              <small class="text-muted d-block mb-1">
                 {{ post.date | date: "%b %-d, %Y" }}
               </small>
 
-              <p class="text-muted small">
+              <p class="text-muted small mb-0">
                 {{ post.excerpt | strip_html | truncate: 100 }}
               </p>
             </div>
@@ -172,69 +167,30 @@ layout: default
 
   </div>
 
-  <!-- SIDEBAR -->
-  <div class="col-lg-4">
-    {% include sidebar.html %}
-  </div>
-
 </div>
 
 
 <!-- PAGINATION -->
-<div class="mt-4">
+<div class="container mt-4">
   {% if paginator.total_pages > 1 %}
   <nav>
     <ul class="pagination justify-content-center">
 
-      <!-- PREV -->
       {% if paginator.previous_page %}
       <li class="page-item">
         <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&laquo;</a>
       </li>
       {% endif %}
 
-      {% assign total = paginator.total_pages %}
-      {% assign current = paginator.page %}
-      {% assign delta = 2 %}
-
-      {% assign start = current | minus: delta %}
-      {% assign end = current | plus: delta %}
-
-      {% if start < 1 %}{% assign start = 1 %}{% endif %}
-      {% if end > total %}{% assign end = total %}{% endif %}
-
-      <!-- FIRST -->
-      {% if start > 1 %}
-      <li class="page-item">
-        <a class="page-link" href="{{ '/' | relative_url }}">1</a>
-      </li>
-      {% if start > 2 %}
-      <li class="page-item disabled"><span class="page-link">...</span></li>
-      {% endif %}
-      {% endif %}
-
-      <!-- RANGE -->
-      {% for page in (start..end) %}
-      <li class="page-item {% if page == current %}active{% endif %}">
-        <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
+      {% for page in (1..paginator.total_pages) %}
+      <li class="page-item {% if page == paginator.page %}active{% endif %}">
+        <a class="page-link"
+           href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
           {{ page }}
         </a>
       </li>
       {% endfor %}
 
-      <!-- LAST -->
-      {% if end < total %}
-      {% if end < total | minus: 1 %}
-      <li class="page-item disabled"><span class="page-link">...</span></li>
-      {% endif %}
-      <li class="page-item">
-        <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
-          {{ total }}
-        </a>
-      </li>
-      {% endif %}
-
-      <!-- NEXT -->
       {% if paginator.next_page %}
       <li class="page-item">
         <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">&raquo;</a>
