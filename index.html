@@ -74,7 +74,10 @@ layout: default
       <div class="d-flex mb-3 gap-3 align-items-start">
 
         {% if post.image %}
-        <img src="{{ post.image | relative_url }}" class="rounded" style="min-width: 120px; height:75px;object-fit:cover;">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" class="rounded"
+            style="min-width: 120px; height:75px;object-fit:cover;">
+        </a>
         {% endif %}
 
         <div class="flex-grow-1">

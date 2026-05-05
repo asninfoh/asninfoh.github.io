@@ -1,72 +1,74 @@
 <div class="readmore-list mt-4 p-3 border rounded">
 
-  <h6 class="fw-bold mb-3">Read More</h6>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> BACA JUGA <span class="text-danger">/</span>
+  </h6>
 
   {% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" %}
-  {% assign shown_urls = "" %}
+  {% assign shown_urls = "" | split: "" %}
   {% assign count = 0 %}
 
-  <!-- PRIORITAS TAG -->
-  {% if page.tags %}
+  <ul class="mb-0">
 
+    <!-- PRIORITAS TAG -->
+    {% if page.tags %}
     {% for post in related_posts %}
 
-      {% assign match = false %}
+    {% assign match = false %}
 
-      {% for tag in post.tags %}
-        {% if page.tags contains tag %}
-          {% assign match = true %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-
-      {% if match and shown_urls contains post.url == false %}
-
-        <div class="mb-2">
-          <a href="{{ post.url | relative_url }}"
-             class="d-block text-decoration-none text-dark small fw-semibold readmore-link">
-            → {{ post.title }}
-          </a>
-        </div>
-
-        {% assign shown_urls = shown_urls | append: post.url %}
-        {% assign count = count | plus: 1 %}
-
-        {% if count == 5 %}
-          {% break %}
-        {% endif %}
-
-      {% endif %}
-
+    {% for tag in post.tags %}
+    {% if page.tags contains tag %}
+    {% assign match = true %}
+    {% break %}
+    {% endif %}
     {% endfor %}
 
-  {% endif %}
+    {% unless shown_urls contains post.url %}
+    {% if match %}
 
-  <!-- FALLBACK -->
-  {% if count < 5 %}
+    <li class="mb-2">
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark fw-semibold d-block readmore-link">
+        → {{ post.title }}
+      </a>
+    </li>
 
+    {% assign shown_urls = shown_urls | push: post.url %}
+    {% assign count = count | plus: 1 %}
+
+    {% if count == 5 %}
+    {% break %}
+    {% endif %}
+
+    {% endif %}
+    {% endunless %}
+
+    {% endfor %}
+    {% endif %}
+
+    <!-- FALLBACK -->
+    {% if count < 5 %}
     {% for post in related_posts %}
 
-      {% unless shown_urls contains post.url %}
+    {% unless shown_urls contains post.url %}
 
-        <div class="mb-2">
-          <a href="{{ post.url | relative_url }}"
-             class="d-block text-decoration-none text-dark small fw-semibold readmore-link">
-            → {{ post.title }}
-          </a>
-        </div>
+    <li class="mb-2">
+      <a href="{{ post.url | relative_url }}" class="text-decoration-none text-muted d-block text-primary">
+        {{ post.title }}
+      </a>
+    </li>
 
-        {% assign shown_urls = shown_urls | append: post.url %}
-        {% assign count = count | plus: 1 %}
+    {% assign shown_urls = shown_urls | push: post.url %}
+    {% assign count = count | plus: 1 %}
 
-        {% if count == 5 %}
-          {% break %}
-        {% endif %}
+    {% if count == 5 %}
+    {% break %}
+    {% endif %}
 
-      {% endunless %}
+    {% endunless %}
 
     {% endfor %}
+    {% endif %}
 
-  {% endif %}
+  </ul>
 
 </div>
