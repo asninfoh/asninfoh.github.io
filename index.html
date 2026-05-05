@@ -12,6 +12,10 @@ layout: default
     <!-- FEATURED -->
     <div class="col-lg-7">
 
+      <h6 class="fw-bold text-uppercase mb-3">
+        <span class="text-danger">/</span> FEATURED POST <span class="text-danger">/</span>
+      </h6>
+
       {% assign featured_post = nil %}
       {% for post in site.posts %}
       {% if post.tags contains "featured" %}
@@ -24,25 +28,39 @@ layout: default
       {% endfor %}
 
       {% if featured_post %}
-      <div class="position-relative">
+      <div class="card border-0">
 
-        <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-white">
+        <a href="{{ featured_post.url | relative_url }}" class="text-decoration-none text-dark">
 
           {% if featured_post.image %}
-          <img src="{{ featured_post.image | relative_url }}" class="w-100 rounded"
-            style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+          <div class="position-relative">
+            <img src="{{ featured_post.image | relative_url }}" class="w-100 rounded"
+              style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+
+            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">
+              FEATURED
+            </span>
+          </div>
           {% endif %}
 
-          <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">
-            FEATURED
-          </span>
+          <!-- TEXT DI BAWAH -->
+          <div class="mt-3">
 
-          <div class="position-absolute bottom-0 start-0 w-100 p-3"
-            style="background:linear-gradient(to top, rgba(0,0,0,.7), transparent);">
+            <!-- CATEGORY -->
+            {% if featured_post.categories %}
+            <div class="small text-danger fw-semibold mb-1">
+              {{ featured_post.categories | first }}
+            </div>
+            {% endif %}
 
-            <h4 class="fw-bold">{{ featured_post.title }}</h4>
-            <p class="small mb-0">
-              {{ featured_post.excerpt | strip_html | truncate: 120 }}
+            <!-- TITLE -->
+            <h4 class="fw-bold text-dark mb-2">
+              {{ featured_post.title }}
+            </h4>
+
+            <!-- EXCERPT -->
+            <p class="text-muted small mb-0">
+              {{ featured_post.excerpt | strip_html | truncate: 140 }}
             </p>
 
           </div>
@@ -58,7 +76,7 @@ layout: default
     <div class="col-lg-5">
 
       <h6 class="fw-bold text-uppercase mb-3">
-        <span class="text-danger">/</span> Populer
+        <span class="text-danger">/</span> POPULER <span class="text-danger">/</span>
       </h6>
 
       {% for post in site.posts limit:4 %}
@@ -98,7 +116,9 @@ layout: default
   <!-- MAIN CONTENT -->
   <div class="mt-5">
 
-    <h5 class="fw-bold mb-3">Artikel Terbaru</h5>
+    <h6 class="fw-bold text-uppercase mb-3">
+      <span class="text-danger">/</span> ARTIKEL TERBARU <span class="text-danger">/</span>
+    </h6>
 
     <div class="row g-4">
 
@@ -111,7 +131,7 @@ layout: default
       {% if post.publish_at == nil or publish_time <= now %}
       {% assign visible_count = visible_count | plus: 1 %}
 
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-4">
 
         <div class="card border-0 h-100">
 
