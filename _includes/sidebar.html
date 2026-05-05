@@ -55,10 +55,7 @@
         {% assign size = count | times: 100 | divided_by: max_count %}
 
         <a href="{{ '/categories/' | append: category[0] | append: '/' | slugify | relative_url }}"
-          class="text-decoration-none px-2 py-1 rounded" style="
-            font-size: {{ size | plus: 80 }}%;
-            background: rgba(0,0,0,0.05);
-          ">
+          class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
 
           {{ category[0] }}
 
@@ -71,16 +68,16 @@
   </div>
 
   <!-- STICKY WIDGET -->
-  <div id="sidebar-sticky" class="col-lg-4 mt-4 mt-lg-0 w-100">
-    <div class="card border-0 shadow-none">
-      <div class="card-body">
-        <h5 class="fw-bold mb-3">Featured</h5>
+  <div id=" sidebar-sticky" class="col-lg-4 mt-4 mt-lg-0 w-100">
+          <div class="card border-0 shadow-none">
+            <div class="card-body">
+              <h5 class="fw-bold mb-3">Featured</h5>
 
-        <p class="small text-muted mb-2 text-center">
-          {% include adsidebar.html %}
-        </p>
+              <p class="small text-muted mb-2 text-center">
+                {% include adsidebar.html %}
+              </p>
+            </div>
+          </div>
       </div>
-    </div>
-  </div>
 
-</div>
+    </div>

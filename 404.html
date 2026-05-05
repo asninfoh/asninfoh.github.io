@@ -13,7 +13,7 @@ permalink: /404.html
 
     {% for post in random_posts %}
 
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4 mt-0 mb-4">
 
         <div class="card modern-card h-100 border-0">
 
@@ -22,17 +22,16 @@ permalink: /404.html
                 {% if post.image %}
                 <div class="overflow-hidden position-relative">
 
-                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-img-top"
-                        style="aspect-ratio: 4/3; object-fit: cover;" loading="lazy">
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-img rounded"
+                        style="aspect-ratio: 16/9; object-fit: cover;" loading="lazy">
 
                 </div>
                 {% endif %}
 
-                <div class="card-body">
-
-                    <h4 class="fw-semibold mb-2 text-capitalize">
+                <div class="card-body my-3 p-0">
+                    <h5 class="fw-semibold mb-2 text-capitalize text-danger">
                         {{ post.title }}
-                    </h4>
+                    </h5>
 
                     <small class="text-muted d-block mb-2">
                         {{ post.date | date: "%b %-d, %Y" }}
