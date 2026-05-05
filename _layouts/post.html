@@ -101,6 +101,30 @@ layout: default
       </div>
     </div>
 
+
+    <!-- NEXT PREV -->
+    <nav class="mb-5">
+      <ul class="pagination justify-content-between">
+
+        {% if page.previous.url %}
+        <li class="page-item">
+          <a class="page-link" href="{{ page.previous.url | relative_url }}">
+            &laquo; {{ page.previous.title | truncate: 40 }}
+          </a>
+        </li>
+        {% endif %}
+
+        {% if page.next.url %}
+        <li class="page-item ms-auto">
+          <a class="page-link" href="{{ page.next.url | relative_url }}">
+            {{ page.next.title | truncate: 40 }} &raquo;
+          </a>
+        </li>
+        {% endif %}
+
+      </ul>
+    </nav>
+
     <!-- RELATED POSTS -->
     <div class="related-posts mb-5">
       <h6 class="fw-bold text-uppercase mb-3">
