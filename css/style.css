@@ -1,12 +1,43 @@
 // Custom CSS
 
-.ad iframe,
-.ad img,
-.post-content img,
-iframe,
+body {
+  overflow-x: hidden;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.ad-box {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.ad-box iframe,
+.ad-box img,
+.ad-box ins {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin: auto;
+}
+
+.adsbygoogle {
+  display: block;
+  max-width: 100% !important;
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
+  height: auto;
 }
+
 
 .share .btn {
   border-radius: 5px;
