@@ -72,13 +72,8 @@
 
   <!-- COPYRIGHT -->
   <div class="footer-bottom text-center mt-4 py-3">
-    © {{ site.time | date: "%Y" }}
-    {% if site.copyright.name %}
-    <small>© 2026 - <a href="{{site.copyright.link}}"
-        class="text-danger text-decoration-none">{{site.copyright.name}}</a></small>
-    {% else %}
-    {{ site.title }}
-    {% endif %}
+    <small> © {{ site.time | date: "%Y" }}
+      - <a href="{{site.copyright.link}}" class="text-danger text-decoration-none">{{ site.title }}</a></small>
   </div>
 
 </footer>
