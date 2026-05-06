@@ -7,6 +7,7 @@ description: >
 url: "https://asninfo.id"
 baseurl: "/"
 
+analytics: G-N1QW4ER93C
 timezone: Asia/Jakarta
 
 future: false
