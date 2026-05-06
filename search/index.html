@@ -4,38 +4,98 @@ title: Search
 permalink: /search/
 ---
 
-<h2>Hasil Pencarian</h2>
+<div class="my-5">
 
-<input id="searchBox" class="form-control mb-3" placeholder="Cari ulang...">
-<ul id="results"></ul>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> HASIL PENCARIAN <span class="text-danger">/</span>
+  </h6>
+
+  <div id="search-info" class="mb-3 text-muted small"></div>
+
+  <div class="row g-4" id="search-result"></div>
+
+</div>
 
 <script>
-function render(q) {
-  const posts = window.SITE_POSTS || [];
+const params = new URLSearchParams(window.location.search);
+const query = (params.get("q") || "").toLowerCase();
 
-  const filtered = posts.filter(p =>
-    p.title.toLowerCase().includes(q.toLowerCase())
+const allPosts = [
+  {% for post in site.posts %}
+  {
+    title: `{{ post.title | escape }}`,
+    url: "{{ post.url | relative_url }}",
+    image: "{{ post.image | relative_url }}",
+    date: "{{ post.date | date: "%b %-d, %Y" }}",
+    excerpt: `{{ post.excerpt | strip_html | truncate: 100 | escape }}`,
+    content: `{{ post.content | strip_html | escape }}`,
+    category: "{{ post.categories[0] }}"
+  },
+  {% endfor %}
+];
+
+const container = document.getElementById("search-result");
+const info = document.getElementById("search-info");
+
+container.innerHTML = "";
+
+if (!query) {
+  info.innerText = "Masukkan kata kunci pencarian...";
+} else {
+
+  const results = allPosts.filter(p =>
+    p.title.toLowerCase().includes(query) ||
+    p.content.toLowerCase().includes(query)
   );
 
-  let html = "";
-  filtered.forEach(p => {
-    html += `<li><a href="${p.url}">${p.title}</a></li>`;
-  });
+  info.innerText = results.length + " hasil untuk \"" + query + "\"";
 
-  document.getElementById("results").innerHTML = html;
-  document.getElementById("searchBox").value = q;
+  if (results.length === 0) {
+    container.innerHTML = `
+      <div class="col-12 text-center text-muted py-5">
+        Tidak ditemukan hasil.
+      </div>
+    `;
+  } else {
+    results.forEach(p => {
+      container.innerHTML += `
+        <div class="col-12 col-md-4">
+          <div class="card border-0 h-100">
+
+            <a href="${p.url}" class="text-decoration-none text-dark">
+
+              <div class="position-relative">
+                <img src="${p.image ? p.image : '/images/default.jpg'}"
+                     class="w-100 rounded"
+                     style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+              </div>
+
+              <div class="mt-3">
+
+                <div class="small text-danger fw-semibold mb-1">
+                  ${p.category}
+                </div>
+
+                <h4 class="fw-bold text-dark mb-1">
+                  ${p.title}
+                </h4>
+
+                <small class="text-muted d-block mb-1">
+                  ${p.date}
+                </small>
+
+                <p class="text-muted small mb-0">
+                  ${p.excerpt}
+                </p>
+
+              </div>
+
+            </a>
+
+          </div>
+        </div>
+      `;
+    });
+  }
 }
-
-// ambil dari navbar (hash)
-window.addEventListener("load", function () {
-  const q = decodeURIComponent(window.location.hash.replace("#", ""));
-  if (q) render(q);
-});
-
-// search ulang di halaman ini
-document.getElementById("searchBox").addEventListener("input", function () {
-  const q = this.value;
-  window.location.hash = q;
-  render(q);
-});
 </script>
