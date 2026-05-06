@@ -9,14 +9,18 @@ permalink: /categories/
 <div id="post-list"></div>
 
 <script>
-const hash = window.location.hash.replace("#", "");
+const hash = window.location.hash.replace("#", "").toLowerCase();
 
 const allPosts = [
   {% for post in site.posts %}
   {
     title: "{{ post.title | escape }}",
     url: "{{ post.url | relative_url }}",
-    category: "{{ post.categories | first | slugify }}"
+    categories: [
+      {% for cat in post.categories %}
+        "{{ cat | slugify }}"{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
   },
   {% endfor %}
 ];
@@ -24,13 +28,14 @@ const allPosts = [
 let filtered = allPosts;
 
 if (hash) {
-  filtered = allPosts.filter(p => p.category === hash);
+  filtered = allPosts.filter(p => p.categories.includes(hash));
   document.getElementById("category-title").innerText = "Kategori: " + hash;
 } else {
   document.getElementById("category-title").innerText = "Semua Kategori";
 }
 
 const container = document.getElementById("post-list");
+container.innerHTML = "";
 
 if (filtered.length === 0) {
   container.innerHTML = "<p>Tidak ada postingan.</p>";
@@ -43,4 +48,8 @@ if (filtered.length === 0) {
     `;
   });
 }
+</script>
+
+<script>
+window.addEventListener("hashchange", () => location.reload());
 </script>
