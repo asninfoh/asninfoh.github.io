@@ -43,7 +43,7 @@ permalink: /sitemap/
     {% for category in site.categories %}
       <li>
         <a class="text-capitalize" href="/categories/{{ category[0] | slugify }}/">
-          {{ category[0] }} ({{ category[1].size }})
+          {{ category[0] }}
         </a>
       </li>
     {% endfor %}
