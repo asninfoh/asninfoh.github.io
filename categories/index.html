@@ -6,7 +6,7 @@ permalink: /categories/
 
 <h3 id="category-title" class="mb-4"></h3>
 
-<div id="post-list"></div>
+<div class="row g-4" id="post-list"></div>
 
 <script>
 const hash = window.location.hash.replace("#", "").toLowerCase();
@@ -16,11 +16,15 @@ const allPosts = [
   {
     title: "{{ post.title | escape }}",
     url: "{{ post.url | relative_url }}",
+    image: "{{ post.image | relative_url }}",
+    date: "{{ post.date | date: "%b %-d, %Y" }}",
+    excerpt: "{{ post.excerpt | strip_html | truncate: 100 | escape }}",
     categories: [
       {% for cat in post.categories %}
         "{{ cat | slugify }}"{% unless forloop.last %},{% endunless %}
       {% endfor %}
-    ]
+    ],
+    category_name: "{{ post.categories[0] }}"
   },
   {% endfor %}
 ];
@@ -38,12 +42,48 @@ const container = document.getElementById("post-list");
 container.innerHTML = "";
 
 if (filtered.length === 0) {
-  container.innerHTML = "<p>Tidak ada postingan.</p>";
+  container.innerHTML = `
+    <div class="col-12 text-center text-muted py-5">
+      Tidak ada postingan.
+    </div>
+  `;
 } else {
   filtered.forEach(p => {
     container.innerHTML += `
-      <div class="mb-2">
-        <a href="${p.url}">${p.title}</a>
+      <div class="col-12 col-md-4">
+        <div class="card border-0 h-100">
+
+          <a href="${p.url}" class="text-decoration-none text-dark">
+
+            ${p.image ? `
+            <div class="position-relative">
+              <img src="${p.image}" class="w-100 rounded"
+                style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+            </div>` : ""}
+
+            <div class="mt-3">
+
+              <div class="small text-danger fw-semibold mb-1">
+                ${p.category_name}
+              </div>
+
+              <h4 class="fw-bold text-dark mb-1">
+                ${p.title}
+              </h4>
+
+              <small class="text-muted d-block mb-1">
+                ${p.date}
+              </small>
+
+              <p class="text-muted small mb-0">
+                ${p.excerpt}
+              </p>
+
+            </div>
+
+          </a>
+
+        </div>
       </div>
     `;
   });
