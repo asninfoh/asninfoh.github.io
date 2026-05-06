@@ -1,0 +1,41 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+
+<h2>Hasil Pencarian</h2>
+
+<input id="searchBox" class="form-control mb-3" placeholder="Cari ulang...">
+<ul id="results"></ul>
+
+<script>
+function render(q) {
+  const posts = window.SITE_POSTS || [];
+
+  const filtered = posts.filter(p =>
+    p.title.toLowerCase().includes(q.toLowerCase())
+  );
+
+  let html = "";
+  filtered.forEach(p => {
+    html += `<li><a href="${p.url}">${p.title}</a></li>`;
+  });
+
+  document.getElementById("results").innerHTML = html;
+  document.getElementById("searchBox").value = q;
+}
+
+// ambil dari navbar (hash)
+window.addEventListener("load", function () {
+  const q = decodeURIComponent(window.location.hash.replace("#", ""));
+  if (q) render(q);
+});
+
+// search ulang di halaman ini
+document.getElementById("searchBox").addEventListener("input", function () {
+  const q = this.value;
+  window.location.hash = q;
+  render(q);
+});
+</script>
