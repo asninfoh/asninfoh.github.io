@@ -5,6 +5,7 @@ categories: ["peran","strategi","pemerintahan"]
 date: "2026-02-20"
 publish_at: "2026-02-20 22:23:24"
 image: "images/peran-asn-dalam-negara.jpg"
+tag: ["featured"]
 ---
 
 Aparatur Sipil Negara (ASN) memiliki posisi strategis dalam sistem pemerintahan Indonesia. ASN bukan sekadar pegawai negeri, tetapi merupakan pilar utama yang menjalankan fungsi negara, menyelenggarakan pelayanan publik, serta mendukung pembangunan nasional. Peran ASN sangat menentukan efektivitas pemerintahan dan kesejahteraan masyarakat.
