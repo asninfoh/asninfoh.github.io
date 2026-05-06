@@ -10,7 +10,7 @@ image: "images/mengubah-stigma-negatif-asn.jpg"
 Aparatur Sipil Negara (ASN) sering kali mendapat stigma negatif di tengah masyarakat. Mulai dari anggapan kurang produktif, lambat dalam bekerja, hingga pelayanan yang berbelit-belit. Meskipun tidak sepenuhnya benar, stigma ini telah melekat dan menjadi tantangan tersendiri bagi ASN.
 
 
-## Asal Mula Stigma Negatif ASN
+### Asal Mula Stigma Negatif ASN
 
 Stigma negatif terhadap ASN tidak muncul begitu saja. Beberapa faktor yang mempengaruhi munculnya persepsi ini antara lain:
 
@@ -21,7 +21,7 @@ Stigma negatif terhadap ASN tidak muncul begitu saja. Beberapa faktor yang mempe
 Hal-hal tersebut membentuk persepsi yang kemudian berkembang menjadi stigma di masyarakat.
 
 
-## Dampak Stigma Negatif
+### Dampak Stigma Negatif
 
 Stigma negatif tidak hanya merugikan citra ASN, tetapi juga berdampak pada kinerja dan kepercayaan publik. Beberapa dampaknya antara lain:
 
@@ -32,39 +32,39 @@ Stigma negatif tidak hanya merugikan citra ASN, tetapi juga berdampak pada kiner
 Jika dibiarkan, stigma ini dapat menjadi penghambat kemajuan pelayanan publik.
 
 
-## Upaya Mengubah Stigma Negatif
+### Upaya Mengubah Stigma Negatif
 
 Mengubah stigma negatif bukanlah hal yang mudah, tetapi bukan berarti tidak mungkin. Diperlukan usaha yang konsisten dari seluruh ASN dan dukungan dari berbagai pihak.
 
 
-###  1. Meningkatkan Kualitas Pelayanan
+###### 1. Meningkatkan Kualitas Pelayanan
 
 Pelayanan yang cepat, ramah, dan transparan akan memberikan pengalaman positif bagi masyarakat.
 
 
-###  2. Membangun Integritas
+###### 2. Membangun Integritas
 
 ASN harus menunjukkan sikap jujur dan bertanggung jawab dalam setiap tugasnya.
 
 
-###  3. Mendorong Inovasi
+###### 3. Mendorong Inovasi
 
 Inovasi dalam pelayanan publik dapat mengubah cara pandang masyarakat terhadap ASN.
 
 
-###  4. Transparansi dan Akuntabilitas
+###### 4. Transparansi dan Akuntabilitas
 
 Membuka akses informasi kepada publik akan meningkatkan kepercayaan masyarakat.
 
 
-## Peran Media dalam Membentuk Persepsi
+### Peran Media dalam Membentuk Persepsi
 
 Media memiliki peran besar dalam membentuk opini publik. Berita negatif tentang ASN sering kali lebih cepat menyebar dibandingkan berita positif.
 
 Oleh karena itu, penting bagi ASN dan instansi pemerintah untuk juga aktif menyampaikan informasi positif kepada masyarakat.
 
 
-## Pentingnya Personal Branding ASN
+### Pentingnya Personal Branding ASN
 
 Di era digital, ASN juga perlu membangun citra diri yang positif. Personal branding dapat dilakukan melalui:
 
@@ -74,7 +74,7 @@ Di era digital, ASN juga perlu membangun citra diri yang positif. Personal brand
 Langkah ini dapat membantu mengubah persepsi masyarakat secara perlahan.
 
 
-## Kolaborasi untuk Perubahan
+### Kolaborasi untuk Perubahan
 
 Mengubah stigma negatif ASN tidak bisa dilakukan sendiri. Diperlukan kolaborasi antara pemerintah, ASN, media, dan masyarakat.
 

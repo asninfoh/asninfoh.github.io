@@ -10,20 +10,20 @@ image: "images/pppk-dan-pns-mana-yang-lebih-cocok-untuk-kamu.jpg"
 Di Indonesia, banyak calon pegawai pemerintah bingung memilih antara menjadi Pegawai Negeri Sipil (PNS) atau Pegawai Pemerintah dengan Perjanjian Kerja (PPPK). Kedua jalur ini memiliki kelebihan, kekurangan, dan persyaratan yang berbeda. Memahami perbedaan keduanya penting agar pilihan karier sesuai dengan kemampuan, kebutuhan, dan tujuan jangka panjang.
 
 
-## Apa Itu PNS dan PPPK?
+### Apa Itu PNS dan PPPK?
 
 
-###  PNS (Pegawai Negeri Sipil)
+###### PNS (Pegawai Negeri Sipil)
 
 PNS adalah pegawai tetap yang diangkat oleh pemerintah untuk mengisi jabatan dalam instansi pemerintahan. PNS memiliki status permanen, gaji pokok tetap, tunjangan, dan hak pensiun setelah masa kerja tertentu.
 
 
-###  PPPK (Pegawai Pemerintah dengan Perjanjian Kerja)
+###### PPPK (Pegawai Pemerintah dengan Perjanjian Kerja)
 
 PPPK adalah pegawai yang diangkat berdasarkan kontrak atau perjanjian kerja tertentu. PPPK dapat ditempatkan pada instansi pemerintah dengan tugas dan tanggung jawab yang serupa dengan PNS, namun dengan durasi kontrak tertentu dan pengaturan hak serta tunjangan berbeda.
 
 
-## Perbedaan PNS dan PPPK
+### Perbedaan PNS dan PPPK
 
 Beberapa perbedaan penting antara PNS dan PPPK antara lain:
 
@@ -33,21 +33,21 @@ Beberapa perbedaan penting antara PNS dan PPPK antara lain:
 - **Kesempatan Promosi:** PNS memiliki jalur jenjang karier lebih jelas dan panjang, sedangkan PPPK bisa dipromosikan tetapi terbatas sesuai kontrak dan evaluasi kinerja.
 - **Persyaratan Seleksi:** Seleksi PNS biasanya melalui CPNS dengan tahapan SKD dan SKB, sedangkan PPPK melalui seleksi PPPK sesuai formasi dan kebutuhan instansi.
 
-## Kelebihan Menjadi PNS
+### Kelebihan Menjadi PNS
 
 - Keamanan kerja lebih tinggi karena status pegawai tetap.
 - Tunjangan lengkap dan jaminan pensiun.
 - Jalur karier jelas dengan peluang promosi panjang.
 - Lebih dihargai secara sosial dan profesional.
 
-## Kelebihan Menjadi PPPK
+### Kelebihan Menjadi PPPK
 
 - Fleksibilitas kontrak sesuai kebutuhan instansi.
 - Kesempatan masuk ke instansi pemerintah tanpa harus menunggu formasi CPNS.
 - Peluang bekerja di bidang tertentu yang sesuai keahlian tanpa persyaratan jabatan tinggi.
 - Proses seleksi lebih singkat dan transparan pada beberapa formasi.
 
-## Tips Memilih Antara PNS dan PPPK
+### Tips Memilih Antara PNS dan PPPK
 
 - Evaluasi tujuan karier jangka panjang: apakah menginginkan pekerjaan permanen dengan pensiun atau fleksibilitas kontrak?
 - Tinjau keuangan pribadi dan kebutuhan jaminan pensiun.

@@ -10,92 +10,92 @@ image: "images/mengapa-asn-harus-berintegritas.jpg"
 Integritas merupakan salah satu nilai utama yang harus dimiliki oleh Aparatur Sipil Negara (ASN). ASN yang berintegritas tidak hanya menjadi teladan bagi masyarakat, tetapi juga menjadi fondasi bagi pemerintahan yang bersih, transparan, dan terpercaya. Tanpa integritas, profesionalisme ASN dan kualitas pelayanan publik akan sulit terwujud.
 
 
-## Pengertian Integritas ASN
+### Pengertian Integritas ASN
 
 Integritas ASN adalah sikap dan perilaku yang mencerminkan kejujuran, konsistensi, dan komitmen terhadap nilai-nilai etika, hukum, serta aturan pemerintahan dalam menjalankan tugasnya. ASN yang berintegritas selalu menjaga moral, mematuhi aturan, dan menghindari perilaku koruptif.
 
 
-## Alasan ASN Harus Berintegritas
+### Alasan ASN Harus Berintegritas
 
 Integritas ASN menjadi kunci utama dalam membangun pemerintahan yang efektif dan pelayanan publik yang berkualitas. Berikut beberapa alasan mengapa integritas sangat penting:
 
 
-###  Menjaga Kepercayaan Masyarakat
+###### Menjaga Kepercayaan Masyarakat
 
 Masyarakat menaruh kepercayaan besar pada pemerintah. ASN yang berintegritas mampu menjaga kepercayaan ini melalui tindakan yang jujur, transparan, dan konsisten.
 
 
-###  Mencegah Korupsi dan Penyalahgunaan Kekuasaan
+###### Mencegah Korupsi dan Penyalahgunaan Kekuasaan
 
 Integritas menjadi benteng untuk menolak praktik korupsi, kolusi, dan nepotisme. ASN yang memiliki integritas tinggi tidak mudah terpengaruh oleh kepentingan pribadi atau kelompok.
 
 
-###  Mendukung Profesionalisme
+###### Mendukung Profesionalisme
 
 Integritas adalah fondasi profesionalisme. ASN yang profesional selalu bertindak sesuai aturan, etika, dan standar pelayanan publik.
 
 
-## Karakter ASN Berintegritas
+### Karakter ASN Berintegritas
 
 ASN yang berintegritas memiliki karakteristik tertentu yang mencerminkan sikap profesional dan etis.
 
 
-###  Kejujuran
+###### Kejujuran
 
 ASN selalu berbicara dan bertindak jujur dalam setiap keputusan dan laporan kerja.
 
 
-###  Konsistensi
+###### Konsistensi
 
 ASN menjalankan tugasnya secara konsisten sesuai aturan dan nilai-nilai etika, tanpa kompromi terhadap kepentingan pribadi.
 
 
-###  Akuntabilitas
+###### Akuntabilitas
 
 ASN bertanggung jawab atas setiap keputusan dan tindakan yang diambil, serta siap dievaluasi secara transparan.
 
 
-## Implementasi Integritas dalam Pelayanan Publik
+### Implementasi Integritas dalam Pelayanan Publik
 
 Integritas ASN harus tercermin dalam pelayanan publik sehari-hari. Hal ini termasuk:
 
 
-###  Memberikan Layanan Tanpa Diskriminasi
+###### Memberikan Layanan Tanpa Diskriminasi
 
 Setiap warga negara harus menerima layanan secara adil dan setara.
 
 
-###  Transparansi Prosedur dan Informasi
+###### Transparansi Prosedur dan Informasi
 
 ASN wajib menyampaikan informasi yang jelas mengenai prosedur, biaya, dan waktu layanan kepada masyarakat.
 
 
-###  Menghindari Konflik Kepentingan
+###### Menghindari Konflik Kepentingan
 
 ASN harus memastikan keputusan yang diambil murni untuk kepentingan publik, bukan kepentingan pribadi atau kelompok.
 
 
-## Tantangan ASN dalam Menjaga Integritas
+### Tantangan ASN dalam Menjaga Integritas
 
 Menjadi ASN yang berintegritas bukan hal mudah. Beberapa tantangan yang dihadapi meliputi:
 
 
-###  Tekanan Politik dan Ekonomi
+###### Tekanan Politik dan Ekonomi
 
 ASN sering menghadapi tekanan dari pihak tertentu untuk mempengaruhi keputusan atau kebijakan.
 
 
-###  Lingkungan Birokrasi yang Kompleks
+###### Lingkungan Birokrasi yang Kompleks
 
 Birokrasi yang kaku dan prosedur yang panjang dapat memunculkan godaan untuk mengambil jalan pintas.
 
 
-###  Perubahan Teknologi dan Digitalisasi
+###### Perubahan Teknologi dan Digitalisasi
 
 ASN harus tetap menjaga integritas meskipun menghadapi kemudahan akses dan sistem digital yang kompleks.
 
 
-## Upaya Meningkatkan Integritas ASN
+### Upaya Meningkatkan Integritas ASN
 
 Pemerintah melakukan berbagai upaya untuk menanamkan integritas pada ASN, termasuk melalui pendidikan etika, kode etik ASN, pelatihan anti-korupsi, serta sistem pengawasan internal dan eksternal.
 
