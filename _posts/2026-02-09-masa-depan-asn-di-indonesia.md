@@ -5,6 +5,7 @@ categories: ["masa-depan","karier","transformasi"]
 date: "2026-02-09"
 publish_at: "2026-02-09 11:21:45"
 image: "images/masa-depan-asn-di-indonesia.jpg"
+tag: [featured]
 ---
 
 Aparatur Sipil Negara (ASN) memiliki peran penting dalam menjalankan roda pemerintahan dan pelayanan publik. Seiring dengan perkembangan zaman, masa depan ASN di Indonesia mengalami berbagai perubahan yang menuntut adaptasi, inovasi, dan peningkatan kualitas sumber daya manusia.
