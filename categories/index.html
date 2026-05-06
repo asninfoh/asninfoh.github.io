@@ -4,9 +4,17 @@ title: Kategori
 permalink: /categories/
 ---
 
-<h3 id="category-title" class="mb-4"></h3>
+<div class="my-5">
 
-<div class="row g-4" id="post-list"></div>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span>
+    <span id="category-title">KATEGORI</span>
+    <span class="text-danger">/</span>
+  </h6>
+
+  <div class="row g-4" id="post-list"></div>
+
+</div>
 
 <script>
 const hash = window.location.hash.replace("#", "").toLowerCase();
@@ -14,11 +22,11 @@ const hash = window.location.hash.replace("#", "").toLowerCase();
 const allPosts = [
   {% for post in site.posts %}
   {
-    title: "{{ post.title | escape }}",
+    title: `{{ post.title | escape }}`,
     url: "{{ post.url | relative_url }}",
     image: "{{ post.image | relative_url }}",
     date: "{{ post.date | date: "%b %-d, %Y" }}",
-    excerpt: "{{ post.excerpt | strip_html | truncate: 100 | escape }}",
+    excerpt: `{{ post.excerpt | strip_html | truncate: 100 | escape }}`,
     categories: [
       {% for cat in post.categories %}
         "{{ cat | slugify }}"{% unless forloop.last %},{% endunless %}
@@ -29,14 +37,12 @@ const allPosts = [
   {% endfor %}
 ];
 
-let filtered = allPosts;
+let filtered = hash
+  ? allPosts.filter(p => p.categories.includes(hash))
+  : allPosts;
 
-if (hash) {
-  filtered = allPosts.filter(p => p.categories.includes(hash));
-  document.getElementById("category-title").innerText = "Kategori: " + hash;
-} else {
-  document.getElementById("category-title").innerText = "Semua Kategori";
-}
+document.getElementById("category-title").innerText =
+  hash ? hash.toUpperCase() : "SEMUA KATEGORI";
 
 const container = document.getElementById("post-list");
 container.innerHTML = "";
@@ -55,11 +61,11 @@ if (filtered.length === 0) {
 
           <a href="${p.url}" class="text-decoration-none text-dark">
 
-            ${p.image ? `
             <div class="position-relative">
-              <img src="${p.image}" class="w-100 rounded"
-                style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
-            </div>` : ""}
+              <img src="${p.image ? p.image : '/images/default.jpg'}"
+                   class="w-100 rounded"
+                   style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+            </div>
 
             <div class="mt-3">
 
