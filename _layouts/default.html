@@ -35,17 +35,6 @@ layout: compress
 
   {% if site.analytics %}{% include analytics.html %}{% endif %}
 
-  <script>
-    window.SITE_POSTS = [
-      {% for post in site.posts %}
-      {
-        title: "{{ post.title | escape }}",
-        url: "{{ post.url }}"
-      },
-      {% endfor %}
-    ];
-</script>
-
 </body>
 
 </html>

@@ -45,22 +45,10 @@
 
       <!-- SEARCH -->
       <div class="search-container d-flex align-items-center">
-        <form class="d-flex w-100" onsubmit="goSearch(event, this)">
-          <input type="text" name="q" class="search-input form-control" placeholder="Cari informasi ASN..." required>
+        <form action="/search/" method="get" class="d-flex w-100">
+          <input type="text" name="q" class="search-input form-control" placeholder="Cari informasi ASN...">
         </form>
       </div>
-
-      <script>
-        function goSearch(e, form) {
-          e.preventDefault();
-
-          const q = form.q.value.trim();
-          if (!q) return;
-
-          // arahkan ke halaman search (tanpa ?q)
-          window.location.href = "/search/#" + encodeURIComponent(q);
-        }
-      </script>
 
     </div>
 
