@@ -8,17 +8,17 @@ permalink: /categories/
 
   <h2 class="fw-bold mb-3">Kategori Artikel</h2>
 
-  <!-- SEARCH -->
+  <!-- SEARCH KATEGORI -->
   <input id="catSearch"
          class="form-control mb-3"
-         placeholder="Cari kategori...">
+         placeholder="Cari kategori (contoh: gaji, pns, inspirasi...)">
 
   <!-- BUTTON KATEGORI -->
   <div class="d-flex flex-wrap gap-2 mb-3">
 
     {% for category in site.categories %}
       <button class="btn btn-sm btn-outline-primary"
-              onclick="showCat('{{ category[0] | slugify }}')">
+              onclick="location.hash='{{ category[0] | slugify }}'; showCat('{{ category[0] | slugify }}')">
         {{ category[0] }}
       </button>
     {% endfor %}
@@ -27,13 +27,14 @@ permalink: /categories/
 
   <hr>
 
-  <!-- OUTPUT (SAMA SEPERTI INDEX) -->
+  <!-- OUTPUT POST -->
   <div id="postList">
-    <p class="text-muted">Pilih kategori untuk menampilkan artikel</p>
+    <p class="text-muted">Pilih kategori atau buka link dari sidebar</p>
   </div>
 
 </div>
 
+<!-- DATA KATEGORI -->
 <script>
 const CAT_DATA = {
   {% for category in site.categories %}
@@ -49,13 +50,13 @@ const CAT_DATA = {
   {% endfor %}
 };
 
-// TAMPILKAN SEPERTI HOMEPAGE
+// TAMPILKAN POST (SEPERTI INDEX)
 function showCat(cat) {
-  const posts = CAT_DATA[cat] || [];
+  const posts = CAT_DATA[cat];
 
-  if (posts.length === 0) {
+  if (!posts) {
     document.getElementById("postList").innerHTML =
-      "<p class='text-danger'>Tidak ada postingan</p>";
+      "<p class='text-danger'>Kategori tidak ditemukan</p>";
     return;
   }
 
@@ -74,12 +75,10 @@ function showCat(cat) {
         </div>` : ""}
 
         <div class="flex-grow-1">
-
           <a href="${p.url}"
              class="text-dark text-decoration-none fw-semibold d-block">
             ${p.title}
           </a>
-
         </div>
 
       </div>
@@ -115,7 +114,8 @@ document.getElementById("catSearch").addEventListener("input", function () {
             </div>` : ""}
 
             <div class="flex-grow-1">
-              <a href="${p.url}" class="text-dark text-decoration-none fw-semibold d-block">
+              <a href="${p.url}"
+                 class="text-dark text-decoration-none fw-semibold d-block">
                 ${p.title}
               </a>
             </div>
@@ -130,9 +130,9 @@ document.getElementById("catSearch").addEventListener("input", function () {
     found ? html : "<p class='text-danger'>Kategori tidak ditemukan</p>";
 });
 
-// AUTO LOAD dari sidebar (#gaji, dll)
+// AUTO LOAD DARI URL (#inspirasi)
 window.addEventListener("load", function () {
-  const hash = window.location.hash.replace("#", "");
+  const hash = window.location.hash.replace("#", "").toLowerCase();
 
   if (hash && CAT_DATA[hash]) {
     showCat(hash);
