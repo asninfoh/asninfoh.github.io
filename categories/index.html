@@ -20,40 +20,54 @@ permalink: /categories/
 </div>
 
 <script>
-const hash = window.location.hash.replace("#", "").toLowerCase();
-
 const perPage = 6;
 let currentPage = 1;
 
-const allPosts = [
+const allPosts = JSON.parse(`[
   {% for post in site.posts %}
   {
-    title: `{{ post.title | escape }}`,
-    url: "{{ post.url | relative_url }}",
-    image: "{{ post.image | relative_url }}",
-    date: "{{ post.date | date: "%b %-d, %Y" }}",
-    excerpt: `{{ post.excerpt | strip_html | truncate: 100 | escape }}`,
-    categories: [
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "image": {{ post.image | relative_url | jsonify }},
+    "date": {{ post.date | date: "%b %-d, %Y" | jsonify }},
+    "excerpt": {{ post.excerpt | strip_html | truncate: 100 | jsonify }},
+    "categories": [
       {% for cat in post.categories %}
-        "{{ cat | slugify }}"{% unless forloop.last %},{% endunless %}
+        {{ cat | slugify | jsonify }}{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ],
-    category_name: "{{ post.categories[0] }}"
-  },
+    "category_name": {{ post.categories[0] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
   {% endfor %}
-];
+]`);
 
-let filtered = hash
-  ? allPosts.filter(p => p.categories.includes(hash))
-  : allPosts;
+// ambil hash kategori
+function getHash() {
+  return window.location.hash.replace("#", "").toLowerCase();
+}
 
-document.getElementById("category-title").innerText =
-  hash ? hash.toUpperCase() : "SEMUA KATEGORI";
+let filtered = filterPosts();
 
-const container = document.getElementById("post-list");
-const pagination = document.getElementById("pagination");
+function filterPosts() {
+  const hash = getHash();
+  return hash
+    ? allPosts.filter(p => p.categories.includes(hash))
+    : allPosts;
+}
 
+// title update
+function updateTitle() {
+  const hash = getHash();
+  document.getElementById("category-title").innerText =
+    hash ? hash.toUpperCase() : "SEMUA KATEGORI";
+}
+
+// render posts
 function renderPage(page) {
+
+  const container = document.getElementById("post-list");
+  const pagination = document.getElementById("pagination");
+
   container.innerHTML = "";
 
   let start = (page - 1) * perPage;
@@ -79,7 +93,7 @@ function renderPage(page) {
           <a href="${p.url}" class="text-decoration-none text-dark">
 
             <div class="position-relative">
-              <img src="${p.image ? p.image : '/images/default.jpg'}"
+              <img src="${p.image || '/images/default.jpg'}"
                    class="w-100 rounded"
                    style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             </div>
@@ -114,31 +128,27 @@ function renderPage(page) {
   renderPagination(page);
 }
 
+// pagination
 function renderPagination(page) {
+
+  const pagination = document.getElementById("pagination");
   pagination.innerHTML = "";
 
   let totalPages = Math.ceil(filtered.length / perPage);
 
   if (totalPages <= 1) return;
 
-  // Prev
   pagination.innerHTML += `
     <button class="btn btn-sm btn-outline-dark"
       ${page === 1 ? "disabled" : ""}
       onclick="goPage(${page - 1})">
       Prev
     </button>
-  `;
 
-  // Info
-  pagination.innerHTML += `
-    <span class="align-self-center small px-2">
+    <span class="small px-2 align-self-center">
       ${page} / ${totalPages}
     </span>
-  `;
 
-  // Next
-  pagination.innerHTML += `
     <button class="btn btn-sm btn-outline-dark"
       ${page === totalPages ? "disabled" : ""}
       onclick="goPage(${page + 1})">
@@ -147,16 +157,23 @@ function renderPagination(page) {
   `;
 }
 
+// page change
 window.goPage = function(page) {
   currentPage = page;
   renderPage(currentPage);
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-// init
-renderPage(currentPage);
-</script>
+// update category tanpa reload
+window.addEventListener("hashchange", () => {
+  filtered = filterPosts();
+  updateTitle();
+  currentPage = 1;
+  renderPage(currentPage);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
-<script>
-window.addEventListener("hashchange", () => location.reload());
+// init
+updateTitle();
+renderPage(currentPage);
 </script>
