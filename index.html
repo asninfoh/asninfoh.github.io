@@ -114,25 +114,18 @@ layout: default
     </h6>
 
     {% assign now = site.time | date: "%s" %}
-    {% assign valid_posts = "" | split: "" %}
-
-    {% for post in site.posts %}
-    {% assign publish_time = post.publish_at | date: "%s" %}
-
-    {% if post.publish_at == nil or publish_time <= now %}
-    {% assign valid_posts = valid_posts | push: post %}
-    {% endif %}
-    {% endfor %}
-
-    {% assign sorted_posts = valid_posts | sort: "publish_at" | reverse %}
 
     <div class="row g-4">
 
-      {% if sorted_posts.size > 0 %}
+      {% assign has_post = false %}
 
-      {% for post in sorted_posts limit:12 %}
+      {% for post in paginator.posts %}
+      {% assign publish_time = post.publish_at | date: "%s" %}
+
+      {% if post.publish_at == nil or publish_time <= now %}
+      {% assign has_post = true %}
+
       <div class="col-12 col-md-4">
-
         <div class="card border-0 h-100">
 
           <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark">
@@ -173,19 +166,18 @@ layout: default
           </a>
 
         </div>
-
       </div>
+
+      {% endif %}
       {% endfor %}
 
-      {% else %}
-
+      {% unless has_post %}
       <div class="col-12">
         <div class="text-center text-muted py-5">
           No posts available yet.
         </div>
       </div>
-
-      {% endif %}
+      {% endunless %}
 
     </div>
 
@@ -231,23 +223,31 @@ layout: default
       <!-- RANGE -->
       {% for page in (start..end) %}
       <li class="page-item {% if page == current %}active{% endif %}">
-        <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
-          {{ page }}
-        </a>
+        
+        {% if page == 1 %}
+          <a class="page-link" href="{{ '/' | relative_url }}">
+            {{ page }}
+          </a>
+        {% else %}
+          <a class="page-link" href="{{ site.paginate_path | replace: ':num', page | relative_url }}">
+            {{ page }}
+          </a>
+        {% endif %}
+
       </li>
       {% endfor %}
 
       <!-- LAST -->
       {% if end < total %}
-      {% if end < total | minus: 1 %}
-      <li class="page-item disabled"><span class="page-link">...</span></li>
-      {% endif %}
+        {% if end < total | minus: 1 %}
+        <li class="page-item disabled"><span class="page-link">...</span></li>
+        {% endif %}
 
-      <li class="page-item">
-        <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
-          {{ total }}
-        </a>
-      </li>
+        <li class="page-item">
+          <a class="page-link" href="{{ site.paginate_path | replace: ':num', total | relative_url }}">
+            {{ total }}
+          </a>
+        </li>
       {% endif %}
 
       <!-- NEXT -->
