@@ -1,95 +1,46 @@
 ---
 layout: default
-title: Categories
+title: Kategori
 permalink: /categories/
 ---
 
-<div class="container">
+<h3 id="category-title" class="mb-4"></h3>
 
-  <h2 class="fw-bold mb-3">Kategori Artikel</h2>
+<div id="post-list"></div>
 
-  <!-- BUTTON KATEGORI -->
-  <div class="d-flex flex-wrap gap-2 mb-3">
-
-    {% for category in site.categories %}
-      <a href="/categories/#{{ category[0] | slugify }}"
-         class="btn btn-sm btn-outline-primary">
-        {{ category[0] }}
-      </a>
-    {% endfor %}
-
-  </div>
-
-  <hr>
-
-  <!-- OUTPUT -->
-  <div id="postList">
-
-    {% if page.category %}
-      {% assign posts = site.categories[page.category] %}
-    {% endif %}
-
-    <p class="text-muted">Pilih kategori di atas</p>
-
-  </div>
-
-</div>
-
-<!-- SCRIPT AUTO LOAD -->
 <script>
-const CAT_DATA = {
-  {% for category in site.categories %}
-  "{{ category[0] | slugify }}": [
-    {% for post in category[1] %}
-    {
-      title: "{{ post.title | escape }}",
-      url: "{{ post.url | relative_url }}",
-      image: "{{ post.image | relative_url }}"
-    },
-    {% endfor %}
-  ],
+const hash = window.location.hash.replace("#", "");
+
+const allPosts = [
+  {% for post in site.posts %}
+  {
+    title: "{{ post.title | escape }}",
+    url: "{{ post.url | relative_url }}",
+    category: "{{ post.categories | first | slugify }}"
+  },
   {% endfor %}
-};
+];
 
-function render(cat) {
-  const posts = CAT_DATA[cat];
+let filtered = allPosts;
 
-  if (!posts) return;
+if (hash) {
+  filtered = allPosts.filter(p => p.category === hash);
+  document.getElementById("category-title").innerText = "Kategori: " + hash;
+} else {
+  document.getElementById("category-title").innerText = "Semua Kategori";
+}
 
-  let html = "";
+const container = document.getElementById("post-list");
 
-  posts.forEach(p => {
-    html += `
-      <div class="d-flex mb-3">
-
-        ${p.image ? `
-        <div class="me-2">
-          <a href="${p.url}">
-            <img src="${p.image}"
-                 style="width:120px;height:75px;object-fit:cover;border-radius:6px;">
-          </a>
-        </div>` : ""}
-
-        <div class="flex-grow-1">
-          <a href="${p.url}"
-             class="text-dark text-decoration-none fw-semibold d-block">
-            ${p.title}
-          </a>
-        </div>
-
+if (filtered.length === 0) {
+  container.innerHTML = "<p>Tidak ada postingan.</p>";
+} else {
+  filtered.forEach(p => {
+    container.innerHTML += `
+      <div class="mb-2">
+        <a href="${p.url}">${p.title}</a>
       </div>
     `;
   });
-
-  document.getElementById("postList").innerHTML = html;
 }
-
-// AUTO LOAD DARI HASH (INI YANG PENTING)
-window.addEventListener("load", function () {
-  const hash = window.location.hash.replace("#", "").toLowerCase();
-
-  if (hash && CAT_DATA[hash]) {
-    render(hash);
-  }
-});
 </script>

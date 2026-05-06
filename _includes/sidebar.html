@@ -47,16 +47,16 @@
 
     {% assign max_count = 0 %}
     {% for category in site.categories %}
-      {% if category[1].size > max_count %}
-        {% assign max_count = category[1].size %}
-      {% endif %}
+    {% if category[1].size > max_count %}
+    {% assign max_count = category[1].size %}
+    {% endif %}
     {% endfor %}
 
     {% for category in site.categories %}
-      <a href="/categories/#{{ category[0] | slugify }}"
-         class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
-        {{ category[0] }}
-      </a>
+    <a href="/categories/#{{ category[0] | slugify }}"
+      class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
+      {{ category[0] }}
+    </a>
     {% endfor %}
 
   </div>
