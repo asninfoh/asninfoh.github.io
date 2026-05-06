@@ -14,17 +14,10 @@ permalink: /categories/
 
   <div class="row g-4" id="post-list"></div>
 
-  <!-- PAGINATION -->
-  <div class="d-flex justify-content-center mt-4 gap-2" id="pagination"></div>
-
 </div>
 
 <script>
 const hash = window.location.hash.replace("#", "").toLowerCase();
-const params = new URLSearchParams(window.location.search);
-let page = parseInt(params.get("page")) || 1;
-
-const perPage = 9;
 
 const allPosts = [
   {% for post in site.posts %}
@@ -44,37 +37,24 @@ const allPosts = [
   {% endfor %}
 ];
 
-// FILTER CATEGORY
 let filtered = hash
   ? allPosts.filter(p => p.categories.includes(hash))
   : allPosts;
 
-// TITLE
 document.getElementById("category-title").innerText =
   hash ? hash.toUpperCase() : "SEMUA KATEGORI";
 
-// PAGINATION CALC
-const totalPages = Math.ceil(filtered.length / perPage);
-if (page < 1) page = 1;
-if (page > totalPages) page = totalPages;
-
-// SLICE DATA
-const start = (page - 1) * perPage;
-const end = start + perPage;
-const paginatedPosts = filtered.slice(start, end);
-
-// RENDER POSTS
 const container = document.getElementById("post-list");
 container.innerHTML = "";
 
-if (paginatedPosts.length === 0) {
+if (filtered.length === 0) {
   container.innerHTML = `
     <div class="col-12 text-center text-muted py-5">
       Tidak ada postingan.
     </div>
   `;
 } else {
-  paginatedPosts.forEach(p => {
+  filtered.forEach(p => {
     container.innerHTML += `
       <div class="col-12 col-md-4">
         <div class="card border-0 h-100">
@@ -113,34 +93,6 @@ if (paginatedPosts.length === 0) {
       </div>
     `;
   });
-}
-
-// PAGINATION UI
-const pagination = document.getElementById("pagination");
-pagination.innerHTML = "";
-
-function createPageLink(label, targetPage, disabled = false, active = false) {
-  return `
-    <a href="?page=${targetPage}#${hash}"
-       class="btn btn-sm ${active ? 'btn-danger' : 'btn-outline-danger'} ${disabled ? 'disabled' : ''}">
-      ${label}
-    </a>
-  `;
-}
-
-// Prev
-if (page > 1) {
-  pagination.innerHTML += createPageLink("Prev", page - 1);
-}
-
-// Page number
-for (let i = 1; i <= totalPages; i++) {
-  pagination.innerHTML += createPageLink(i, i, false, i === page);
-}
-
-// Next
-if (page < totalPages) {
-  pagination.innerHTML += createPageLink("Next", page + 1);
 }
 </script>
 
