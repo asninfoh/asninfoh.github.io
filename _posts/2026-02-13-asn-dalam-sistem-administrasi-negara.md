@@ -3,7 +3,7 @@ title: "ASN dalam Sistem Administrasi Negara"
 author: "admin"
 categories: ["sistem","pemerintahan","profesi"]
 date: "2026-02-13"
-publish_at: "2026-02-13 09:13:56"
+publish_at: "2026-02-13 16:35:10"
 image: "images/asn-dalam-sistem-administrasi-negara.jpg"
 ---
 
@@ -14,8 +14,7 @@ Aparatur Sipil Negara (ASN) merupakan bagian penting dalam sistem administrasi n
 
 Sistem administrasi negara adalah keseluruhan proses dan mekanisme yang digunakan pemerintah dalam mengelola kebijakan, program, serta pelayanan kepada masyarakat.
 
-
-###### Peran ASN dalam Sistem Ini
+#### Peran ASN dalam Sistem Ini
 
 ASN menjadi pelaksana utama dalam menjalankan sistem administrasi negara melalui berbagai fungsi dan tugasnya.
 
@@ -29,8 +28,7 @@ ASN bertugas untuk melaksanakan kebijakan yang telah dirumuskan oleh pemerintah.
 
 Dalam sistem administrasi negara, ASN berperan sebagai administrator yang mengelola berbagai kegiatan pemerintahan, mulai dari perencanaan hingga evaluasi.
 
-
-###### Manajemen Administrasi
+#### Manajemen Administrasi
 
 ASN mengatur dokumen, data, serta proses administratif yang mendukung jalannya pemerintahan.
 
@@ -53,6 +51,7 @@ Beberapa tantangan yang dihadapi ASN antara lain birokrasi yang kompleks, peruba
 ### Reformasi Administrasi Negara
 
 Pemerintah terus melakukan reformasi untuk meningkatkan kualitas sistem administrasi negara, termasuk melalui digitalisasi dan peningkatan kompetensi ASN.
+
 
 
 

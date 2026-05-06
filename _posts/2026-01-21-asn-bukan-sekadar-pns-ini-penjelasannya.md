@@ -3,7 +3,7 @@ title: "ASN Bukan Sekadar PNS, Ini Penjelasannya"
 author: "admin"
 categories: ["profesi","pns","pppk"]
 date: "2026-01-21"
-publish_at: "2026-01-21 21:08:04"
+publish_at: "2026-01-21 18:59:22"
 image: "images/asn-bukan-sekadar-pns-ini-penjelasannya.jpg"
 ---
 
@@ -19,13 +19,11 @@ ASN adalah profesi bagi pegawai yang bekerja pada instansi pemerintah. ASN memil
 
 ASN terdiri dari dua kategori utama, yaitu:
 
-
-###### 1. Pegawai Negeri Sipil (PNS)
+#### 1. Pegawai Negeri Sipil (PNS)
 
 PNS adalah pegawai tetap yang diangkat oleh pemerintah dan memiliki nomor induk pegawai secara nasional. PNS memiliki hak pensiun dan jenjang karier yang jelas.
 
-
-###### 2. Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)
+#### 2. Pegawai Pemerintah dengan Perjanjian Kerja (PPPK)
 
 PPPK adalah pegawai yang diangkat berdasarkan perjanjian kerja untuk jangka waktu tertentu. PPPK tidak memiliki hak pensiun seperti PNS, tetapi tetap mendapatkan hak dan perlindungan sesuai peraturan.
 
@@ -53,6 +51,7 @@ Pemahaman yang benar tentang ASN membantu masyarakat mengetahui struktur kepegaw
 - Perubahan regulasi yang dinamis
 - Perkembangan teknologi digital
 - Harapan masyarakat yang semakin besar
+
 
 
 ASN bukan hanya PNS, tetapi juga mencakup PPPK. Keduanya memiliki peran penting dalam menjalankan fungsi pemerintahan dan pelayanan publik. Oleh karena itu, memahami perbedaan ini menjadi langkah awal untuk mengenal sistem birokrasi di Indonesia.

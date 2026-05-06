@@ -10,7 +10,7 @@ image: "images/kesalahan-yang-sering-dilakukan-asn-dan-cara-menghindarinya.jpg"
 Dalam menjalankan tugasnya, Aparatur Sipil Negara (ASN) dituntut untuk bekerja secara profesional dan bertanggung jawab. Namun, dalam praktiknya masih ada beberapa kesalahan yang sering terjadi, baik disadari maupun tidak. Jika tidak diperbaiki, hal ini dapat berdampak pada kualitas pelayanan publik.
 
 
-### Kesalahan yang Sering Dilakukan ASN
+#### Kesalahan yang Sering Dilakukan ASN
 
 
 ###### 1. Kurang Disiplin
@@ -38,7 +38,7 @@ ASN yang hanya menunggu perintah tanpa inisiatif akan sulit berkembang dan kuran
 Menghindari tanggung jawab atau menyalahkan orang lain adalah sikap yang harus dihindari dalam dunia kerja.
 
 
-### Cara Menghindari Kesalahan
+#### Cara Menghindari Kesalahan
 
 
 ###### 1. Meningkatkan Disiplin
@@ -66,14 +66,12 @@ Jangan hanya menunggu perintah, tetapi cobalah mencari solusi dan ide baru dalam
 Selesaikan tugas dengan baik dan berani mengakui kesalahan jika terjadi.
 
 
-### Dampak Jika Kesalahan Tidak Diperbaiki
+#### Dampak Jika Kesalahan Tidak Diperbaiki
 
 - Menurunnya kualitas pelayanan publik
 - Berkurangnya kepercayaan masyarakat
 - Lingkungan kerja menjadi tidak produktif
 - Terhambatnya perkembangan karier
-
-### Penutup
 
 Setiap ASN pasti pernah melakukan kesalahan, namun yang terpenting adalah bagaimana memperbaikinya. Dengan kesadaran diri dan komitmen untuk menjadi lebih baik, ASN dapat meningkatkan kualitas kerja dan memberikan pelayanan terbaik bagi masyarakat.
 

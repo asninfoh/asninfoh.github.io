@@ -3,7 +3,7 @@ title: "Tugas Pokok ASN dalam Pemerintahan"
 author: "admin"
 categories: ["tugas","profesi","pemerintahan"]
 date: "2026-02-11"
-publish_at: "2026-02-11 15:47:12"
+publish_at: "2026-02-11 14:27:20"
 image: "images/tugas-pokok-asn-dalam-pemerintahan.jpg"
 ---
 
@@ -19,8 +19,7 @@ Tugas pokok ASN merupakan tanggung jawab utama yang harus dilaksanakan oleh seti
 
 Salah satu tugas utama ASN adalah melaksanakan kebijakan publik yang telah ditetapkan oleh pemerintah. ASN harus memastikan bahwa kebijakan tersebut berjalan sesuai dengan peraturan yang berlaku.
 
-
-###### Implementasi Kebijakan
+#### Implementasi Kebijakan
 
 ASN bertanggung jawab dalam mengimplementasikan program-program pemerintah agar dapat dirasakan manfaatnya oleh masyarakat.
 
@@ -29,8 +28,7 @@ ASN bertanggung jawab dalam mengimplementasikan program-program pemerintah agar 
 
 ASN memiliki kewajiban untuk memberikan pelayanan kepada masyarakat secara adil, cepat, dan transparan.
 
-
-###### Pelayanan yang Responsif
+#### Pelayanan yang Responsif
 
 ASN harus mampu merespons kebutuhan masyarakat dengan cepat dan tepat.
 
@@ -58,6 +56,7 @@ Selain tugas teknis, ASN juga memiliki tanggung jawab moral untuk bekerja dengan
 ### Tantangan dalam Pelaksanaan Tugas
 
 Dalam menjalankan tugasnya, ASN menghadapi berbagai tantangan seperti birokrasi yang kompleks, keterbatasan sumber daya, serta tuntutan masyarakat yang semakin tinggi.
+
 
 
 

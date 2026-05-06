@@ -3,7 +3,7 @@ title: "Kode Etik ASN: Apa yang Boleh dan Tidak Boleh Dilakukan?"
 author: "admin"
 categories: ["etika","regulasi","profesionalisme"]
 date: "2026-03-13"
-publish_at: "2026-03-13 18:01:07"
+publish_at: "2026-03-13 13:25:08"
 image: "images/kode-etik-asn-apa-yang-boleh-dan-tidak-boleh-dilakukan.jpg"
 ---
 
@@ -51,6 +51,7 @@ ASN harus menjaga sikap sopan, ramah, dan profesional saat berinteraksi dengan m
 ### Implementasi Kode Etik ASN
 
 Implementasi kode etik ASN dilakukan melalui pengawasan internal, pelaporan pelanggaran, dan sanksi disiplin. ASN yang melanggar kode etik dapat dikenai teguran, penurunan pangkat, atau pemberhentian sesuai ketentuan yang berlaku.
+
 
 
 

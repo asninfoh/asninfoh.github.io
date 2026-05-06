@@ -10,12 +10,12 @@ image: "images/mindset-asn-profesional-dari-sekadar-tugas-menjadi-pengabdian.jpg
 Menjadi Aparatur Sipil Negara (ASN) bukan hanya tentang menyelesaikan pekerjaan harian, tetapi juga tentang bagaimana memaknai pekerjaan tersebut sebagai bentuk pengabdian kepada masyarakat dan negara. Di sinilah pentingnya memiliki mindset profesional.
 
 
-### Apa Itu Mindset Profesional?
+#### Apa Itu Mindset Profesional?
 
 Mindset profesional adalah pola pikir yang mendorong seseorang untuk bekerja dengan penuh tanggung jawab, integritas, dan dedikasi tinggi. ASN dengan mindset ini tidak hanya bekerja karena kewajiban, tetapi karena kesadaran akan peran pentingnya.
 
 
-### Perubahan Pola Pikir ASN
+#### Perubahan Pola Pikir ASN
 
 
 ###### Dari Tugas ke Pengabdian
@@ -33,7 +33,7 @@ ASN tidak sekadar menjalankan perintah, tetapi juga memahami dampak dari setiap 
 Fokus tidak hanya pada menyelesaikan pekerjaan, tetapi juga memastikan hasilnya berkualitas.
 
 
-### Ciri ASN dengan Mindset Profesional
+#### Ciri ASN dengan Mindset Profesional
 
 - Bekerja dengan penuh integritas
 - Memiliki rasa tanggung jawab tinggi
@@ -41,7 +41,7 @@ Fokus tidak hanya pada menyelesaikan pekerjaan, tetapi juga memastikan hasilnya 
 - Terbuka terhadap perubahan dan pembelajaran
 - Mengutamakan kepentingan masyarakat
 
-### Cara Membangun Mindset Profesional
+#### Cara Membangun Mindset Profesional
 
 
 ###### 1. Menanamkan Nilai Pengabdian
@@ -69,14 +69,13 @@ Pengembangan diri sangat penting untuk menjadi ASN yang profesional.
 Selalu utamakan kebutuhan masyarakat dalam setiap pekerjaan.
 
 
-### Dampak Mindset Profesional
+#### Dampak Mindset Profesional
 
 - Meningkatkan kualitas kerja
 - Membangun kepercayaan masyarakat
 - Menciptakan lingkungan kerja yang positif
 - Mendorong kemajuan organisasi
 
-### Penutup
 
 Mindset profesional adalah kunci utama dalam membentuk ASN yang berkualitas. Ketika pekerjaan dimaknai sebagai pengabdian, maka setiap tugas akan dilakukan dengan sepenuh hati dan memberikan hasil yang terbaik.
 

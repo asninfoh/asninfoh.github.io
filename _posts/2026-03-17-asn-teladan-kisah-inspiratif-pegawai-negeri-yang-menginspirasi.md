@@ -3,7 +3,7 @@ title: "ASN Teladan: Kisah Inspiratif Pegawai Negeri yang Menginspirasi"
 author: "admin"
 categories: ["inspirasi","profesionalisme","publik"]
 date: "2026-03-17"
-publish_at: "2026-03-17 12:55:16"
+publish_at: "2026-03-17 18:55:10"
 image: "images/asn-teladan-kisah-inspiratif-pegawai-negeri-yang-menginspirasi.jpg"
 ---
 
@@ -14,15 +14,13 @@ Menjadi Aparatur Sipil Negara (ASN) bukan sekadar pekerjaan, tetapi sebuah bentu
 
 ASN teladan adalah sosok pegawai negeri yang tidak hanya menjalankan tugas, tetapi juga menunjukkan integritas, dedikasi, dan tanggung jawab yang tinggi. Mereka bekerja bukan hanya karena kewajiban, tetapi karena panggilan hati untuk melayani.
 
-
-###### Ciri-ciri ASN Teladan
+#### Ciri-ciri ASN Teladan
 
 - Memiliki integritas tinggi
 - Disiplin dan bertanggung jawab
 - Memberikan pelayanan terbaik kepada masyarakat
 - Mampu berinovasi dalam pekerjaan
 - Menjadi contoh bagi rekan kerja
-
 
 ### Kisah Inspiratif ASN
 

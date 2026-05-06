@@ -3,7 +3,7 @@ title: "Profesionalisme ASN di Tengah Sorotan Publik"
 author: "admin"
 categories: ["profesionalisme","integritas","publik"]
 date: "2026-01-05"
-publish_at: "2026-01-05 19:47:45"
+publish_at: "2026-01-05 22:21:22"
 image: "images/profesionalisme-asn-di-tengah-sorotan-publik.jpg"
 ---
 
@@ -27,23 +27,19 @@ Situasi ini menuntut ASN untuk selalu menjaga profesionalisme dalam setiap aspek
 
 Profesionalisme ASN tidak hanya diukur dari kemampuan teknis, tetapi juga dari sikap dan integritas. ASN yang profesional memiliki beberapa ciri utama, antara lain:
 
-
-###### 1. Kompeten
+#### 1. Kompeten
 
 Memiliki pengetahuan dan keterampilan yang sesuai dengan bidang tugasnya.
 
-
-###### 2. Bertanggung Jawab
+#### 2. Bertanggung Jawab
 
 Mampu menyelesaikan tugas dengan baik dan siap mempertanggungjawabkan hasilnya.
 
-
-###### 3. Berintegritas Tinggi
+#### 3. Berintegritas Tinggi
 
 Menjunjung tinggi kejujuran dan tidak menyalahgunakan wewenang.
 
-
-###### 4. Disiplin
+#### 4. Disiplin
 
 Mematuhi aturan dan bekerja sesuai dengan standar yang telah ditetapkan.
 
@@ -74,23 +70,19 @@ Oleh karena itu, profesionalisme menjadi hal yang tidak bisa ditawar.
 
 Untuk menjaga dan meningkatkan profesionalisme, ASN perlu melakukan beberapa langkah berikut:
 
-
-###### 1. Pengembangan Kompetensi
+#### 1. Pengembangan Kompetensi
 
 Mengikuti pelatihan dan pendidikan untuk meningkatkan kemampuan kerja.
 
-
-###### 2. Penegakan Disiplin
+#### 2. Penegakan Disiplin
 
 Mematuhi aturan dan menjunjung tinggi etika kerja.
 
-
-###### 3. Evaluasi Kinerja
+#### 3. Evaluasi Kinerja
 
 Melakukan evaluasi secara berkala untuk meningkatkan kualitas kerja.
 
-
-###### 4. Membangun Integritas
+#### 4. Membangun Integritas
 
 Menanamkan nilai-nilai kejujuran dan tanggung jawab dalam setiap tindakan.
 
@@ -100,6 +92,7 @@ Menanamkan nilai-nilai kejujuran dan tanggung jawab dalam setiap tindakan.
 Pimpinan memiliki peran penting dalam menciptakan budaya kerja yang profesional. Kepemimpinan yang baik dapat memberikan contoh, motivasi, dan arahan bagi ASN.
 
 Lingkungan kerja yang positif akan mendorong ASN untuk bekerja lebih baik dan menjaga integritas.
+
 
 
 

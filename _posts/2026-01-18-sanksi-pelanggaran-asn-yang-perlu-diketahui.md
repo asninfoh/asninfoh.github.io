@@ -3,7 +3,7 @@ title: "Sanksi Pelanggaran ASN yang Perlu Diketahui"
 author: "admin"
 categories: ["disiplin","regulasi","hukuman"]
 date: "2026-01-18"
-publish_at: "2026-01-18 10:38:23"
+publish_at: "2026-01-18 08:58:36"
 image: "images/sanksi-pelanggaran-asn-yang-perlu-diketahui.jpg"
 ---
 
@@ -22,20 +22,17 @@ Pemberian sanksi kepada ASN diatur dalam peraturan pemerintah mengenai disiplin 
 
 ### Jenis-Jenis Sanksi ASN
 
-
-###### 1. Sanksi Ringan
+#### 1. Sanksi Ringan
 
 - Teguran lisan
 - Teguran tertulis
 - Pernyataan tidak puas secara tertulis
-
-###### 2. Sanksi Sedang
+#### 2. Sanksi Sedang
 
 - Penundaan kenaikan gaji berkala
 - Penundaan kenaikan pangkat
 - Penurunan pangkat sementara
-
-###### 3. Sanksi Berat
+#### 3. Sanksi Berat
 
 - Penurunan jabatan
 - Pembebasan dari jabatan
@@ -67,6 +64,7 @@ Pemberian sanksi dilakukan melalui proses pemeriksaan yang objektif dan transpar
 - Menjaga integritas dan etika kerja
 - Meningkatkan kesadaran disiplin
 - Mengikuti pembinaan dan pelatihan
+
 
 
 Sanksi pelanggaran ASN merupakan bagian penting dalam menjaga disiplin dan profesionalisme pegawai. Dengan memahami jenis dan konsekuensi sanksi, ASN diharapkan dapat bekerja lebih bertanggung jawab dan menjaga kepercayaan masyarakat.

@@ -3,7 +3,7 @@ title: "ASN dan Pelayanan Publik yang Humanis"
 author: "admin"
 categories: ["pelayanan","humanis","reformasi"]
 date: "2026-01-07"
-publish_at: "2026-01-07 08:46:46"
+publish_at: "2026-01-07 10:34:17"
 image: "images/asn-dan-pelayanan-publik-yang-humanis.jpg"
 ---
 
@@ -32,23 +32,19 @@ Dengan pendekatan ini, pelayanan publik menjadi lebih bermakna dan berdampak pos
 
 Pelayanan yang humanis dapat dikenali dari beberapa karakteristik berikut:
 
-
-###### 1. Ramah dan Sopan
+#### 1. Ramah dan Sopan
 
 ASN memberikan pelayanan dengan sikap yang ramah, santun, dan menghargai masyarakat.
 
-
-###### 2. Empati
+#### 2. Empati
 
 ASN mampu memahami kondisi dan kebutuhan masyarakat, terutama dalam situasi sulit.
 
-
-###### 3. Responsif
+#### 3. Responsif
 
 Pelayanan dilakukan dengan cepat dan tanggap terhadap kebutuhan masyarakat.
 
-
-###### 4. Tidak Diskriminatif
+#### 4. Tidak Diskriminatif
 
 Semua masyarakat dilayani dengan adil tanpa membedakan latar belakang.
 
@@ -68,23 +64,19 @@ Tantangan ini memerlukan perubahan pola pikir dan budaya kerja.
 
 ASN memiliki peran penting dalam menciptakan pelayanan yang humanis. Beberapa langkah yang dapat dilakukan antara lain:
 
-
-###### 1. Mengutamakan Kepentingan Masyarakat
+#### 1. Mengutamakan Kepentingan Masyarakat
 
 ASN harus menempatkan kebutuhan masyarakat sebagai prioritas utama.
 
-
-###### 2. Meningkatkan Keterampilan Komunikasi
+#### 2. Meningkatkan Keterampilan Komunikasi
 
 Komunikasi yang baik akan membantu menciptakan pelayanan yang lebih nyaman.
 
-
-###### 3. Mengubah Pola Pikir
+#### 3. Mengubah Pola Pikir
 
 Dari sekadar menjalankan tugas menjadi melayani dengan hati.
 
-
-###### 4. Memberikan Solusi, Bukan Sekadar Prosedur
+#### 4. Memberikan Solusi, Bukan Sekadar Prosedur
 
 ASN diharapkan mampu membantu masyarakat menemukan solusi terbaik.
 
@@ -97,6 +89,7 @@ Pelayanan publik yang humanis memberikan banyak dampak positif, antara lain:
 - Meningkatkan kepuasan dan kepercayaan masyarakat
 - Mendorong partisipasi masyarakat dalam pembangunan
 - Menciptakan lingkungan pelayanan yang nyaman
+
 
 
 Pelayanan publik yang humanis merupakan kunci dalam membangun hubungan yang baik antara ASN dan masyarakat. Di tengah tuntutan modern, pendekatan yang mengedepankan empati dan kepedulian menjadi sangat penting.

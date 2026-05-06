@@ -3,7 +3,7 @@ title: "Disiplin ASN dalam Aturan Pemerintah"
 author: "admin"
 categories: ["disiplin","regulasi","profesionalisme"]
 date: "2026-01-17"
-publish_at: "2026-01-17 16:32:57"
+publish_at: "2026-01-17 14:38:13"
 image: "images/disiplin-asn-dalam-aturan-pemerintah.jpg"
 ---
 
@@ -56,6 +56,7 @@ Disiplin yang tinggi akan menciptakan lingkungan kerja yang produktif dan profes
 ### Peran Pimpinan dalam Menegakkan Disiplin
 
 Pimpinan memiliki peran penting dalam menegakkan disiplin ASN. Keteladanan, pengawasan, dan pembinaan dari pimpinan akan sangat mempengaruhi tingkat kedisiplinan pegawai.
+
 
 
 

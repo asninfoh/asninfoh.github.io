@@ -3,7 +3,7 @@ title: "Mengubah Stigma Negatif ASN"
 author: "admin"
 categories: ["integritas","reputasi","profesionalisme"]
 date: "2026-01-06"
-publish_at: "2026-01-06 18:45:11"
+publish_at: "2026-01-06 22:31:36"
 image: "images/mengubah-stigma-negatif-asn.jpg"
 ---
 
@@ -36,23 +36,19 @@ Jika dibiarkan, stigma ini dapat menjadi penghambat kemajuan pelayanan publik.
 
 Mengubah stigma negatif bukanlah hal yang mudah, tetapi bukan berarti tidak mungkin. Diperlukan usaha yang konsisten dari seluruh ASN dan dukungan dari berbagai pihak.
 
-
-###### 1. Meningkatkan Kualitas Pelayanan
+#### 1. Meningkatkan Kualitas Pelayanan
 
 Pelayanan yang cepat, ramah, dan transparan akan memberikan pengalaman positif bagi masyarakat.
 
-
-###### 2. Membangun Integritas
+#### 2. Membangun Integritas
 
 ASN harus menunjukkan sikap jujur dan bertanggung jawab dalam setiap tugasnya.
 
-
-###### 3. Mendorong Inovasi
+#### 3. Mendorong Inovasi
 
 Inovasi dalam pelayanan publik dapat mengubah cara pandang masyarakat terhadap ASN.
 
-
-###### 4. Transparansi dan Akuntabilitas
+#### 4. Transparansi dan Akuntabilitas
 
 Membuka akses informasi kepada publik akan meningkatkan kepercayaan masyarakat.
 
@@ -79,6 +75,7 @@ Langkah ini dapat membantu mengubah persepsi masyarakat secara perlahan.
 Mengubah stigma negatif ASN tidak bisa dilakukan sendiri. Diperlukan kolaborasi antara pemerintah, ASN, media, dan masyarakat.
 
 Dengan kerja sama yang baik, perubahan persepsi dapat terjadi secara bertahap.
+
 
 
 

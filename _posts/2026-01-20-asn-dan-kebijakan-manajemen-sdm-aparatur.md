@@ -3,7 +3,7 @@ title: "ASN dan Kebijakan Manajemen SDM Aparatur"
 author: "admin"
 categories: ["kebijakan","manajemen","sdm"]
 date: "2026-01-20"
-publish_at: "2026-01-20 18:25:40"
+publish_at: "2026-01-20 15:38:41"
 image: "images/asn-dan-kebijakan-manajemen-sdm-aparatur.jpg"
 ---
 
@@ -29,28 +29,23 @@ Sistem merit adalah kebijakan yang menempatkan ASN berdasarkan kualifikasi, komp
 
 ### Ruang Lingkup Manajemen SDM ASN
 
-
-###### 1. Perencanaan Kebutuhan ASN
+#### 1. Perencanaan Kebutuhan ASN
 
 Menentukan jumlah dan jenis pegawai yang dibutuhkan sesuai dengan kebutuhan organisasi.
 
-
-###### 2. Rekrutmen dan Seleksi
+#### 2. Rekrutmen dan Seleksi
 
 Proses penerimaan ASN dilakukan secara transparan dan berbasis kompetensi.
 
-
-###### 3. Pengembangan Kompetensi
+#### 3. Pengembangan Kompetensi
 
 ASN diberikan pelatihan dan pendidikan untuk meningkatkan kemampuan kerja.
 
-
-###### 4. Penilaian Kinerja
+#### 4. Penilaian Kinerja
 
 Kinerja ASN dievaluasi secara berkala untuk memastikan efektivitas kerja.
 
-
-###### 5. Penghargaan dan Sanksi
+#### 5. Penghargaan dan Sanksi
 
 ASN yang berprestasi diberikan penghargaan, sedangkan yang melanggar dikenakan sanksi.
 
@@ -73,6 +68,7 @@ Digitalisasi telah membawa perubahan dalam pengelolaan SDM ASN, seperti pengguna
 - Mendorong budaya kerja profesional
 - Memanfaatkan teknologi digital
 - Memperkuat sistem evaluasi kinerja
+
 
 
 Kebijakan manajemen SDM aparatur merupakan kunci dalam menciptakan ASN yang unggul dan berdaya saing. Dengan pengelolaan yang baik, ASN dapat memberikan kontribusi maksimal dalam pembangunan dan pelayanan publik.

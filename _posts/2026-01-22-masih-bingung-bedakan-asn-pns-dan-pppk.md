@@ -3,7 +3,7 @@ title: "Masih Bingung Bedakan ASN, PNS, dan PPPK?"
 author: "admin"
 categories: ["profesi","pns","pppk"]
 date: "2026-01-22"
-publish_at: "2026-01-22 08:26:15"
+publish_at: "2026-01-22 09:08:06"
 image: "images/masih-bingung-bedakan-asn-pns-dan-pppk.jpg"
 ---
 
@@ -14,8 +14,7 @@ Banyak masyarakat Indonesia masih merasa bingung ketika mendengar istilah ASN, P
 
 ASN atau Aparatur Sipil Negara adalah profesi bagi pegawai yang bekerja pada instansi pemerintah. ASN terdiri dari dua kategori utama, yaitu PNS dan PPPK. Jadi, ASN adalah istilah besar yang mencakup keduanya.
 
-
-###### Fungsi ASN
+#### Fungsi ASN
 
 - Pelaksana kebijakan publik
 - Pelayan publik
@@ -25,8 +24,7 @@ ASN atau Aparatur Sipil Negara adalah profesi bagi pegawai yang bekerja pada ins
 
 PNS (Pegawai Negeri Sipil) adalah bagian dari ASN yang diangkat sebagai pegawai tetap oleh pemerintah. Mereka memiliki Nomor Induk Pegawai (NIP) secara nasional dan bekerja hingga masa pensiun.
 
-
-###### Ciri-ciri PNS
+#### Ciri-ciri PNS
 
 - Status pegawai tetap
 - Mendapatkan pensiun
@@ -37,8 +35,7 @@ PNS (Pegawai Negeri Sipil) adalah bagian dari ASN yang diangkat sebagai pegawai 
 
 PPPK (Pegawai Pemerintah dengan Perjanjian Kerja) adalah bagian dari ASN yang diangkat berdasarkan kontrak kerja dalam jangka waktu tertentu. PPPK biasanya direkrut untuk memenuhi kebutuhan tenaga profesional di bidang tertentu.
 
-
-###### Ciri-ciri PPPK
+#### Ciri-ciri PPPK
 
 - Status kontrak
 - Tidak mendapatkan pensiun
@@ -47,23 +44,19 @@ PPPK (Pegawai Pemerintah dengan Perjanjian Kerja) adalah bagian dari ASN yang di
 
 ### Perbedaan Utama ASN, PNS, dan PPPK
 
-
-###### 1. Status Kepegawaian
+#### 1. Status Kepegawaian
 
 PNS bersifat permanen, sedangkan PPPK bersifat kontrak. Keduanya berada di bawah ASN.
 
-
-###### 2. Hak Pensiun
+#### 2. Hak Pensiun
 
 PNS mendapatkan jaminan pensiun, sementara PPPK tidak.
 
-
-###### 3. Masa Kerja
+#### 3. Masa Kerja
 
 PNS bekerja hingga usia pensiun, sedangkan PPPK sesuai masa kontrak yang dapat diperpanjang.
 
-
-###### 4. Sistem Rekrutmen
+#### 4. Sistem Rekrutmen
 
 Keduanya melalui seleksi nasional, tetapi PPPK biasanya lebih fokus pada kompetensi spesifik.
 
@@ -71,6 +64,7 @@ Keduanya melalui seleksi nasional, tetapi PPPK biasanya lebih fokus pada kompete
 ### Mana yang Lebih Baik?
 
 Tidak ada yang mutlak lebih baik. PNS cocok bagi yang menginginkan stabilitas jangka panjang, sementara PPPK lebih cocok bagi profesional yang ingin fleksibilitas dan fokus pada bidang tertentu.
+
 
 
 

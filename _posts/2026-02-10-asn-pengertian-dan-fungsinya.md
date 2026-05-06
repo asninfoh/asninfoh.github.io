@@ -3,7 +3,7 @@ title: "ASN: Pengertian dan Fungsinya"
 author: "admin"
 categories: ["profesi","publik","pengetahuan"]
 date: "2026-02-10"
-publish_at: "2026-02-10 18:53:36"
+publish_at: "2026-02-10 21:06:30"
 image: "images/asn-pengertian-dan-fungsinya.jpg"
 ---
 
@@ -14,8 +14,7 @@ Aparatur Sipil Negara (ASN) merupakan bagian penting dalam sistem pemerintahan d
 
 ASN adalah profesi bagi pegawai negeri sipil (PNS) dan pegawai pemerintah dengan perjanjian kerja (PPPK) yang bekerja pada instansi pemerintah. ASN diangkat oleh pejabat pembina kepegawaian dan memiliki tugas untuk menjalankan fungsi pemerintahan serta pelayanan publik.
 
-
-###### ASN sebagai Profesi
+#### ASN sebagai Profesi
 
 Sebagai profesi, ASN dituntut memiliki kompetensi, kualifikasi, dan integritas dalam menjalankan tugasnya.
 
@@ -24,18 +23,15 @@ Sebagai profesi, ASN dituntut memiliki kompetensi, kualifikasi, dan integritas d
 
 ASN memiliki beberapa fungsi utama yang menjadi dasar dalam menjalankan tugasnya.
 
-
-###### Pelaksana Kebijakan Publik
+#### Pelaksana Kebijakan Publik
 
 ASN bertugas melaksanakan kebijakan yang telah ditetapkan oleh pemerintah sesuai dengan peraturan perundang-undangan.
 
-
-###### Pelayan Publik
+#### Pelayan Publik
 
 ASN memberikan pelayanan kepada masyarakat dalam berbagai bidang, seperti administrasi, pendidikan, kesehatan, dan lainnya.
 
-
-###### Perekat dan Pemersatu Bangsa
+#### Perekat dan Pemersatu Bangsa
 
 ASN juga memiliki peran penting dalam menjaga persatuan dan kesatuan bangsa di tengah keberagaman masyarakat Indonesia.
 
@@ -58,6 +54,7 @@ ASN menghadapi berbagai tantangan seperti perkembangan teknologi, tuntutan pelay
 ### Upaya Peningkatan Kualitas ASN
 
 Pemerintah terus melakukan berbagai upaya untuk meningkatkan kualitas ASN melalui pendidikan, pelatihan, serta reformasi birokrasi.
+
 
 
 

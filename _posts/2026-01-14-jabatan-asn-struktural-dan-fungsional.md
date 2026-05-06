@@ -3,7 +3,7 @@ title: "Jabatan ASN: Struktural dan Fungsional"
 author: "admin"
 categories: ["jabatan","karier","manajemen"]
 date: "2026-01-14"
-publish_at: "2026-01-14 17:11:28"
+publish_at: "2026-01-14 16:14:28"
 image: "images/jabatan-asn-struktural-dan-fungsional.jpg"
 ---
 
@@ -17,40 +17,34 @@ Jabatan ASN adalah kedudukan yang menunjukkan tugas, tanggung jawab, wewenang, d
 
 ### Jabatan Struktural
 
-
-###### Definisi Jabatan Struktural
+#### Definisi Jabatan Struktural
 
 Jabatan struktural adalah jabatan yang secara tegas tercantum dalam struktur organisasi pemerintahan. Jabatan ini berkaitan dengan posisi kepemimpinan dan manajerial dalam suatu instansi.
 
-
-###### Ciri-Ciri Jabatan Struktural
+#### Ciri-Ciri Jabatan Struktural
 
 - Memiliki garis komando yang jelas
 - Bertanggung jawab terhadap unit kerja
 - Berperan dalam pengambilan keputusan
 - Biasanya terdiri dari eselon (I, II, III, IV)
-
-###### Contoh Jabatan Struktural
+#### Contoh Jabatan Struktural
 
 Beberapa contoh jabatan struktural antara lain kepala dinas, kepala bidang, kepala seksi, dan direktur di instansi pemerintah.
 
 
 ### Jabatan Fungsional
 
-
-###### Definisi Jabatan Fungsional
+#### Definisi Jabatan Fungsional
 
 Jabatan fungsional adalah jabatan yang lebih berfokus pada keahlian dan keterampilan tertentu. ASN dalam jabatan ini tidak selalu terikat pada struktur organisasi, melainkan pada fungsi spesifik yang dijalankan.
 
-
-###### Ciri-Ciri Jabatan Fungsional
+#### Ciri-Ciri Jabatan Fungsional
 
 - Berdasarkan kompetensi dan keahlian
 - Tidak selalu memiliki bawahan
 - Penilaian kinerja berbasis angka kredit
 - Fokus pada pelayanan profesional
-
-###### Contoh Jabatan Fungsional
+#### Contoh Jabatan Fungsional
 
 Contoh jabatan fungsional meliputi guru, dosen, auditor, analis kebijakan, dan tenaga kesehatan.
 
@@ -63,6 +57,7 @@ Perbedaan utama antara jabatan struktural dan fungsional terletak pada peran dan
 ### Pentingnya Memahami Jenis Jabatan ASN
 
 Pemahaman tentang jenis jabatan ASN membantu pegawai dalam merencanakan karier serta meningkatkan kompetensi sesuai bidangnya. Selain itu, masyarakat juga dapat memahami bagaimana sistem birokrasi bekerja secara lebih transparan.
+
 
 
 

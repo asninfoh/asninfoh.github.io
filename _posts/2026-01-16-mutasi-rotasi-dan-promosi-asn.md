@@ -3,7 +3,7 @@ title: "Mutasi, Rotasi, dan Promosi ASN"
 author: "admin"
 categories: ["jabatan","karier","strategi"]
 date: "2026-01-16"
-publish_at: "2026-01-16 16:07:00"
+publish_at: "2026-01-16 21:55:47"
 image: "images/mutasi-rotasi-dan-promosi-asn.jpg"
 ---
 
@@ -12,18 +12,15 @@ Dalam sistem manajemen Aparatur Sipil Negara (ASN), mutasi, rotasi, dan promosi 
 
 ### Pengertian Mutasi, Rotasi, dan Promosi
 
-
-###### Mutasi ASN
+#### Mutasi ASN
 
 Mutasi adalah perpindahan ASN dari satu unit kerja ke unit kerja lain, baik dalam satu instansi maupun antar instansi. Mutasi biasanya dilakukan untuk memenuhi kebutuhan organisasi atau penyegaran lingkungan kerja.
 
-
-###### Rotasi ASN
+#### Rotasi ASN
 
 Rotasi adalah perpindahan jabatan dalam level yang setara. Tujuannya adalah untuk memperluas pengalaman kerja serta meningkatkan kompetensi ASN di berbagai bidang.
 
-
-###### Promosi ASN
+#### Promosi ASN
 
 Promosi adalah kenaikan jabatan yang diikuti dengan peningkatan tanggung jawab, wewenang, dan biasanya juga peningkatan kesejahteraan. Promosi diberikan kepada ASN yang memiliki kinerja dan kompetensi yang baik.
 
@@ -60,6 +57,7 @@ Pelaksanaan mutasi, rotasi, dan promosi harus dilakukan secara objektif, transpa
 - Menjaga kinerja dan integritas
 - Siap beradaptasi dengan perubahan
 - Membangun komunikasi yang baik
+
 
 
 Mutasi, rotasi, dan promosi ASN merupakan bagian penting dalam pengelolaan sumber daya manusia di pemerintahan. Dengan pelaksanaan yang tepat dan adil, ketiganya dapat meningkatkan profesionalisme ASN serta kualitas pelayanan publik.

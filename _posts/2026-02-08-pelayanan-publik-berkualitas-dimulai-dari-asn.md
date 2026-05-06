@@ -3,7 +3,7 @@ title: "Pelayanan Publik Berkualitas Dimulai dari ASN"
 author: "admin"
 categories: ["pelayanan","kualitas","profesionalisme"]
 date: "2026-02-08"
-publish_at: "2026-02-08 21:07:43"
+publish_at: "2026-02-08 15:00:12"
 image: "images/pelayanan-publik-berkualitas-dimulai-dari-asn.jpg"
 ---
 
@@ -14,8 +14,7 @@ Pelayanan publik yang berkualitas merupakan salah satu indikator keberhasilan su
 
 ASN memiliki tugas utama sebagai pelayan masyarakat. Mereka bertanggung jawab dalam memberikan layanan administratif, sosial, hingga pelayanan dasar lainnya yang dibutuhkan oleh masyarakat.
 
-
-###### Garda Terdepan Pelayanan
+#### Garda Terdepan Pelayanan
 
 ASN menjadi wajah pemerintah di mata masyarakat. Sikap, perilaku, dan cara kerja ASN akan sangat mempengaruhi kepercayaan publik.
 
@@ -24,18 +23,15 @@ ASN menjadi wajah pemerintah di mata masyarakat. Sikap, perilaku, dan cara kerja
 
 Pelayanan publik yang baik memiliki beberapa karakteristik utama yang harus dipenuhi oleh ASN.
 
-
-###### Cepat dan Tepat
+#### Cepat dan Tepat
 
 Layanan harus diberikan secara cepat tanpa mengurangi ketepatan dan akurasi.
 
-
-###### Transparan
+#### Transparan
 
 Informasi mengenai prosedur, biaya, dan waktu pelayanan harus jelas dan mudah diakses.
 
-
-###### Ramah dan Responsif
+#### Ramah dan Responsif
 
 ASN harus mampu melayani masyarakat dengan sikap yang ramah serta tanggap terhadap kebutuhan masyarakat.
 
@@ -63,6 +59,7 @@ Beberapa tantangan yang dihadapi ASN antara lain keterbatasan sumber daya, birok
 ### Upaya Meningkatkan Kualitas Pelayanan
 
 Pemerintah terus melakukan berbagai upaya seperti pelatihan ASN, reformasi birokrasi, serta pengembangan sistem pelayanan berbasis teknologi.
+
 
 
 
