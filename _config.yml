@@ -1,10 +1,10 @@
 # Site settings
 title: ASN INFO
-email: admin@aridjaya.com
+email: asninfo.id
 description: >
   Portal informasi ASN, CPNS, PPPK, kebijakan, formasi, gaji, dan karier Aparatur Sipil Negara di Indonesia
   
-url: "https://asninfoh.github.io"
+url: "https://asninfo.id"
 baseurl: "/"
 
 timezone: Asia/Jakarta
