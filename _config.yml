@@ -2,22 +2,22 @@
 title: ASN INFO
 email: admin@aridjaya.com
 description: >
-  A collection of high-quality HD, Full HD, and 4K wallpapers featuring nature landscapes, mountains, forests, beaches, sunsets, city views, and aesthetic designs.
-
+  Portal informasi ASN, CPNS, PPPK, kebijakan, formasi, gaji, dan karier Aparatur Sipil Negara di Indonesia
+  
 url: "https://asninfoh.github.io"
 baseurl: "/"
 
 timezone: Asia/Jakarta
 
 future: false
-logo: images/logo.jpg
-default-image: logo.jpg
+logo: logo.jpg
+default-image: default.jpg
 
 built-by: ASN INFO
 
 copyright:
   name: ASN INFO
-  link: "https://asninfoh.github.io"
+  link: "https://asninfo.id"
 
 markdown: kramdown
 permalink: /:title/
