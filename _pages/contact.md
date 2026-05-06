@@ -1,26 +1,22 @@
 ---
-layout: page
-title: Contact
+layout: default
+title: Kontak
 permalink: /contact/
 ---
 
-## Contact Us
+<section class="container py-5">
+  <h1 class="fw-bold mb-4">Kontak</h1>
 
-Have a question, suggestion, or feedback? Feel free to get in touch. We always appreciate hearing from visitors and improving the experience of this wallpaper collection.
+  <p>Jika Anda memiliki pertanyaan, saran, atau ingin menjalin kerja sama, silakan hubungi kami melalui:</p>
 
-You can contact us for:
-- Wallpaper requests
-- Content suggestions
-- Reporting issues or broken links
-- Collaboration or partnership inquiries
+  <ul>
+    <li>Email: admin@domainanda.com</li>
+    <li>WhatsApp: 08xxxxxxxxxx</li>
+  </ul>
 
-## Get in Touch
+  <h5 class="mt-4">Kerjasama & Iklan</h5>
+  <p>Kami terbuka untuk kerjasama konten, promosi, maupun periklanan. Silakan hubungi melalui email untuk respon lebih cepat.</p>
 
-📧 Email: [support@aridjaya.com](https://aridjaya.com/wallpaper ){: target="\_blank"} 
-🌐 Website: [Aridjaya](https://aridjaya.com/wallpaper ){: target="\_blank"} 
-
-## Response Time
-
-We usually respond within 24–48 hours depending on the volume of messages.
-
-Thank you for visiting and supporting this wallpaper website. Your feedback helps us grow and improve.
+  <h5 class="mt-4">Respon</h5>
+  <p>Kami akan berusaha merespon pesan Anda dalam waktu 1-3 hari kerja.</p>
+</section>
