@@ -14,9 +14,6 @@ permalink: /search/
 
   <div class="row g-4" id="search-result"></div>
 
-  <!-- PAGINATION -->
-  <div class="text-center mt-4" id="search-nav"></div>
-
 </div>
 
 <script>
@@ -38,118 +35,67 @@ const allPosts = [
 ];
 
 const container = document.getElementById("search-result");
-const nav = document.getElementById("search-nav");
 const info = document.getElementById("search-info");
 
-let currentPage = 1;
-const perPage = 6;
-let filteredResults = [];
-
-function renderPage(page) {
-
-  container.innerHTML = "";
-
-  const start = (page - 1) * perPage;
-  const end = start + perPage;
-
-  const pageItems = filteredResults.slice(start, end);
-
-  pageItems.forEach(p => {
-    container.innerHTML += `
-      <div class="col-12 col-md-4">
-        <div class="card border-0 h-100">
-
-          <a href="${p.url}" class="text-decoration-none text-dark">
-
-            <div class="position-relative">
-              <img src="${p.image ? p.image : '/images/default.jpg'}"
-                   class="w-100 rounded"
-                   style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
-            </div>
-
-            <div class="mt-3">
-
-              <div class="small text-danger fw-semibold mb-1">
-                ${p.category}
-              </div>
-
-              <h4 class="fw-bold text-dark mb-1">
-                ${p.title}
-              </h4>
-
-              <small class="text-muted d-block mb-1">
-                ${p.date}
-              </small>
-
-              <p class="text-muted small mb-0">
-                ${p.excerpt}
-              </p>
-
-            </div>
-
-          </a>
-
-        </div>
-      </div>
-    `;
-  });
-
-  renderNav();
-}
-
-function renderNav() {
-
-  nav.innerHTML = "";
-
-  const totalPages = Math.ceil(filteredResults.length / perPage);
-
-  if (totalPages <= 1) return;
-
-  nav.innerHTML = `
-    <button class="btn btn-sm btn-outline-dark me-2"
-      ${currentPage === 1 ? "disabled" : ""}
-      onclick="changePage(-1)">
-      Prev
-    </button>
-
-    <span class="small">
-      ${currentPage} / ${totalPages}
-    </span>
-
-    <button class="btn btn-sm btn-outline-dark ms-2"
-      ${currentPage === totalPages ? "disabled" : ""}
-      onclick="changePage(1)">
-      Next
-    </button>
-  `;
-}
-
-window.changePage = function(step) {
-  currentPage += step;
-  renderPage(currentPage);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+container.innerHTML = "";
 
 if (!query) {
   info.innerText = "Masukkan kata kunci pencarian...";
 } else {
 
-  filteredResults = allPosts.filter(p =>
+  const results = allPosts.filter(p =>
     p.title.toLowerCase().includes(query) ||
     p.content.toLowerCase().includes(query)
   );
 
-  info.innerText = filteredResults.length + " hasil untuk \"" + query + "\"";
+  info.innerText = results.length + " hasil untuk \"" + query + "\"";
 
-  if (filteredResults.length === 0) {
+  if (results.length === 0) {
     container.innerHTML = `
       <div class="col-12 text-center text-muted py-5">
         Tidak ditemukan hasil.
       </div>
     `;
   } else {
-    currentPage = 1;
-    renderPage(currentPage);
+    results.forEach(p => {
+      container.innerHTML += `
+        <div class="col-12 col-md-4">
+          <div class="card border-0 h-100">
+
+            <a href="${p.url}" class="text-decoration-none text-dark">
+
+              <div class="position-relative">
+                <img src="${p.image ? p.image : '/images/default.jpg'}"
+                     class="w-100 rounded"
+                     style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
+              </div>
+
+              <div class="mt-3">
+
+                <div class="small text-danger fw-semibold mb-1">
+                  ${p.category}
+                </div>
+
+                <h4 class="fw-bold text-dark mb-1">
+                  ${p.title}
+                </h4>
+
+                <small class="text-muted d-block mb-1">
+                  ${p.date}
+                </small>
+
+                <p class="text-muted small mb-0">
+                  ${p.excerpt}
+                </p>
+
+              </div>
+
+            </a>
+
+          </div>
+        </div>
+      `;
+    });
   }
 }
 </script>
