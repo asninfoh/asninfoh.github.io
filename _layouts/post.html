@@ -228,3 +228,19 @@ layout: default
     alert("Link copied!");
   }
 </script>
+
+
+<script>
+fetch("https://api.indexnow.org/indexnow", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    host: "asninfo.id",
+    key: "acd04077e4b94f5c8a5fa2d7f8f1c772",
+    keyLocation: "https://asninfo.id/acd04077e4b94f5c8a5fa2d7f8f1c772.txt",
+    urlList: [window.location.href]
+  })
+});
+</script>
