@@ -20,72 +20,61 @@ permalink: /categories/
 </div>
 
 <script>
-const perPage = 6;
-let currentPage = 1;
+const hash = window.location.hash.replace("#", "").toLowerCase();
+const params = new URLSearchParams(window.location.search);
+let page = parseInt(params.get("page")) || 1;
 
-const allPosts = JSON.parse(`[
+const perPage = 9;
+
+const allPosts = [
   {% for post in site.posts %}
   {
-    "title": {{ post.title | jsonify }},
-    "url": {{ post.url | relative_url | jsonify }},
-    "image": {{ post.image | relative_url | jsonify }},
-    "date": {{ post.date | date: "%b %-d, %Y" | jsonify }},
-    "excerpt": {{ post.excerpt | strip_html | truncate: 100 | jsonify }},
-    "categories": [
+    title: `{{ post.title | escape }}`,
+    url: "{{ post.url | relative_url }}",
+    image: "{{ post.image | relative_url }}",
+    date: "{{ post.date | date: "%b %-d, %Y" }}",
+    excerpt: `{{ post.excerpt | strip_html | truncate: 100 | escape }}`,
+    categories: [
       {% for cat in post.categories %}
-        {{ cat | slugify | jsonify }}{% unless forloop.last %},{% endunless %}
+        "{{ cat | slugify }}"{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ],
-    "category_name": {{ post.categories[0] | jsonify }}
-  }{% unless forloop.last %},{% endunless %}
+    category_name: "{{ post.categories[0] }}"
+  },
   {% endfor %}
-]`);
+];
 
-// ambil hash kategori
-function getHash() {
-  return window.location.hash.replace("#", "").toLowerCase();
-}
+// FILTER CATEGORY
+let filtered = hash
+  ? allPosts.filter(p => p.categories.includes(hash))
+  : allPosts;
 
-let filtered = filterPosts();
+// TITLE
+document.getElementById("category-title").innerText =
+  hash ? hash.toUpperCase() : "SEMUA KATEGORI";
 
-function filterPosts() {
-  const hash = getHash();
-  return hash
-    ? allPosts.filter(p => p.categories.includes(hash))
-    : allPosts;
-}
+// PAGINATION CALC
+const totalPages = Math.ceil(filtered.length / perPage);
+if (page < 1) page = 1;
+if (page > totalPages) page = totalPages;
 
-// title update
-function updateTitle() {
-  const hash = getHash();
-  document.getElementById("category-title").innerText =
-    hash ? hash.toUpperCase() : "SEMUA KATEGORI";
-}
+// SLICE DATA
+const start = (page - 1) * perPage;
+const end = start + perPage;
+const paginatedPosts = filtered.slice(start, end);
 
-// render posts
-function renderPage(page) {
+// RENDER POSTS
+const container = document.getElementById("post-list");
+container.innerHTML = "";
 
-  const container = document.getElementById("post-list");
-  const pagination = document.getElementById("pagination");
-
-  container.innerHTML = "";
-
-  let start = (page - 1) * perPage;
-  let end = start + perPage;
-
-  let pageItems = filtered.slice(start, end);
-
-  if (pageItems.length === 0) {
-    container.innerHTML = `
-      <div class="col-12 text-center text-muted py-5">
-        Tidak ada postingan.
-      </div>
-    `;
-    pagination.innerHTML = "";
-    return;
-  }
-
-  pageItems.forEach(p => {
+if (paginatedPosts.length === 0) {
+  container.innerHTML = `
+    <div class="col-12 text-center text-muted py-5">
+      Tidak ada postingan.
+    </div>
+  `;
+} else {
+  paginatedPosts.forEach(p => {
     container.innerHTML += `
       <div class="col-12 col-md-4">
         <div class="card border-0 h-100">
@@ -93,7 +82,7 @@ function renderPage(page) {
           <a href="${p.url}" class="text-decoration-none text-dark">
 
             <div class="position-relative">
-              <img src="${p.image || '/images/default.jpg'}"
+              <img src="${p.image ? p.image : '/images/default.jpg'}"
                    class="w-100 rounded"
                    style="aspect-ratio:16/9; object-fit:cover;" loading="lazy">
             </div>
@@ -124,56 +113,37 @@ function renderPage(page) {
       </div>
     `;
   });
-
-  renderPagination(page);
 }
 
-// pagination
-function renderPagination(page) {
+// PAGINATION UI
+const pagination = document.getElementById("pagination");
+pagination.innerHTML = "";
 
-  const pagination = document.getElementById("pagination");
-  pagination.innerHTML = "";
-
-  let totalPages = Math.ceil(filtered.length / perPage);
-
-  if (totalPages <= 1) return;
-
-  pagination.innerHTML += `
-    <button class="btn btn-sm btn-outline-dark"
-      ${page === 1 ? "disabled" : ""}
-      onclick="goPage(${page - 1})">
-      Prev
-    </button>
-
-    <span class="small px-2 align-self-center">
-      ${page} / ${totalPages}
-    </span>
-
-    <button class="btn btn-sm btn-outline-dark"
-      ${page === totalPages ? "disabled" : ""}
-      onclick="goPage(${page + 1})">
-      Next
-    </button>
+function createPageLink(label, targetPage, disabled = false, active = false) {
+  return `
+    <a href="?page=${targetPage}#${hash}"
+       class="btn btn-sm ${active ? 'btn-danger' : 'btn-outline-danger'} ${disabled ? 'disabled' : ''}">
+      ${label}
+    </a>
   `;
 }
 
-// page change
-window.goPage = function(page) {
-  currentPage = page;
-  renderPage(currentPage);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+// Prev
+if (page > 1) {
+  pagination.innerHTML += createPageLink("Prev", page - 1);
+}
 
-// update category tanpa reload
-window.addEventListener("hashchange", () => {
-  filtered = filterPosts();
-  updateTitle();
-  currentPage = 1;
-  renderPage(currentPage);
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+// Page number
+for (let i = 1; i <= totalPages; i++) {
+  pagination.innerHTML += createPageLink(i, i, false, i === page);
+}
 
-// init
-updateTitle();
-renderPage(currentPage);
+// Next
+if (page < totalPages) {
+  pagination.innerHTML += createPageLink("Next", page + 1);
+}
+</script>
+
+<script>
+window.addEventListener("hashchange", () => location.reload());
 </script>
