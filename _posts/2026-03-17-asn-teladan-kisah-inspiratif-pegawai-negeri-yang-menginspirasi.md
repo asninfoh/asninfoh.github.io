@@ -10,11 +10,11 @@ image: "images/asn-teladan-kisah-inspiratif-pegawai-negeri-yang-menginspirasi.jp
 Menjadi Aparatur Sipil Negara (ASN) bukan sekadar pekerjaan, tetapi sebuah bentuk pengabdian kepada masyarakat dan negara. Di balik seragam dan rutinitas kerja, ada banyak kisah inspiratif dari ASN teladan yang mampu memberikan dampak nyata bagi lingkungan sekitarnya.
 
 
-### Makna ASN Teladan
+#### Makna ASN Teladan
 
 ASN teladan adalah sosok pegawai negeri yang tidak hanya menjalankan tugas, tetapi juga menunjukkan integritas, dedikasi, dan tanggung jawab yang tinggi. Mereka bekerja bukan hanya karena kewajiban, tetapi karena panggilan hati untuk melayani.
 
-#### Ciri-ciri ASN Teladan
+##### Ciri-ciri ASN Teladan
 
 - Memiliki integritas tinggi
 - Disiplin dan bertanggung jawab
@@ -22,14 +22,14 @@ ASN teladan adalah sosok pegawai negeri yang tidak hanya menjalankan tugas, teta
 - Mampu berinovasi dalam pekerjaan
 - Menjadi contoh bagi rekan kerja
 
-### Kisah Inspiratif ASN
+#### Kisah Inspiratif ASN
 
 Banyak ASN di berbagai daerah yang menunjukkan dedikasi luar biasa. Misalnya, seorang pegawai di daerah terpencil yang tetap memberikan pelayanan meskipun fasilitas terbatas. Atau ASN yang menciptakan inovasi digital untuk mempermudah pelayanan publik.
 
 Kisah-kisah seperti ini membuktikan bahwa perubahan besar bisa dimulai dari hal kecil, selama dilakukan dengan konsisten dan penuh tanggung jawab.
 
 
-### Dampak Positif ASN Teladan
+#### Dampak Positif ASN Teladan
 
 Keberadaan ASN teladan membawa dampak yang sangat besar, di antaranya:
 
@@ -38,7 +38,7 @@ Keberadaan ASN teladan membawa dampak yang sangat besar, di antaranya:
 - Meningkatkan kualitas pelayanan publik
 - Menciptakan lingkungan kerja yang positif
 
-### Bagaimana Menjadi ASN Teladan?
+#### Bagaimana Menjadi ASN Teladan?
 
 Menjadi ASN teladan bukan hal yang mustahil. Berikut beberapa langkah yang bisa dilakukan:
 

@@ -10,7 +10,7 @@ image: "images/cara-asn-menghadapi-tekanan-kerja-dan-tugas-yang-kompleks.jpg"
 Menjadi Aparatur Sipil Negara (ASN) bukanlah pekerjaan yang ringan. Selain tuntutan pelayanan publik yang tinggi, ASN juga sering dihadapkan pada tugas yang kompleks, deadline ketat, serta tekanan dari berbagai pihak. Oleh karena itu, kemampuan menghadapi tekanan kerja menjadi hal yang sangat penting.
 
 
-### Memahami Sumber Tekanan Kerja
+#### Memahami Sumber Tekanan Kerja
 
 Langkah pertama dalam menghadapi tekanan kerja adalah memahami sumbernya. Dengan mengetahui penyebabnya, ASN dapat menentukan cara yang tepat untuk mengatasinya.
 
@@ -20,7 +20,7 @@ Langkah pertama dalam menghadapi tekanan kerja adalah memahami sumbernya. Dengan
 - Tuntutan dari atasan dan masyarakat
 - Kurangnya waktu istirahat
 
-### Dampak Tekanan Kerja Jika Tidak Dikelola
+#### Dampak Tekanan Kerja Jika Tidak Dikelola
 
 Tekanan kerja yang tidak dikelola dengan baik dapat berdampak negatif, baik bagi kinerja maupun kesehatan.
 
@@ -29,54 +29,54 @@ Tekanan kerja yang tidak dikelola dengan baik dapat berdampak negatif, baik bagi
 - Kesalahan dalam pekerjaan
 - Menurunnya kualitas pelayanan publik
 
-### Strategi Menghadapi Tekanan Kerja
+#### Strategi Menghadapi Tekanan Kerja
 
-#### 1. Mengatur Prioritas
+##### 1. Mengatur Prioritas
 
 Fokus pada tugas yang paling penting dan mendesak. Dengan menentukan prioritas, pekerjaan akan lebih terarah dan tidak terasa terlalu berat.
 
-#### 2. Manajemen Waktu yang Efektif
+##### 2. Manajemen Waktu yang Efektif
 
 Menyusun jadwal kerja harian dapat membantu ASN menyelesaikan tugas secara lebih terorganisir.
 
-#### 3. Membagi Tugas
+##### 3. Membagi Tugas
 
 Jika memungkinkan, lakukan delegasi atau kerja sama dengan tim untuk meringankan beban kerja.
 
-#### 4. Istirahat yang Cukup
+##### 4. Istirahat yang Cukup
 
 Istirahat sejenak di tengah pekerjaan dapat membantu menyegarkan pikiran dan meningkatkan fokus.
 
-#### 5. Menjaga Pola Pikir Positif
+##### 5. Menjaga Pola Pikir Positif
 
 Berpikir positif membantu ASN tetap tenang dan tidak mudah panik dalam menghadapi tekanan.
 
 
-### Tips Menjaga Kesehatan Mental
+#### Tips Menjaga Kesehatan Mental
 
-#### 1. Luangkan Waktu untuk Diri Sendiri
+##### 1. Luangkan Waktu untuk Diri Sendiri
 
 Ambil waktu sejenak untuk melakukan hal yang disukai, seperti hobi atau beristirahat.
 
-#### 2. Berbagi Cerita
+##### 2. Berbagi Cerita
 
 Bercerita dengan teman atau keluarga dapat membantu mengurangi beban pikiran.
 
-#### 3. Olahraga Ringan
+##### 3. Olahraga Ringan
 
 Aktivitas fisik dapat membantu mengurangi stres dan meningkatkan energi.
 
-#### 4. Menghindari Overthinking
+##### 4. Menghindari Overthinking
 
 Fokus pada solusi, bukan hanya pada masalah.
 
 
-### Membangun Ketahanan Diri (Resilience)
+#### Membangun Ketahanan Diri (Resilience)
 
 ASN perlu memiliki ketahanan diri agar mampu menghadapi tekanan kerja dalam jangka panjang. Ketahanan ini dapat dibangun melalui pengalaman, pembelajaran, dan sikap mental yang kuat.
 
 
-### Peran Lingkungan Kerja
+#### Peran Lingkungan Kerja
 
 Lingkungan kerja yang suportif sangat membantu ASN dalam menghadapi tekanan. Dukungan dari atasan dan rekan kerja dapat menciptakan suasana kerja yang lebih nyaman.
 

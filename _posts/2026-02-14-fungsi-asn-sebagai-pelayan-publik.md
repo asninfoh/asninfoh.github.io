@@ -10,52 +10,52 @@ image: "images/fungsi-asn-sebagai-pelayan-publik.jpg"
 Aparatur Sipil Negara (ASN) memiliki fungsi utama sebagai pelayan publik yang bertugas memenuhi kebutuhan masyarakat dalam berbagai aspek kehidupan. Fungsi ini menjadi inti dari keberadaan ASN dalam sistem pemerintahan modern.
 
 
-### Pengertian Pelayan Publik
+#### Pengertian Pelayan Publik
 
 Pelayan publik adalah individu atau lembaga yang memberikan layanan kepada masyarakat sesuai dengan kebutuhan dan peraturan yang berlaku. Dalam hal ini, ASN menjadi ujung tombak pelayanan tersebut.
 
 
-### Fungsi Utama ASN sebagai Pelayan Publik
+#### Fungsi Utama ASN sebagai Pelayan Publik
 
 ASN memiliki beberapa fungsi penting dalam menjalankan perannya sebagai pelayan publik.
 
-#### Memberikan Layanan Administratif
+##### Memberikan Layanan Administratif
 
 ASN melayani berbagai kebutuhan administratif seperti pembuatan dokumen kependudukan, perizinan, dan layanan lainnya.
 
-#### Memberikan Layanan Sosial
+##### Memberikan Layanan Sosial
 
 Selain administrasi, ASN juga berperan dalam memberikan layanan sosial seperti pendidikan, kesehatan, dan bantuan sosial.
 
 
-### Prinsip Pelayanan Publik
+#### Prinsip Pelayanan Publik
 
 Dalam menjalankan fungsi sebagai pelayan publik, ASN harus berpegang pada prinsip-prinsip berikut:
 
-#### Transparansi
+##### Transparansi
 
 Pelayanan harus terbuka dan mudah diakses oleh masyarakat.
 
-#### Akuntabilitas
+##### Akuntabilitas
 
 ASN harus bertanggung jawab atas setiap layanan yang diberikan.
 
-#### Efisiensi dan Efektivitas
+##### Efisiensi dan Efektivitas
 
 Layanan harus dilakukan dengan cepat, tepat, dan sesuai kebutuhan masyarakat.
 
 
-### Sikap yang Harus Dimiliki ASN
+#### Sikap yang Harus Dimiliki ASN
 
 Untuk menjalankan fungsi ini, ASN harus memiliki sikap ramah, sopan, profesional, dan responsif terhadap kebutuhan masyarakat.
 
 
-### Tantangan dalam Pelayanan Publik
+#### Tantangan dalam Pelayanan Publik
 
 ASN sering menghadapi berbagai tantangan seperti keterbatasan fasilitas, jumlah pegawai, serta tingginya harapan masyarakat terhadap pelayanan.
 
 
-### Upaya Meningkatkan Pelayanan Publik
+#### Upaya Meningkatkan Pelayanan Publik
 
 Pemerintah terus melakukan inovasi seperti digitalisasi layanan dan peningkatan kompetensi ASN untuk meningkatkan kualitas pelayanan.
 

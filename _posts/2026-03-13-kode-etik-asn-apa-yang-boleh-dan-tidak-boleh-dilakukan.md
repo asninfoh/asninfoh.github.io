@@ -10,12 +10,12 @@ image: "images/kode-etik-asn-apa-yang-boleh-dan-tidak-boleh-dilakukan.jpg"
 Aparatur Sipil Negara (ASN) memiliki peran penting dalam menjalankan pemerintahan dan memberikan pelayanan publik. Agar profesionalisme dan integritas tetap terjaga, ASN harus mematuhi kode etik yang berlaku. Kode etik ini menjadi panduan perilaku dalam melaksanakan tugas, berinteraksi dengan masyarakat, dan mengambil keputusan. Artikel ini membahas kode etik ASN, serta hal-hal yang boleh dan tidak boleh dilakukan.
 
 
-### Apa Itu Kode Etik ASN?
+#### Apa Itu Kode Etik ASN?
 
 Kode etik ASN adalah pedoman yang mengatur perilaku, tanggung jawab, dan etika kerja ASN. Tujuannya untuk memastikan ASN bekerja secara profesional, adil, transparan, dan akuntabel, serta menjaga kepercayaan masyarakat terhadap birokrasi.
 
 
-### Prinsip-Prinsip Kode Etik ASN
+#### Prinsip-Prinsip Kode Etik ASN
 
 - **Profesionalisme:** Melaksanakan tugas sesuai standar dan kompetensi yang dimiliki.
 - **Integritas:** Bersikap jujur, tidak memihak, dan bebas dari korupsi, kolusi, dan nepotisme.
@@ -23,7 +23,7 @@ Kode etik ASN adalah pedoman yang mengatur perilaku, tanggung jawab, dan etika k
 - **Akuntabilitas:** Bertanggung jawab atas keputusan, tindakan, dan penggunaan sumber daya.
 - **Transparansi:** Memberikan informasi yang jelas dan dapat dipertanggungjawabkan kepada masyarakat.
 
-### Apa yang Boleh Dilakukan ASN?
+#### Apa yang Boleh Dilakukan ASN?
 
 - Melaksanakan tugas sesuai aturan dan prosedur yang berlaku.
 - Bekerja secara profesional, efisien, dan berkualitas.
@@ -31,7 +31,7 @@ Kode etik ASN adalah pedoman yang mengatur perilaku, tanggung jawab, dan etika k
 - Menjalin komunikasi dan koordinasi yang baik dengan rekan kerja dan masyarakat.
 - Terus mengembangkan kompetensi melalui pelatihan, pendidikan, dan inovasi.
 
-### Apa yang Tidak Boleh Dilakukan ASN?
+#### Apa yang Tidak Boleh Dilakukan ASN?
 
 - Menyalahgunakan wewenang untuk kepentingan pribadi atau kelompok.
 - Terlibat dalam praktik korupsi, kolusi, atau nepotisme.
@@ -39,7 +39,7 @@ Kode etik ASN adalah pedoman yang mengatur perilaku, tanggung jawab, dan etika k
 - Menyebarkan informasi yang tidak benar atau menyesatkan masyarakat.
 - Mengabaikan prosedur dan aturan yang berlaku dalam pelaksanaan tugas.
 
-### Etika Berinteraksi dengan Masyarakat
+#### Etika Berinteraksi dengan Masyarakat
 
 ASN harus menjaga sikap sopan, ramah, dan profesional saat berinteraksi dengan masyarakat. Hal ini termasuk:
 
@@ -48,7 +48,7 @@ ASN harus menjaga sikap sopan, ramah, dan profesional saat berinteraksi dengan m
 - Menghormati hak masyarakat tanpa diskriminasi.
 - Menjaga kerahasiaan data dan informasi sensitif.
 
-### Implementasi Kode Etik ASN
+#### Implementasi Kode Etik ASN
 
 Implementasi kode etik ASN dilakukan melalui pengawasan internal, pelaporan pelanggaran, dan sanksi disiplin. ASN yang melanggar kode etik dapat dikenai teguran, penurunan pangkat, atau pemberhentian sesuai ketentuan yang berlaku.
 

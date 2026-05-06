@@ -10,80 +10,80 @@ image: "images/pentingnya-disiplin-kerja-bagi-asn.jpg"
 Disiplin kerja merupakan salah satu fondasi utama dalam membangun kinerja Aparatur Sipil Negara (ASN) yang profesional. Tanpa disiplin, pekerjaan yang seharusnya berjalan dengan baik bisa menjadi terhambat, bahkan berdampak pada kualitas pelayanan publik.
 
 
-### Pengertian Disiplin Kerja
+#### Pengertian Disiplin Kerja
 
 Disiplin kerja adalah sikap patuh dan taat terhadap aturan, waktu, serta tanggung jawab yang telah ditetapkan dalam pekerjaan. Bagi ASN, disiplin bukan hanya kewajiban, tetapi juga bentuk komitmen dalam menjalankan tugas negara.
 
 
-### Mengapa Disiplin Itu Penting?
+#### Mengapa Disiplin Itu Penting?
 
 - Membantu pekerjaan selesai tepat waktu
 - Meningkatkan kualitas kerja
 - Menciptakan lingkungan kerja yang tertib
 - Membangun kepercayaan masyarakat
 
-### Bentuk Disiplin Kerja ASN
+#### Bentuk Disiplin Kerja ASN
 
-#### 1. Disiplin Waktu
+##### 1. Disiplin Waktu
 
 Datang tepat waktu, tidak terlambat, serta menyelesaikan pekerjaan sesuai deadline.
 
-#### 2. Disiplin Tugas
+##### 2. Disiplin Tugas
 
 Melaksanakan tugas sesuai dengan tanggung jawab yang diberikan.
 
-#### 3. Disiplin Aturan
+##### 3. Disiplin Aturan
 
 Mematuhi semua peraturan yang berlaku di lingkungan kerja.
 
-#### 4. Disiplin Sikap
+##### 4. Disiplin Sikap
 
 Menjaga etika, sopan santun, dan profesionalisme dalam bekerja.
 
 
-### Dampak Positif Disiplin Kerja
+#### Dampak Positif Disiplin Kerja
 
 - Meningkatkan produktivitas
 - Mengurangi kesalahan kerja
 - Menciptakan suasana kerja yang nyaman
 - Meningkatkan citra ASN di mata masyarakat
 
-### Dampak Negatif Kurangnya Disiplin
+#### Dampak Negatif Kurangnya Disiplin
 
 - Pekerjaan tertunda
 - Menurunnya kualitas pelayanan
 - Lingkungan kerja menjadi tidak teratur
 - Menurunnya kepercayaan masyarakat
 
-### Cara Meningkatkan Disiplin Kerja
+#### Cara Meningkatkan Disiplin Kerja
 
-#### 1. Membiasakan Tepat Waktu
+##### 1. Membiasakan Tepat Waktu
 
 Mulai dari hal sederhana seperti datang dan pulang sesuai jadwal.
 
-#### 2. Membuat Jadwal Kerja
+##### 2. Membuat Jadwal Kerja
 
 Perencanaan kerja membantu menjaga konsistensi dalam bekerja.
 
-#### 3. Menetapkan Target
+##### 3. Menetapkan Target
 
 Target kerja yang jelas dapat meningkatkan fokus dan tanggung jawab.
 
-#### 4. Menghindari Penundaan
+##### 4. Menghindari Penundaan
 
 Segera kerjakan tugas agar tidak menumpuk.
 
-#### 5. Menjaga Komitmen
+##### 5. Menjaga Komitmen
 
 Disiplin membutuhkan komitmen yang kuat dari dalam diri.
 
 
-### Peran Pimpinan dalam Meningkatkan Disiplin
+#### Peran Pimpinan dalam Meningkatkan Disiplin
 
 Pimpinan harus memberikan contoh yang baik serta menegakkan aturan secara konsisten. Keteladanan pimpinan akan mempengaruhi seluruh ASN di bawahnya.
 
 
-### Disiplin sebagai Budaya Kerja
+#### Disiplin sebagai Budaya Kerja
 
 Jika disiplin diterapkan secara konsisten, maka akan menjadi budaya kerja yang positif dalam lingkungan ASN. Budaya ini akan mendukung terciptanya kinerja yang optimal.
 
