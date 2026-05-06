@@ -50,8 +50,8 @@
     {% for category in sorted_categories %}
       {% if category[0] != "" %}
       <a href="/categories/#{{ category[0] | slugify }}"
-        class="text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
-        {{ category[0] }} ({{ category[1].size }})
+        class="small text-decoration-none border border-1 text-capitalize px-2 py-1 rounded">
+        {{ category[0] }}
       </a>
       {% endif %}
     {% endfor %}

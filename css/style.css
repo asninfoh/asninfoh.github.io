@@ -45,7 +45,8 @@ body {
 
 /* Default (desktop) */
 .search-container {
-  max-width: 250px; /* batasi biar gak kepanjangan */
+  max-width: 250px;
+  /* batasi biar gak kepanjangan */
   width: 100%;
 }
 
@@ -67,11 +68,30 @@ body {
 }
 
 .bg-danger {
-  background: linear-gradient(90deg,#dc3545,#8b2bbf);
+  background: linear-gradient(90deg, #dc3545, #8b2bbf);
 }
 
 h6 span {
   margin-right: 5px;
+}
+
+/* sembunyikan scrollbar */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE & Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+.no-scrollbar a {
+  scroll-snap-align: start;
 }
 
 @media (max-width: 768px) {
