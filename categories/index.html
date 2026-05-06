@@ -14,10 +14,16 @@ permalink: /categories/
 
   <div class="row g-4" id="post-list"></div>
 
+  <!-- PAGINATION -->
+  <div class="d-flex justify-content-center mt-4 gap-2" id="pagination"></div>
+
 </div>
 
 <script>
 const hash = window.location.hash.replace("#", "").toLowerCase();
+
+const perPage = 6;
+let currentPage = 1;
 
 const allPosts = [
   {% for post in site.posts %}
@@ -45,16 +51,27 @@ document.getElementById("category-title").innerText =
   hash ? hash.toUpperCase() : "SEMUA KATEGORI";
 
 const container = document.getElementById("post-list");
-container.innerHTML = "";
+const pagination = document.getElementById("pagination");
 
-if (filtered.length === 0) {
-  container.innerHTML = `
-    <div class="col-12 text-center text-muted py-5">
-      Tidak ada postingan.
-    </div>
-  `;
-} else {
-  filtered.forEach(p => {
+function renderPage(page) {
+  container.innerHTML = "";
+
+  let start = (page - 1) * perPage;
+  let end = start + perPage;
+
+  let pageItems = filtered.slice(start, end);
+
+  if (pageItems.length === 0) {
+    container.innerHTML = `
+      <div class="col-12 text-center text-muted py-5">
+        Tidak ada postingan.
+      </div>
+    `;
+    pagination.innerHTML = "";
+    return;
+  }
+
+  pageItems.forEach(p => {
     container.innerHTML += `
       <div class="col-12 col-md-4">
         <div class="card border-0 h-100">
@@ -93,7 +110,51 @@ if (filtered.length === 0) {
       </div>
     `;
   });
+
+  renderPagination(page);
 }
+
+function renderPagination(page) {
+  pagination.innerHTML = "";
+
+  let totalPages = Math.ceil(filtered.length / perPage);
+
+  if (totalPages <= 1) return;
+
+  // Prev
+  pagination.innerHTML += `
+    <button class="btn btn-sm btn-outline-dark"
+      ${page === 1 ? "disabled" : ""}
+      onclick="goPage(${page - 1})">
+      Prev
+    </button>
+  `;
+
+  // Info
+  pagination.innerHTML += `
+    <span class="align-self-center small px-2">
+      ${page} / ${totalPages}
+    </span>
+  `;
+
+  // Next
+  pagination.innerHTML += `
+    <button class="btn btn-sm btn-outline-dark"
+      ${page === totalPages ? "disabled" : ""}
+      onclick="goPage(${page + 1})">
+      Next
+    </button>
+  `;
+}
+
+window.goPage = function(page) {
+  currentPage = page;
+  renderPage(currentPage);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+// init
+renderPage(currentPage);
 </script>
 
 <script>
