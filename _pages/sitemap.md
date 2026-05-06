@@ -9,8 +9,22 @@ permalink: /sitemap/
 
   <p>Daftar lengkap halaman dan konten website:</p>
 
+  <!-- POSTINGAN -->
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> POSTINGAN TERBARU <span class="text-danger">/</span>
+  </h6>
+  <ul>
+    {% for post in site.posts limit:50 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
   <!-- HALAMAN -->
-  <h5 class="mt-4">Halaman</h5>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> HALAMAN <span class="text-danger">/</span>
+  </h6>
   <ul>
     {% for page in site.pages %}
       {% if page.title and page.url != '/404.html' %}
@@ -21,19 +35,10 @@ permalink: /sitemap/
     {% endfor %}
   </ul>
 
-  <!-- POSTINGAN -->
-  <h5 class="mt-4">Postingan Terbaru</h5>
-  <ul>
-    {% for post in site.posts limit:50 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <small class="text-muted">({{ post.date | date: "%d %b %Y" }})</small>
-      </li>
-    {% endfor %}
-  </ul>
-
   <!-- KATEGORI -->
-  <h5 class="mt-4">Kategori</h5>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> KATEGORI <span class="text-danger">/</span>
+  </h6>
   <ul>
     {% for category in site.categories %}
       <li>
@@ -45,7 +50,9 @@ permalink: /sitemap/
   </ul>
 
   <!-- TAG -->
-  <h5 class="mt-4">Tag</h5>
+  <h6 class="fw-bold text-uppercase mb-3">
+    <span class="text-danger">/</span> TAGS <span class="text-danger">/</span>
+  </h6>
   <ul>
     {% for tag in site.tags %}
       <li>
