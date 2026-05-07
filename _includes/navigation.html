@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top z-3">
   <div class="container">
 
-    <!-- LOGO AUTO -->
+    <!-- LOGO -->
     <a class="navbar-brand fw-bold d-flex align-items-center" href="{{ '/' | relative_url }}">
       {% if site.logo %}
       <img src="{{ site.logo | relative_url }}" alt="{{ site.title }}" style="height:40px;">
@@ -11,134 +11,175 @@
     </a>
 
     <!-- TOGGLER -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navTop">
+    <button class="navbar-toggler border-0 shadow-none" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navTop"
+            aria-controls="navTop"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
       <span class="navbar-toggler-icon"></span>
+
     </button>
 
-    <!-- NAVIGASI BLOG ASN -->
-    <ul class="navbar-nav mx-auto nav-custom">
+    <!-- COLLAPSE -->
+    <div class="collapse navbar-collapse" id="navTop">
 
-      <!-- BERANDA -->
-      <li class="nav-item">
-        <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="/">Beranda</a>
-      </li>
+      <!-- MENU -->
+      <ul class="navbar-nav mx-auto nav-custom">
 
-      <!-- INFORMASI -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-          Informasi
-        </a>
-        <ul class="dropdown-menu">
+        <!-- BERANDA -->
+        <li class="nav-item">
+          <a class="nav-link {% if page.url == '/' %}active{% endif %}" href="/">
+            Beranda
+          </a>
+        </li>
 
-          <li><a class="dropdown-item" href="/categories/#informasi">Informasi</a></li>
-          <li><a class="dropdown-item" href="/categories/#berita">Berita</a></li>
-          <li><a class="dropdown-item" href="/categories/#pemerintahan">Pemerintahan</a></li>
-          <li><a class="dropdown-item" href="/categories/#kebijakan">Kebijakan</a></li>
-          <li><a class="dropdown-item" href="/categories/#kepegawaian">Kepegawaian</a></li>
-          <li><a class="dropdown-item" href="/categories/#publik">Publik</a></li>
+        <!-- INFORMASI -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Informasi
+          </a>
 
-        </ul>
-      </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/categories/#informasi">Informasi</a></li>
+            <li><a class="dropdown-item" href="/categories/#berita">Berita</a></li>
+            <li><a class="dropdown-item" href="/categories/#pemerintahan">Pemerintahan</a></li>
+            <li><a class="dropdown-item" href="/categories/#kebijakan">Kebijakan</a></li>
+            <li><a class="dropdown-item" href="/categories/#kepegawaian">Kepegawaian</a></li>
+            <li><a class="dropdown-item" href="/categories/#publik">Publik</a></li>
+          </ul>
+        </li>
 
-      <!-- ASN -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-          ASN
-        </a>
-        <ul class="dropdown-menu">
+        <!-- ASN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            ASN
+          </a>
 
-          <li><a class="dropdown-item" href="/categories/#asn">ASN</a></li>
-          <li><a class="dropdown-item" href="/categories/#pns">PNS</a></li>
-          <li><a class="dropdown-item" href="/categories/#pppk">PPPK</a></li>
-          <li><a class="dropdown-item" href="/categories/#manajemen">Manajemen</a></li>
-          <li><a class="dropdown-item" href="/categories/#jabatan">Jabatan</a></li>
-          <li><a class="dropdown-item" href="/categories/#struktur">Struktur</a></li>
-          <li><a class="dropdown-item" href="/categories/#golongan">Golongan</a></li>
-          <li><a class="dropdown-item" href="/categories/#tugas">Tugas</a></li>
-          <li><a class="dropdown-item" href="/categories/#peran">Peran</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/categories/#asn">ASN</a></li>
+            <li><a class="dropdown-item" href="/categories/#pns">PNS</a></li>
+            <li><a class="dropdown-item" href="/categories/#pppk">PPPK</a></li>
+            <li><a class="dropdown-item" href="/categories/#manajemen">Manajemen</a></li>
+            <li><a class="dropdown-item" href="/categories/#jabatan">Jabatan</a></li>
+            <li><a class="dropdown-item" href="/categories/#struktur">Struktur</a></li>
+            <li><a class="dropdown-item" href="/categories/#golongan">Golongan</a></li>
+            <li><a class="dropdown-item" href="/categories/#tugas">Tugas</a></li>
+            <li><a class="dropdown-item" href="/categories/#peran">Peran</a></li>
+          </ul>
+        </li>
 
-        </ul>
-      </li>
+        <!-- SELEKSI -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Seleksi
+          </a>
 
-      <!-- SELEKSI -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-          Seleksi
-        </a>
-        <ul class="dropdown-menu">
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/categories/#seleksi">Seleksi</a></li>
+            <li><a class="dropdown-item" href="/categories/#cpns">CPNS</a></li>
+            <li><a class="dropdown-item" href="/categories/#formasi">Formasi</a></li>
+            <li><a class="dropdown-item" href="/categories/#pppk">PPPK</a></li>
+            <li><a class="dropdown-item" href="/categories/#masa-depan">Masa Depan</a></li>
+          </ul>
+        </li>
 
-          <li><a class="dropdown-item" href="/categories/#seleksi">Seleksi</a></li>
-          <li><a class="dropdown-item" href="/categories/#cpns">CPNS</a></li>
-          <li><a class="dropdown-item" href="/categories/#formasi">Formasi</a></li>
-          <li><a class="dropdown-item" href="/categories/#pppk">PPPK</a></li>
-          <li><a class="dropdown-item" href="/categories/#masa-depan">Masa Depan</a></li>
+        <!-- KARIER -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Karier
+          </a>
 
-        </ul>
-      </li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/categories/#karier">Karier</a></li>
+            <li><a class="dropdown-item" href="/categories/#promosi">Promosi</a></li>
+            <li><a class="dropdown-item" href="/categories/#pengembangan">Pengembangan</a></li>
+            <li><a class="dropdown-item" href="/categories/#kinerja">Kinerja</a></li>
+            <li><a class="dropdown-item" href="/categories/#gaji">Gaji</a></li>
+            <li><a class="dropdown-item" href="/categories/#tunjangan">Tunjangan</a></li>
+            <li><a class="dropdown-item" href="/categories/#pensiun">Pensiun</a></li>
+          </ul>
+        </li>
 
-      <!-- KARIER -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-          Karier
-        </a>
-        <ul class="dropdown-menu">
+        <!-- REGULASI -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Regulasi
+          </a>
 
-          <li><a class="dropdown-item" href="/categories/#karier">Karier</a></li>
-          <li><a class="dropdown-item" href="/categories/#promosi">Promosi</a></li>
-          <li><a class="dropdown-item" href="/categories/#pengembangan">Pengembangan</a></li>
-          <li><a class="dropdown-item" href="/categories/#kinerja">Kinerja</a></li>
-          <li><a class="dropdown-item" href="/categories/#gaji">Gaji</a></li>
-          <li><a class="dropdown-item" href="/categories/#tunjangan">Tunjangan</a></li>
-          <li><a class="dropdown-item" href="/categories/#pensiun">Pensiun</a></li>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/categories/#regulasi">Regulasi</a></li>
+            <li><a class="dropdown-item" href="/categories/#undang-undang">Undang Undang</a></li>
+            <li><a class="dropdown-item" href="/categories/#peraturan">Peraturan</a></li>
+            <li><a class="dropdown-item" href="/categories/#disiplin">Disiplin</a></li>
+            <li><a class="dropdown-item" href="/categories/#kode-etik">Kode Etik</a></li>
+            <li><a class="dropdown-item" href="/categories/#reformasi">Reformasi</a></li>
+          </ul>
+        </li>
 
-        </ul>
-      </li>
+        <!-- TENTANG -->
+        <li class="nav-item">
+          <a class="nav-link" href="/about">
+            Tentang
+          </a>
+        </li>
 
-      <!-- REGULASI -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-          Regulasi
-        </a>
-        <ul class="dropdown-menu">
+      </ul>
 
-          <li><a class="dropdown-item" href="/categories/#regulasi">Regulasi</a></li>
-          <li><a class="dropdown-item" href="/categories/#undang-undang">Undang Undang</a></li>
-          <li><a class="dropdown-item" href="/categories/#peraturan">Peraturan</a></li>
-          <li><a class="dropdown-item" href="/categories/#disiplin">Disiplin</a></li>
-          <li><a class="dropdown-item" href="/categories/#kode-etik">Kode Etik</a></li>
-          <li><a class="dropdown-item" href="/categories/#reformasi">Reformasi</a></li>
+      <!-- SEARCH -->
+      <div class="search-container ms-lg-3 mt-3 mt-lg-0">
+        <form action="/search/" method="get" class="d-flex">
+          <input type="text"
+                 name="q"
+                 class="form-control search-input"
+                 placeholder="Cari informasi ASN...">
+        </form>
+      </div>
 
-        </ul>
-      </li>
-
-      <!-- TENTANG -->
-      <li class="nav-item">
-        <a class="nav-link" href="/about">Tentang</a>
-      </li>
-
-    </ul>
-
-    <!-- SEARCH -->
-    <div class="search-container d-flex align-items-center">
-      <form action="/search/" method="get" class="d-flex w-100">
-        <input type="text" name="q" class="search-input form-control" placeholder="Cari informasi ASN...">
-      </form>
     </div>
-
 
   </div>
 </nav>
 
 <!-- HOT BAR -->
-<div class="bg-danger text-white py-3">
+<div class="bg-danger text-white py-2">
   <div class="container d-flex flex-nowrap overflow-auto gap-3 small fw-semibold no-scrollbar align-items-center">
-    <a href="/tags/pengumuman" class="text-white text-decoration-none">Pengumuman</a>
-    <a href="/tags/terbaru" class="text-white text-decoration-none">Terbaru</a>
-    <a href="/tags/penting" class="text-white text-decoration-none">Penting</a>
+
+    <a href="/tags/pengumuman" class="text-white text-decoration-none">
+      Pengumuman
+    </a>
+
+    <a href="/tags/terbaru" class="text-white text-decoration-none">
+      Terbaru
+    </a>
+
+    <a href="/tags/penting" class="text-white text-decoration-none">
+      Penting
+    </a>
+
     <span class="text-white-50">|</span>
-    <a href="/categories/#kebijakan" class="text-white text-decoration-none">Kebijakan</a>
-    <a href="/categories/#formasi" class="text-white text-decoration-none">CPNS & PPPK</a>
-    <a href="/categories/#soal" class="text-white text-decoration-none">Soal</a>
-    <a href="/categories/#tips" class="text-white text-decoration-none">Tips</a>
+
+    <a href="/categories/#kebijakan" class="text-white text-decoration-none">
+      Kebijakan
+    </a>
+
+    <a href="/categories/#formasi" class="text-white text-decoration-none">
+      CPNS & PPPK
+    </a>
+
+    <a href="/categories/#soal" class="text-white text-decoration-none">
+      Soal
+    </a>
+
+    <a href="/categories/#tips" class="text-white text-decoration-none">
+      Tips
+    </a>
+
   </div>
 </div>
+
+<style>
+
+</style>

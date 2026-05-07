@@ -6,92 +6,108 @@ body {
 }
 
 /* brand biar gak kegedean */
-.navbar-brand {
-  font-size: 1.25rem;
+/* NAVBAR */
+.navbar{
+  padding-top:12px;
+  padding-bottom:12px;
 }
 
-.nav-custom .nav-link {
-  position: relative;
-  padding: 5px 10px;
+/* MENU */
+.navbar-nav .nav-link{
+  font-weight:600;
+  color:#333 !important;
+  padding:10px 14px;
+  transition:.2s;
 }
 
-.nav-custom .nav-link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: rgb(220 53 69);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.3s;
+.navbar-nav .nav-link:hover{
+  color:#dc3545 !important;
 }
 
-.nav-custom .nav-link:hover::before {
-  transform: scaleX(1);
+/* ACTIVE */
+.navbar-nav .nav-link.active{
+  color:#dc3545 !important;
 }
 
-/* dropdown biar enak di mobile */
-@media (max-width: 991px) {
-  .dropdown-menu {
-    text-align: center;
+/* DROPDOWN */
+.dropdown-menu{
+  border:none;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  padding:10px;
+}
+
+.dropdown-item{
+  border-radius:8px;
+  padding:9px 14px;
+  font-size:14px;
+}
+
+.dropdown-item:hover{
+  background:#f8f9fa;
+  color:#dc3545;
+}
+
+/* SEARCH */
+.search-container{
+  min-width:250px;
+}
+
+.search-input{
+  border-radius:10px;
+  height:42px;
+  border:1px solid #ddd;
+}
+
+.search-input:focus{
+  box-shadow:none;
+  border-color:#dc3545;
+}
+
+/* HOTBAR */
+.no-scrollbar::-webkit-scrollbar{
+  display:none;
+}
+
+.no-scrollbar{
+  scrollbar-width:none;
+}
+
+/* MOBILE */
+@media (max-width:991px){
+
+  .navbar-nav{
+    padding-top:15px;
   }
-}
 
-.navbar .nav-link {
-  font-weight: 500;
-}
-
-/* Default (desktop) */
-.search-container {
-  max-width: 250px;
-  /* batasi biar gak kepanjangan */
-  width: 100%;
-}
-
-/* Mobile */
-@media (max-width: 991px) {
-  .search-container {
-    max-width: 100%;
-    margin-top: 10px;
-    padding: 0 10px;
+  .navbar-nav .nav-link{
+    padding:12px 0;
   }
 
-  .navbar-collapse {
-    align-items: stretch !important;
+  .dropdown-menu{
+    box-shadow:none;
+    border:none;
+    padding-left:10px;
+    margin-top:0;
   }
 
-  .search-container form {
-    width: 100%;
+  .search-container{
+    width:100%;
+    margin-top:15px;
   }
-}
 
-.bg-danger {
-  background: linear-gradient(90deg, #dc3545, #8b2bbf);
-}
+  .search-container form{
+    width:100%;
+  }
 
-h6 span {
-  margin-right: 5px;
-}
+  .search-input{
+    width:100%;
+  }
 
-/* sembunyikan scrollbar */
-.no-scrollbar {
-  -ms-overflow-style: none;
-  /* IE & Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
+  .navbar-collapse{
+    padding-top:10px;
+  }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari */
-}
-
-.no-scrollbar a {
-  scroll-snap-align: start;
 }
 
 @media (max-width: 768px) {
